@@ -144,7 +144,7 @@
         "no-use-before-declare": true,
         "no-void-expression": false,
         "no-var-keyword": false,
-        "no-var-requires": false,
+        "no-var-requires": true,
         "object-curly-spacing": [
             true,
             "never"
