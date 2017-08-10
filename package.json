@@ -1,6 +1,6 @@
 {
   "name": "bm-tslint-rules",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "default tslint rules to use for projects using typescript",
   "main": "tslint.json",
   "files": [
