@@ -89,6 +89,3 @@ jspm_packages
 tmp
 doc
 .awcache
-
-# ignore package-lock.json for now, as we use yarn per default
-package-lock.json
