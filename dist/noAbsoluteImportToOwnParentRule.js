@@ -11,7 +11,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var Lint = require("tslint");
-var Rule = (function (_super) {
+var Rule = /** @class */ (function (_super) {
     __extends(Rule, _super);
     function Rule() {
         return _super !== null && _super.apply(this, arguments) || this;
@@ -25,7 +25,7 @@ var Rule = (function (_super) {
 }(Lint.Rules.AbstractRule));
 exports.Rule = Rule;
 // The walker takes care of all the work.
-var NoImportsWalker = (function (_super) {
+var NoImportsWalker = /** @class */ (function (_super) {
     __extends(NoImportsWalker, _super);
     function NoImportsWalker(sourceFile, options) {
         var _this = _super.call(this, sourceFile, options) || this;
