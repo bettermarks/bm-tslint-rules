@@ -209,7 +209,7 @@
             "never"
         ],
         "strict-boolean-expressions": [
-          true,
+          false,
           "allow-null-union",
           "allow-undefined-union"
         ],
