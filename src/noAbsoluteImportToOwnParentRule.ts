@@ -2,20 +2,26 @@ import * as ts from 'typescript';
 import * as Lint from 'tslint';
 import {IOptions} from 'tslint';
 import * as path from 'path';
+import {findConfigurationPath} from 'tslint/lib/configuration';
 
 export class Rule extends Lint.Rules.AbstractRule {
   public static FAILURE_STRING = 'importing parent path ';
 
   private static _projectRoot: string;
-  static getProjectPath(): string {
-    if (!Rule._projectRoot) {
-      Rule._projectRoot = process.cwd();
+  static getProjectPath(sourceFilePath: string): string {
+    if (Rule._projectRoot === undefined || !sourceFilePath.startsWith(Rule._projectRoot)) {
+      const configurationPath = findConfigurationPath(null, sourceFilePath);
+      if (configurationPath === undefined) {
+        throw new Error('no-absolute-import-to-own-parent couldn\'t find config path');
+      }
+      Rule._projectRoot = path.parse(configurationPath).dir;
       console.info('no-absolute-import-to-own-parent assumes project path:', Rule._projectRoot);
     }
     return this._projectRoot;
   }
 
   public apply(sourceFile: ts.SourceFile): Lint.RuleFailure[] {
+
     // tslint:disable-next-line:no-use-before-declare
     return this.applyWithWalker(new NoImportsWalker(sourceFile, this.getOptions()));
   }
@@ -27,7 +33,7 @@ class NoImportsWalker extends Lint.RuleWalker {
 
   constructor(sourceFile: ts.SourceFile, options: IOptions) {
     super(sourceFile, options);
-    const relative = path.relative(Rule.getProjectPath(), sourceFile.fileName);
+    const relative = path.relative(Rule.getProjectPath(sourceFile.fileName), sourceFile.fileName);
 
     // split and chop of source folder (1st element) and module file name (last element)
     this.packagePathList = relative.split(path.sep).slice(1, -1); // get rid of source folder

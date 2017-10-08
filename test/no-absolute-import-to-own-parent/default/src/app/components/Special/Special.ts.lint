@@ -1,0 +1,9 @@
+/* #3 false positives:
+`components` is part of path but should still be importable absolute,
+assuming there is an alias for it.
+*/
+import {Button} from 'components/';
+
+//should still fail when importing from app:
+import {Something} from 'app/config';
+                        ~~~~~~~~~~~~ [importing parent path  app/config is not allowed.]

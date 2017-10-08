@@ -12,14 +12,19 @@ var __extends = (this && this.__extends) || (function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 var Lint = require("tslint");
 var path = require("path");
+var configuration_1 = require("tslint/lib/configuration");
 var Rule = /** @class */ (function (_super) {
     __extends(Rule, _super);
     function Rule() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    Rule.getProjectPath = function () {
-        if (!Rule._projectRoot) {
-            Rule._projectRoot = process.cwd();
+    Rule.getProjectPath = function (sourceFilePath) {
+        if (Rule._projectRoot === undefined || !sourceFilePath.startsWith(Rule._projectRoot)) {
+            var configurationPath = configuration_1.findConfigurationPath(null, sourceFilePath);
+            if (configurationPath === undefined) {
+                throw new Error('no-absolute-import-to-own-parent couldn\'t find config path');
+            }
+            Rule._projectRoot = path.parse(configurationPath).dir;
             console.info('no-absolute-import-to-own-parent assumes project path:', Rule._projectRoot);
         }
         return this._projectRoot;
@@ -37,7 +42,7 @@ var NoImportsWalker = /** @class */ (function (_super) {
     __extends(NoImportsWalker, _super);
     function NoImportsWalker(sourceFile, options) {
         var _this = _super.call(this, sourceFile, options) || this;
-        var relative = path.relative(Rule.getProjectPath(), sourceFile.fileName);
+        var relative = path.relative(Rule.getProjectPath(sourceFile.fileName), sourceFile.fileName);
         // split and chop of source folder (1st element) and module file name (last element)
         _this.packagePathList = relative.split(path.sep).slice(1, -1); // get rid of source folder
         return _this;
