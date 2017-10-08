@@ -10,6 +10,8 @@ test:
   override:
     - npm test
   post:
-    - npm run build
-#    after build there shouldn't be a diff, otherwise dist folder is not in sync
-    - git diff --exit-code
+    - ./ci-test-clean-build.sh
+# ci-test-master-version.sh will abort in case of changes in working directory
+# so we do `git checkout HEAD` to reset working directory:
+# in case previous tests produced changes, we still execute the check instead of swallowing error
+    - git checkout HEAD && ./ci-test-master-version.sh
