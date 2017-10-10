@@ -10,6 +10,5 @@ test:
   override:
     - npm test
   post:
-    - npm run build
-#    after build there shouldn't be a diff, otherwise dist folder is not in sync
-    - git diff --exit-code
+    - ./ci-test-clean-build.sh
+    - ./ci-test-master-version.sh
