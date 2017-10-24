@@ -1,6 +1,6 @@
 {
   "name": "bm-tslint-rules",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "default tslint rules to use for projects using typescript",
   "main": "tslint.json",
   "files": [
@@ -28,11 +28,11 @@
   "devDependencies": {
     "@types/node": "^8.0.30",
     "ts-node": "^3.3.0",
-    "tslint": "5.7.0",
+    "tslint": "5.8.0",
     "tsutils": "^2.8.2",
-    "typescript": "~2.5.2"
+    "typescript": "~2.5.3"
   },
   "peerDependencies": {
-    "tslint": "5.7.0"
+    "tslint": "5.8.0"
   }
 }
