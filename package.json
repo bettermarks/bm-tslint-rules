@@ -3,14 +3,18 @@
   "version": "0.0.8",
   "description": "default tslint rules to use for projects using typescript",
   "main": "tslint.json",
+  "repository": "https://github.com/bettermarks/bm-tslint-rules",
+  "bugs": "https://github.com/bettermarks/bm-tslint-rules/issues",
   "files": [
     "dist"
   ],
   "engines": {
-    "node": ">=8.1.4",
-    "npm": ">=5.0.3"
+    "node": ">=8.9.4",
+    "npm": ">=5.6.0"
   },
   "scripts": {
+    "preinstall": "npx check-node-version --package",
+    "check": "npx npm-check -u --skip-unused",
     "build": "tsc -p .",
     "test": "tslint --test test/**/tslint.json"
   },
@@ -22,15 +26,15 @@
   "license": "ISC",
   "dependencies": {
     "tslint-eslint-rules": "4.1.1",
-    "tslint-microsoft-contrib": "5.0.1",
-    "tslint-react": "3.2.0"
+    "tslint-microsoft-contrib": "5.0.2",
+    "tslint-react": "3.4.0"
   },
   "devDependencies": {
-    "@types/node": "^8.0.30",
-    "ts-node": "^3.3.0",
-    "tslint": "5.8.0",
-    "tsutils": "^2.8.2",
-    "typescript": "~2.5.3"
+    "@types/node": "^9.4.0",
+    "ts-node": "^4.1.0",
+    "tslint": "5.9.1",
+    "tsutils": "^2.21.0",
+    "typescript": "~2.7.1"
   },
   "peerDependencies": {
     "tslint": "5.8.0"
