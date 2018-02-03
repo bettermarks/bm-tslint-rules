@@ -4,7 +4,7 @@
         "tslint-microsoft-contrib",
         "tslint-react"
     ],
-    "rulesDirectory": "dist",
+    "rulesDirectory": "src",
     "rules": {
         "align": [
             true,
