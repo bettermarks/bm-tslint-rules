@@ -6,7 +6,7 @@
   "repository": "https://github.com/bettermarks/bm-tslint-rules",
   "bugs": "https://github.com/bettermarks/bm-tslint-rules/issues",
   "files": [
-    "dist"
+    "tslint.json", "src"
   ],
   "engines": {
     "node": ">=8.9.4",
