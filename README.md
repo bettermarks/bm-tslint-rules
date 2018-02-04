@@ -63,6 +63,13 @@ Since documenting each and every rule here would possible get outdated soon here
 
 ## Custom Rules
 
+Since `tslint` version 5.7.0, custom rules will be loaded using node's normal path resolution.
+Our custom rules are provided as typescript files.
+For node to be able to load them we need either use `ts-node` to run `tslint`
+or configure node to require `ts-node/register` (see [Usage](#usage) step 3).
+
+(If you [disable the custom rules](https://github.com/bettermarks/bm-tslint-rules/blob/ec4c79a025c444bc61ef61deb0c2f7b20384dfdd/examples/disable-rules/tslint.json), you might not need that extra stuff.)
+
 ### no-absolute-import-to-own-parent
 
 TODO: document
