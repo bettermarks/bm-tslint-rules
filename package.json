@@ -2,11 +2,11 @@
   "name": "bm-tslint-rules",
   "version": "0.1.0",
   "description": "default tslint rules to use for projects using typescript",
-  "main": "tslint.json",
   "repository": "https://github.com/bettermarks/bm-tslint-rules",
   "bugs": "https://github.com/bettermarks/bm-tslint-rules/issues",
+  "main": "tslint.json",
   "files": [
-    "tslint.json", "src"
+    "src"
   ],
   "engines": {
     "node": ">=8.9.4",
@@ -25,6 +25,7 @@
   "author": "bettermarks",
   "license": "ISC",
   "dependencies": {
+    "tslint": "5.9.1",
     "tslint-eslint-rules": "4.1.1",
     "tslint-microsoft-contrib": "5.0.2",
     "tslint-react": "3.4.0"
@@ -32,12 +33,10 @@
   "devDependencies": {
     "@types/node": "^9.4.0",
     "ts-node": "^4.1.0",
-    "tslint": "5.9.1",
-    "tsutils": "^2.21.0",
     "typescript": "~2.7.1"
   },
   "peerDependencies": {
-    "ts-node": "^3.4.0",
-    "tslint": "^5.7.0"
+    "ts-node": ">=4.0.0",
+    "typescript": ">=2.4.1"
   }
 }
