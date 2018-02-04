@@ -21,7 +21,8 @@ For executing the custom rule(s) coming with this package there is the additiona
 
 1. install an [available version](https://github.com/bettermarks/bm-tslint-rules/releases) (e.g. `v0.1.0`)) as a devDependency:
 
-`npm install -D git+https://github.com/bettermarks/bm-tslint-rules\#v<VERSION>` 
+`npm install -D github:bettermarks/bm-tslint-rules#<VERSION>`
+(You should not use leave out `<VERSION>` since this refers to master and differs depending on which time you install it and npm's cache prevents updates once it fetched it.)
 
 2. copy [`tslint.json`](https://github.com/bettermarks/bm-tslint-rules/blob/master/examples/minimal/tslint.json) to your project root.
 
