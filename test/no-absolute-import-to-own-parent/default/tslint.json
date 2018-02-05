@@ -1,5 +1,5 @@
 {
-  "rulesDirectory": "../../../dist",
+  "rulesDirectory": "../../../src",
   "rules": {
     "no-absolute-import-to-own-parent": true
   }

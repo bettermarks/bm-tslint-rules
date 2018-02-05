@@ -1,0 +1,8 @@
+{
+  "extends": [
+    "bm-tslint-rules"
+  ],
+  "rules": {
+    "no-absolute-import-to-own-parent": false
+  }
+}
