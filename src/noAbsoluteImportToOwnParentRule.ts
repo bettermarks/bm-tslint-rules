@@ -1,10 +1,9 @@
 import * as ts from 'typescript';
-import * as Lint from 'tslint';
-import {IOptions} from 'tslint';
+import {IOptions, RuleFailure, Rules, RuleWalker} from 'tslint';
 import * as path from 'path';
 import {findConfigurationPath} from 'tslint/lib/configuration';
 
-export class Rule extends Lint.Rules.AbstractRule {
+export class Rule extends Rules.AbstractRule {
   public static FAILURE_STRING = 'importing parent path ';
 
   private static _projectRoot: string;
@@ -20,7 +19,7 @@ export class Rule extends Lint.Rules.AbstractRule {
     return this._projectRoot;
   }
 
-  public apply(sourceFile: ts.SourceFile): Lint.RuleFailure[] {
+  public apply(sourceFile: ts.SourceFile): RuleFailure[] {
 
     // tslint:disable-next-line:no-use-before-declare
     return this.applyWithWalker(new NoImportsWalker(sourceFile, this.getOptions()));
@@ -28,7 +27,7 @@ export class Rule extends Lint.Rules.AbstractRule {
 }
 
 // The walker takes care of all the work.
-class NoImportsWalker extends Lint.RuleWalker {
+class NoImportsWalker extends RuleWalker {
   readonly packagePathList: ReadonlyArray<string>;
 
   constructor(sourceFile: ts.SourceFile, options: IOptions) {

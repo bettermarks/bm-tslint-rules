@@ -10,7 +10,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-var Lint = require("tslint");
+var tslint_1 = require("tslint");
 var path = require("path");
 var configuration_1 = require("tslint/lib/configuration");
 var Rule = /** @class */ (function (_super) {
@@ -35,7 +35,7 @@ var Rule = /** @class */ (function (_super) {
     };
     Rule.FAILURE_STRING = 'importing parent path ';
     return Rule;
-}(Lint.Rules.AbstractRule));
+}(tslint_1.Rules.AbstractRule));
 exports.Rule = Rule;
 // The walker takes care of all the work.
 var NoImportsWalker = /** @class */ (function (_super) {
@@ -63,4 +63,4 @@ var NoImportsWalker = /** @class */ (function (_super) {
         _super.prototype.visitImportDeclaration.call(this, node);
     };
     return NoImportsWalker;
-}(Lint.RuleWalker));
+}(tslint_1.RuleWalker));
