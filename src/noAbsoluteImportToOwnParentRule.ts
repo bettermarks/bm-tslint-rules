@@ -1,5 +1,6 @@
 import * as path from 'path';
 import {IOptions, IRuleMetadata, RuleFailure, Rules, RuleWalker} from 'tslint';
+// tslint:disable-next-line:no-submodule-imports (only available this way)
 import {findConfigurationPath} from 'tslint/lib/configuration';
 import * as ts from 'typescript';
 

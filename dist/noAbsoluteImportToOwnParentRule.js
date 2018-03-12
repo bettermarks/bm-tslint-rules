@@ -12,6 +12,7 @@ var __extends = (this && this.__extends) || (function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 var path = require("path");
 var tslint_1 = require("tslint");
+// tslint:disable-next-line:no-submodule-imports (only available this way)
 var configuration_1 = require("tslint/lib/configuration");
 var Rule = /** @class */ (function (_super) {
     __extends(Rule, _super);

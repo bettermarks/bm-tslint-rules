@@ -43,5 +43,3 @@ jobs:
       - run:
           name: check version different from master
           command: ./ci-test-master-version.sh
-
-

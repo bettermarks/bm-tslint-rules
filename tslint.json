@@ -1,9 +1,10 @@
 {
   "extends": [
-    // [CORE] https://palantir.github.io/tslint/rules/
-    "tslint-eslint-rules", // [ESLINT] https://eslint.org/docs/rules/
-    "tslint-microsoft-contrib", // [MSC] https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules
-    "tslint-react" // [REACT] https://github.com/palantir/tslint-react#rules
+    // TSLINT: https://palantir.github.io/tslint/rules/
+    "tslint-eslint-rules", // https://eslint.org/docs/rules/
+    "tslint-microsoft-contrib", // https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules
+    "tslint-react", // https://github.com/palantir/tslint-react#rules
+    "tslint-no-unused-expression-chai" // https://github.com/kwonoj/tslint-no-unused-expression-chai
   ],
   "rulesDirectory": "dist",
   "rules": {
@@ -67,7 +68,7 @@
     "jsx-alignment": false, //good for prod?
     //jsx-ban-props:false,
     "jsx-boolean-value": false,
-    "jsx-curly-spacing": ["never"], //duplication, maybe more precise?
+    "jsx-curly-spacing": ["never"],
     "jsx-no-lambda": false, //is covered by react-this-binding-issue
     "jsx-no-multiline-js": false,
     "jsx-no-string-ref": true,
@@ -130,17 +131,17 @@
     "no-relative-imports": false,
     "no-reserved-keywords": false,
     "no-shadowed-variable": false,
+    "no-single-line-block-comment": false,
     "no-sparse-arrays": true,
-//    "no-submodule-imports": false,
+//    "no-submodule-imports": false, // disable in bm-toolbox?
     "no-suspicious-comment": false,
-    "no-stateless-class": false, // deprecated, toggled off in favor of no-unnecessary-class
     "no-string-throw": true,
     "no-switch-case-fall-through": true,
     "no-this-assignment": true,
     "no-trailing-whitespace": true,
     "no-unsafe-any": false,
     "no-unnecessary-class": true,
-    "no-unused-expression": [
+    "no-unused-expression-chai": [ // "no-unused-expression" is disabled by extending config with the same name
       true,
       "allow-fast-null-checks"
     ],
@@ -149,10 +150,10 @@
       "react"
     ],
     "no-use-before-declare": true,
+    "no-useless-files": true,
     "no-void-expression": false,
     "no-var-keyword": false,
     "no-var-requires": true,
-    "no-var-self": false, // deprecated, toggled off in favor of no-this-assignment
     "object-curly-spacing": [
       true,
       "never"
@@ -195,7 +196,6 @@
     "react-iframe-missing-sandbox": true,
     "react-no-dangerous-html": true,
     "react-this-binding-issue": true,
-    "react-tsx-curly-spacing": false,
     "react-unused-props-and-state": true,
     "restrict-plus-operands": false,
     "semicolon": [
