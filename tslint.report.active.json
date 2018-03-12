@@ -1,0 +1,754 @@
+{
+  "adjacent-overload-signatures": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "align": {
+    "ruleArguments": [
+      "parameters",
+      "arguments",
+      "statements"
+    ],
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "array-bracket-spacing": {
+    "ruleArguments": [
+      "never"
+    ],
+    "ruleSeverity": "error",
+    "source": "tslint-eslint-rules"
+  },
+  "array-type": {
+    "ruleArguments": [
+      "array"
+    ],
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "arrow-return-shorthand": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "await-promise": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "ban": {
+    "ruleArguments": [
+      [
+        "alert"
+      ]
+    ],
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "ban-types": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "brace-style": {
+    "ruleArguments": [
+      "1tbs",
+      {
+        "allowSingleLine": false
+      }
+    ],
+    "ruleSeverity": "error",
+    "source": "tslint-eslint-rules"
+  },
+  "callable-types": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "chai-prefer-contains-to-index-of": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "class-name": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "comment-format": {
+    "ruleArguments": [
+      "check-space"
+    ],
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "cyclomatic-complexity": {
+    "ruleArguments": [
+      9
+    ],
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "eofline": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "forin": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "handle-callback-err": {
+    "ruleSeverity": "error",
+    "source": "tslint-eslint-rules"
+  },
+  "import-spacing": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "indent": {
+    "ruleArguments": [
+      "spaces"
+    ],
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "jquery-deferred-must-complete": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "jsx-equals-spacing": {
+    "ruleArguments": [
+      "never"
+    ],
+    "ruleSeverity": "error",
+    "source": "tslint-react"
+  },
+  "jsx-key": {
+    "ruleSeverity": "error",
+    "source": "tslint-react"
+  },
+  "jsx-no-bind": {
+    "ruleSeverity": "error",
+    "source": "tslint-react"
+  },
+  "jsx-no-string-ref": {
+    "ruleSeverity": "error",
+    "source": "tslint-react"
+  },
+  "jsx-self-close": {
+    "ruleSeverity": "error",
+    "source": "tslint-react"
+  },
+  "jsx-wrap-multiline": {
+    "ruleSeverity": "error",
+    "source": "tslint-react"
+  },
+  "label-position": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "linebreak-style": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "max-line-length": {
+    "ruleArguments": [
+      100
+    ],
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "mocha-avoid-only": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "mocha-no-side-effect-code": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "mocha-unneeded-done": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "new-parens": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-absolute-import-to-own-parent": {
+    "ruleSeverity": "error",
+    "source": "bm-tslint-rules"
+  },
+  "no-angle-bracket-type-assertion": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-arg": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-banned-terms": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "no-bitwise": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-boolean-literal-compare": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-conditional-assignment": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-consecutive-blank-lines": {
+    "ruleArguments": [
+      3
+    ],
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-constant-condition": {
+    "ruleSeverity": "error",
+    "source": "tslint-eslint-rules",
+    "sameName": [
+      "./node_modules/tslint-microsoft-contrib:no-constant-condition"
+    ]
+  },
+  "no-construct": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-control-regex": {
+    "ruleSeverity": "error",
+    "source": "tslint-eslint-rules",
+    "sameName": [
+      "./node_modules/tslint-microsoft-contrib:no-control-regex"
+    ]
+  },
+  "no-cookies": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "no-debugger": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-delete-expression": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "no-disable-auto-sanitization": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "no-document-domain": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "no-document-write": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "no-duplicate-case": {
+    "ruleSeverity": "error",
+    "source": "tslint-eslint-rules",
+    "sameName": [
+      "./node_modules/tslint-microsoft-contrib:no-duplicate-case"
+    ]
+  },
+  "no-duplicate-super": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-duplicate-variable": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-empty": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-empty-character-class": {
+    "ruleSeverity": "error",
+    "source": "tslint-eslint-rules"
+  },
+  "no-empty-interface": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-eval": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-ex-assign": {
+    "ruleSeverity": "error",
+    "source": "tslint-eslint-rules"
+  },
+  "no-exec-script": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "no-extra-boolean-cast": {
+    "ruleSeverity": "error",
+    "source": "tslint-eslint-rules"
+  },
+  "no-extra-semi": {
+    "ruleSeverity": "error",
+    "source": "tslint-eslint-rules"
+  },
+  "no-floating-promises": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-for-in": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "no-for-in-array": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-function-constructor-with-string-args": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "no-function-expression": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "no-import-side-effect": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-inferrable-types": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-inner-declarations": {
+    "ruleArguments": [
+      "both"
+    ],
+    "ruleSeverity": "error",
+    "source": "tslint-eslint-rules"
+  },
+  "no-inner-html": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "no-internal-module": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-invalid-regexp": {
+    "ruleSeverity": "error",
+    "source": "tslint-eslint-rules",
+    "sameName": [
+      "./node_modules/tslint-microsoft-contrib:no-invalid-regexp"
+    ]
+  },
+  "no-invalid-template-strings": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-invalid-this": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-irregular-whitespace": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-jquery-raw-elements": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "no-misused-new": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-multi-spaces": {
+    "ruleSeverity": "error",
+    "source": "tslint-eslint-rules"
+  },
+  "no-non-null-assertion": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-octal-literal": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "no-reference": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-reference-import": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-regex-spaces": {
+    "ruleSeverity": "error",
+    "source": "tslint-eslint-rules",
+    "sameName": [
+      "./node_modules/tslint-microsoft-contrib:no-regex-spaces"
+    ]
+  },
+  "no-sparse-arrays": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-stateless-class": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "no-string-based-set-immediate": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "no-string-based-set-interval": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "no-string-based-set-timeout": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "no-string-literal": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-string-throw": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-switch-case-fall-through": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-trailing-whitespace": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-typeof-undefined": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "no-unnecessary-bind": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "no-unnecessary-callback-wrapper": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-unnecessary-field-initialization": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "no-unnecessary-initializer": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-unnecessary-local-variable": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "no-unnecessary-override": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "no-unnecessary-qualifier": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-unnecessary-semicolons": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "no-unsafe-finally": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-unsupported-browser-code": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "no-unused-expression-chai": {
+    "ruleArguments": [
+      "allow-fast-null-checks"
+    ],
+    "ruleSeverity": "error",
+    "source": "tslint-no-unused-expression-chai"
+  },
+  "no-unused-variable": {
+    "ruleArguments": [
+      "react"
+    ],
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-use-before-declare": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-useless-files": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "no-var-requires": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-var-self": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "no-with-statement": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "non-literal-require": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "object-curly-spacing": {
+    "ruleArguments": [
+      "never"
+    ],
+    "ruleSeverity": "error",
+    "source": "tslint-eslint-rules"
+  },
+  "object-literal-key-quotes": {
+    "ruleArguments": [
+      "as-needed"
+    ],
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "one-line": {
+    "ruleArguments": [
+      "check-open-brace",
+      "check-whitespace"
+    ],
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "possible-timing-attack": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "prefer-array-literal": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "prefer-const": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "prefer-for-of": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "prefer-template": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "promise-function-async": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "promise-must-complete": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "quotemark": {
+    "ruleArguments": [
+      "single",
+      "avoid-escape"
+    ],
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "radix": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "react-a11y-anchors": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "react-a11y-aria-unsupported-elements": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "react-a11y-event-has-role": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "react-a11y-image-button-has-alt": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "react-a11y-img-has-alt": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "react-a11y-lang": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "react-a11y-meta": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "react-a11y-props": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "react-a11y-proptypes": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "react-a11y-role": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "react-a11y-role-has-required-aria-props": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "react-a11y-role-supports-aria-props": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "react-a11y-tabindex-no-positive": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "react-a11y-titles": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "react-anchor-blank-noopener": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "react-iframe-missing-sandbox": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "react-no-dangerous-html": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "react-this-binding-issue": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "react-unused-props-and-state": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "semicolon": {
+    "ruleArguments": [
+      "always"
+    ],
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "space-before-function-paren": {
+    "ruleArguments": [
+      {
+        "anonymous": "always",
+        "named": "never",
+        "asyncArrow": "always",
+        "method": "never",
+        "constructor": "never"
+      }
+    ],
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "space-in-parens": {
+    "ruleArguments": [
+      "never"
+    ],
+    "ruleSeverity": "error",
+    "source": "tslint-eslint-rules"
+  },
+  "switch-default": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "ter-arrow-spacing": {
+    "ruleSeverity": "error",
+    "source": "tslint-eslint-rules"
+  },
+  "ter-indent": {
+    "ruleArguments": [
+      2,
+      {
+        "SwitchCase": true
+      }
+    ],
+    "ruleSeverity": "error",
+    "source": "tslint-eslint-rules"
+  },
+  "trailing-comma": {
+    "ruleArguments": [
+      {
+        "multiline": "never",
+        "singleline": "never"
+      }
+    ],
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "triple-equals": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "typedef-whitespace": {
+    "ruleArguments": [
+      {
+        "call-signature": "nospace",
+        "index-signature": "nospace",
+        "parameter": "nospace",
+        "property-declaration": "nospace",
+        "variable-declaration": "nospace"
+      }
+    ],
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "underscore-consistent-invocation": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "unified-signatures": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "use-isnan": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "use-named-parameter": {
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "valid-typeof": {
+    "ruleSeverity": "error",
+    "source": "tslint-eslint-rules",
+    "sameName": [
+      "./node_modules/tslint-microsoft-contrib:valid-typeof"
+    ]
+  },
+  "whitespace": {
+    "ruleArguments": [
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-separator",
+      "check-type"
+    ],
+    "ruleSeverity": "error",
+    "source": "tslint"
+  }
+}
