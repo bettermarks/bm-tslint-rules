@@ -48,7 +48,7 @@
     ],
     "completed-docs": false,
     "consistent-return": false,
-    "curly": true,
+    "curly": [true, "ignore-same-line"],
     "eofline": true,
     "export-name": false,
     "forin": true,
