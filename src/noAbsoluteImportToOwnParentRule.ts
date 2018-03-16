@@ -2,6 +2,7 @@ import * as path from 'path';
 import {IOptions, IRuleMetadata, RuleFailure, Rules, RuleWalker} from 'tslint';
 // tslint:disable-next-line:no-submodule-imports (only available this way)
 import {findConfigurationPath} from 'tslint/lib/configuration';
+// tslint:disable-next-line:no-implicit-dependencies (it is a peer dependency through tslint)
 import * as ts from 'typescript';
 
 export class Rule extends Rules.AbstractRule {
