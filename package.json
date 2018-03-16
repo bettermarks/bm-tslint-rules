@@ -6,7 +6,8 @@
   "bugs": "https://github.com/bettermarks/bm-tslint-rules/issues",
   "main": "tslint.json",
   "files": [
-    "dist"
+    "dist",
+    "tslint.report.*.json"
   ],
   "engines": {
     "node": ">=8.2.0",
@@ -14,9 +15,10 @@
   },
   "scripts": {
     "preinstall": "npx check-node-version --package",
-    "preversion": "npm run build && npm run test",
+    "preversion": "npm run build && npm run test && npm run report",
     "check": "npx npm-check -u --skip-unused",
     "build": "tsc -p .",
+    "report": "tslint-report",
     "test": "tslint --test test/**/tslint.json",
     "tslint": "tslint -c tslint.json --project tsconfig.json -t stylish"
   },
@@ -34,12 +36,9 @@
     "tslint-react": "3.4.0"
   },
   "devDependencies": {
-    "@types/node": "^9.4.0",
+    "@types/node": "^8.9.0",
     "ts-node": "^4.1.0",
-    "typescript": "^2.7.2"
-  },
-  "peerDependencies": {
-    "ts-node": ">=3.2.0",
-    "typescript": ">=2.6.1"
+    "typescript": "^2.7.2",
+    "tslint-report": "github:karfau/tslint-report#9f2f498"
   }
 }
