@@ -4,7 +4,7 @@
     "tslint-eslint-rules", // https://eslint.org/docs/rules/
     "tslint-microsoft-contrib", // https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules
     "tslint-react", // https://github.com/palantir/tslint-react#rules
-    "tslint-no-unused-expression-chai" // https://github.com/kwonoj/tslint-no-unused-expression-chai
+    "tslint-no-unused-expression-chai" // https://github.com/karfau/tslint-no-unused-expression-chai/tree/should-support
   ],
   "rulesDirectory": "dist",
   "rules": {

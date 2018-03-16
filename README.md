@@ -55,7 +55,7 @@ Since documenting each and every rule here would possible get outdated soon here
 * `tslint-react`:
   - [extending ruleset](https://github.com/palantir/tslint-react/blob/master/tslint-react.json)
   - [available rules and options](https://github.com/palantir/tslint-react#rules)
-* [`tslint-no-unused-expression-chai`](https://github.com/kwonoj/tslint-no-unused-expression-chai#tslint-no-unused-expression-chai))  
+* [`tslint-no-unused-expression-chai`](https://github.com/karfau/tslint-no-unused-expression-chai/tree/should-support#tslint-no-unused-expression-chai) with added support for `should`
 
 ## Custom Rules
 

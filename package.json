@@ -32,7 +32,7 @@
     "tslint": "5.8.0",
     "tslint-eslint-rules": "4.1.1",
     "tslint-microsoft-contrib": "^5.0.3",
-    "tslint-no-unused-expression-chai": "0.0.3",
+    "tslint-no-unused-expression-chai": "github:karfau/tslint-no-unused-expression-chai#e04be1f",
     "tslint-react": "3.4.0"
   },
   "devDependencies": {
