@@ -15,8 +15,6 @@ to make sure upgrading dependencies in a project does not break any code/CI pipe
 
 Instead we are doing regular upgrade days in this project and each project can decide when to switch to a newer version of this package on it's own.
 
-For executing the custom rule(s) coming with this package there is the additional (peer-)dependency [`ts-node`](https://github.com/TypeStrong/ts-node/). Since `ts-node` also [needs `typescript`](https://github.com/TypeStrong/ts-node/blob/v4.1.0/src/index.ts#L11) at runtime, that is the second peer dependency (`^2.4.1` since this is the version `ts-node` [devDepends on](https://github.com/TypeStrong/ts-node/blob/v4.1.0/package.json#L75).
-
 ## Usage
 
 1. install an [available version](https://github.com/bettermarks/bm-tslint-rules/releases) (e.g. `v0.1.0`)) as a devDependency:
@@ -42,10 +40,14 @@ For executing the custom rule(s) coming with this package there is the additiona
 
 ## Configured rules
 
-The repo exports its [`tslint.json`]() as it's main file.
+The repo exports its [`tslint.json`](https://github.com/bettermarks/bm-tslint-rules/blob/master/tslint.json) as it's main file.
+
+The available and active rules are written to respective reports `tslint.report.available.json` and `tslint.report.active.json`.
+These can be generated using `npm run report` and will be generated automatically when running `npm version ...`.
 
 Since documenting each and every rule here would possible get outdated soon here are the sources for the rules we have configured:
 
+* [`tslint`](https://palantir.github.io/tslint/rules/)
 * [`tslint-eslint-rules`](https://github.com/buzinas/tslint-eslint-rules#rules-copied-from-the-eslint-website)
 * `tslint-microsoft-contrib`: 
   - [extending recommended ruleset](https://github.com/Microsoft/tslint-microsoft-contrib/blob/master/recommended_ruleset.js),  
@@ -53,10 +55,15 @@ Since documenting each and every rule here would possible get outdated soon here
 * `tslint-react`:
   - [extending ruleset](https://github.com/palantir/tslint-react/blob/master/tslint-react.json)
   - [available rules and options](https://github.com/palantir/tslint-react#rules)
-  
+* [`tslint-no-unused-expression-chai`](https://github.com/karfau/tslint-no-unused-expression-chai/tree/should-support#tslint-no-unused-expression-chai) with added support for `should`
 
 ## Custom Rules
 
 ### no-absolute-import-to-own-parent
 
-TODO: document
+In a mono-repo with each folder under src being an alias, 
+you should avoid using the alias to import things within an alias.
+
+There is no configuration for this rule, it just checks that you are not importing
+from the root level folder in src, that the module lives in.
+

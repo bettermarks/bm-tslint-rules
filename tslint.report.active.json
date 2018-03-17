@@ -43,6 +43,10 @@
     "ruleSeverity": "error",
     "source": "tslint"
   },
+  "ban-comma-operator": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
   "ban-types": {
     "ruleSeverity": "error",
     "source": "tslint"
@@ -76,10 +80,21 @@
     "ruleSeverity": "error",
     "source": "tslint"
   },
+  "curly": {
+    "ruleArguments": [
+      "ignore-same-line"
+    ],
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
   "cyclomatic-complexity": {
     "ruleArguments": [
       9
     ],
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "encoding": {
     "ruleSeverity": "error",
     "source": "tslint"
   },
@@ -245,14 +260,15 @@
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
-  "no-duplicate-case": {
+  "no-duplicate-imports": {
     "ruleSeverity": "error",
-    "source": "tslint-eslint-rules",
-    "sameName": [
-      "./node_modules/tslint-microsoft-contrib:no-duplicate-case"
-    ]
+    "source": "tslint"
   },
   "no-duplicate-super": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-duplicate-switch-case": {
     "ruleSeverity": "error",
     "source": "tslint"
   },
@@ -312,6 +328,10 @@
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
+  "no-implicit-dependencies": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
   "no-import-side-effect": {
     "ruleSeverity": "error",
     "source": "tslint"
@@ -370,9 +390,21 @@
     "ruleSeverity": "error",
     "source": "tslint"
   },
+  "no-object-literal-type-assertion": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
   "no-octal-literal": {
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
+  },
+  "no-parameter-reassignment": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-redundant-jsdoc": {
+    "ruleSeverity": "error",
+    "source": "tslint"
   },
   "no-reference": {
     "ruleSeverity": "error",
@@ -389,13 +421,13 @@
       "./node_modules/tslint-microsoft-contrib:no-regex-spaces"
     ]
   },
-  "no-sparse-arrays": {
+  "no-return-await": {
     "ruleSeverity": "error",
     "source": "tslint"
   },
-  "no-stateless-class": {
+  "no-sparse-arrays": {
     "ruleSeverity": "error",
-    "source": "tslint-microsoft-contrib"
+    "source": "tslint"
   },
   "no-string-based-set-immediate": {
     "ruleSeverity": "error",
@@ -417,7 +449,15 @@
     "ruleSeverity": "error",
     "source": "tslint"
   },
+  "no-submodule-imports": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
   "no-switch-case-fall-through": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-this-assignment": {
     "ruleSeverity": "error",
     "source": "tslint"
   },
@@ -434,6 +474,10 @@
     "source": "tslint-microsoft-contrib"
   },
   "no-unnecessary-callback-wrapper": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-unnecessary-class": {
     "ruleSeverity": "error",
     "source": "tslint"
   },
@@ -460,6 +504,10 @@
   "no-unnecessary-semicolons": {
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
+  },
+  "no-unnecessary-type-assertion": {
+    "ruleSeverity": "error",
+    "source": "tslint"
   },
   "no-unsafe-finally": {
     "ruleSeverity": "error",
@@ -495,10 +543,6 @@
     "ruleSeverity": "error",
     "source": "tslint"
   },
-  "no-var-self": {
-    "ruleSeverity": "error",
-    "source": "tslint-microsoft-contrib"
-  },
   "no-with-statement": {
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
@@ -506,6 +550,10 @@
   "non-literal-require": {
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
+  },
+  "number-literal-format": {
+    "ruleSeverity": "error",
+    "source": "tslint"
   },
   "object-curly-spacing": {
     "ruleArguments": [
@@ -542,6 +590,10 @@
     "source": "tslint"
   },
   "prefer-for-of": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "prefer-object-spread": {
     "ruleSeverity": "error",
     "source": "tslint"
   },
@@ -672,7 +724,15 @@
     "ruleSeverity": "error",
     "source": "tslint-eslint-rules"
   },
+  "space-within-parens": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
   "switch-default": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "switch-final-break": {
     "ruleSeverity": "error",
     "source": "tslint"
   },
@@ -704,6 +764,10 @@
     "ruleSeverity": "error",
     "source": "tslint"
   },
+  "type-literal-delimiter": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
   "typedef-whitespace": {
     "ruleArguments": [
       {
@@ -722,6 +786,10 @@
     "source": "tslint-microsoft-contrib"
   },
   "unified-signatures": {
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "use-default-type-parameter": {
     "ruleSeverity": "error",
     "source": "tslint"
   },

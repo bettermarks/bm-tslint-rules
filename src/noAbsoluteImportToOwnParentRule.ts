@@ -1,9 +1,20 @@
-import * as ts from 'typescript';
-import {IOptions, RuleFailure, Rules, RuleWalker} from 'tslint';
 import * as path from 'path';
+import {IOptions, IRuleMetadata, RuleFailure, Rules, RuleWalker} from 'tslint';
+// tslint:disable-next-line:no-submodule-imports (only available this way)
 import {findConfigurationPath} from 'tslint/lib/configuration';
+// tslint:disable-next-line:no-implicit-dependencies (it is a peer dependency through tslint)
+import * as ts from 'typescript';
 
 export class Rule extends Rules.AbstractRule {
+  public static metadata: IRuleMetadata = {
+    description: 'In a mono-repo with each folder under src being an alias, ' +
+    'you should avoid using the alias to import things within an alias.',
+    options: [],
+    optionsDescription: '',
+    ruleName: 'no-absolute-import-to-own-parent',
+    type: 'typescript',
+    typescriptOnly: true
+  };
   public static FAILURE_STRING = 'importing parent path ';
 
   private static _projectRoot: string;

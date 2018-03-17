@@ -36,7 +36,8 @@
     "issueType": "Error",
     "severity": "Critical",
     "level": "Opportunity for Excellence",
-    "group": "Correctness",
+    "recommendation": "false,",
+    "group": "Deprecated",
     "commonWeaknessEnumeration": "398, 710",
     "source": "tslint-microsoft-contrib"
   },
@@ -66,19 +67,6 @@
     "group": "Correctness",
     "source": "tslint-microsoft-contrib"
   },
-  "./node_modules/tslint-microsoft-contrib:use-isnan": {
-    "type": "maintainability",
-    "description": "enforces that you use the isNaN() function to check for NaN references instead of a comparison to the NaN constant.",
-    "options": null,
-    "optionsDescription": "",
-    "typescriptOnly": true,
-    "issueClass": "Ignored",
-    "issueType": "Error",
-    "severity": "Critical",
-    "level": "Opportunity for Excellence",
-    "group": "Ignored",
-    "source": "tslint-microsoft-contrib"
-  },
   "./node_modules/tslint-microsoft-contrib:valid-typeof": {
     "type": "maintainability",
     "description": "Ensures that the results of typeof are compared against a valid string.",
@@ -89,7 +77,8 @@
     "issueType": "Error",
     "severity": "Critical",
     "level": "Opportunity for Excellence",
-    "group": "Correctness",
+    "recommendation": "false,",
+    "group": "Deprecated",
     "source": "tslint-microsoft-contrib"
   },
   "adjacent-overload-signatures": {
@@ -1115,6 +1104,7 @@
   "import-name": {
     "type": "maintainability",
     "description": "The name of the imported module must match the name of the thing being imported",
+    "hasFix": true,
     "options": null,
     "optionsDescription": "",
     "typescriptOnly": true,
@@ -1283,6 +1273,36 @@
     ],
     "type": "style",
     "typescriptOnly": false,
+    "source": "tslint-react"
+  },
+  "jsx-ban-elements": {
+    "description": "\nBans specific JSX elements from being used.",
+    "options": {
+      "type": "list",
+      "listType": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "minLength": 1,
+        "maxLength": 2
+      }
+    },
+    "optionsDescription": "\nA list of `[\"regex\", \"optional explanation here\"]`, which bans\ntypes that match `regex`",
+    "optionExamples": [
+      [
+        true,
+        [
+          "Object",
+          "Use {} instead."
+        ],
+        [
+          "String"
+        ]
+      ]
+    ],
+    "type": "typescript",
+    "typescriptOnly": true,
     "source": "tslint-react"
   },
   "jsx-ban-props": {
@@ -1820,6 +1840,11 @@
     "source": "tslint"
   },
   "no-absolute-import-to-own-parent": {
+    "description": "In a mono-repo with each folder under src being an alias, you should avoid using the alias to import things within an alias.",
+    "options": [],
+    "optionsDescription": "",
+    "type": "typescript",
+    "typescriptOnly": true,
     "source": "bm-tslint-rules"
   },
   "no-angle-bracket-type-assertion": {
@@ -2949,7 +2974,8 @@
     "issueType": "Warning",
     "severity": "Important",
     "level": "Opportunity for Excellence",
-    "group": "Correctness",
+    "recommendation": "false,",
+    "group": "Deprecated",
     "commonWeaknessEnumeration": "398, 710",
     "source": "tslint-microsoft-contrib"
   },
@@ -3532,7 +3558,8 @@
     "issueType": "Warning",
     "severity": "Important",
     "level": "Opportunity for Excellence",
-    "group": "Clarity",
+    "group": "Deprecated",
+    "recommendation": "false,",
     "commonWeaknessEnumeration": "398, 710",
     "source": "tslint-microsoft-contrib"
   },
@@ -4329,7 +4356,8 @@
     "issueType": "Warning",
     "severity": "Low",
     "level": "Opportunity for Excellence",
-    "group": "Whitespace",
+    "recommendation": "false,",
+    "group": "Deprecated",
     "source": "tslint-microsoft-contrib"
   },
   "react-unused-props-and-state": {
@@ -5461,10 +5489,7 @@
     ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint",
-    "sameName": [
-      "./node_modules/tslint-microsoft-contrib:use-isnan"
-    ]
+    "source": "tslint"
   },
   "use-named-parameter": {
     "type": "maintainability",

@@ -10,8 +10,9 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-var tslint_1 = require("tslint");
 var path = require("path");
+var tslint_1 = require("tslint");
+// tslint:disable-next-line:no-submodule-imports (only available this way)
 var configuration_1 = require("tslint/lib/configuration");
 var Rule = /** @class */ (function (_super) {
     __extends(Rule, _super);
@@ -32,6 +33,15 @@ var Rule = /** @class */ (function (_super) {
     Rule.prototype.apply = function (sourceFile) {
         // tslint:disable-next-line:no-use-before-declare
         return this.applyWithWalker(new NoImportsWalker(sourceFile, this.getOptions()));
+    };
+    Rule.metadata = {
+        description: 'In a mono-repo with each folder under src being an alias, ' +
+            'you should avoid using the alias to import things within an alias.',
+        options: [],
+        optionsDescription: '',
+        ruleName: 'no-absolute-import-to-own-parent',
+        type: 'typescript',
+        typescriptOnly: true
     };
     Rule.FAILURE_STRING = 'importing parent path ';
     return Rule;
