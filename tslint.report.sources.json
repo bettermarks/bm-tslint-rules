@@ -1,0 +1,93 @@
+{
+  ".": {
+    "bugs": "https://github.com/bettermarks/bm-tslint-rules/issues",
+    "description": "default tslint rules to use for projects using typescript",
+    "docs": "https://github.com/bettermarks/bm-tslint-rules#rules",
+    "main": "tslint.json",
+    "name": "bm-tslint-rules",
+    "path": "."
+  },
+  "./node_modules/tslint-eslint-rules": {
+    "_from": "tslint-eslint-rules@4.1.1",
+    "_resolved": "https://registry.npmjs.org/tslint-eslint-rules/-/tslint-eslint-rules-4.1.1.tgz",
+    "bugs": {
+      "url": "https://github.com/buzinas/tslint-eslint-rules/issues"
+    },
+    "description": "Improve your TSLint with the missing ESLint Rules",
+    "docs": "https://eslint.org/docs/rules/{RULE}",
+    "homepage": "https://github.com/buzinas/tslint-eslint-rules#readme",
+    "main": "index.js",
+    "name": "tslint-eslint-rules",
+    "path": "./node_modules/tslint-eslint-rules",
+    "peerDependencies": {
+      "tslint": "^5.0.0"
+    }
+  },
+  "./node_modules/tslint-microsoft-contrib": {
+    "_from": "tslint-microsoft-contrib@5.0.3",
+    "_resolved": "https://registry.npmjs.org/tslint-microsoft-contrib/-/tslint-microsoft-contrib-5.0.3.tgz",
+    "bugs": {
+      "url": "https://github.com/Microsoft/tslint-microsoft-contrib/issues"
+    },
+    "description": "TSLint Rules for Microsoft",
+    "docs": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "homepage": "https://github.com/Microsoft/tslint-microsoft-contrib#readme",
+    "main": "tslint.json",
+    "name": "tslint-microsoft-contrib",
+    "path": "./node_modules/tslint-microsoft-contrib",
+    "peerDependencies": {
+      "tslint": "^5.1.0",
+      "typescript": "^2.1.0"
+    }
+  },
+  "./node_modules/tslint-no-unused-expression-chai": {
+    "_from": "github:karfau/tslint-no-unused-expression-chai#e04be1f",
+    "_resolved": "github:karfau/tslint-no-unused-expression-chai#e04be1f59dca677928b3c0dac1d5637d4746ae26",
+    "bugs": {
+      "url": "https://github.com/kwonoj/tslint-no-unused-expression-chai/issues"
+    },
+    "deprecated": false,
+    "description": "Custom tslint no-unused-expression rule supports chai's expect assertion",
+    "docs": "unknown",
+    "homepage": "https://github.com/kwonoj/tslint-no-unused-expression-chai#readme",
+    "main": "rules/index.js",
+    "name": "tslint-no-unused-expression-chai",
+    "path": "./node_modules/tslint-no-unused-expression-chai",
+    "peerDependencies": {
+      "tslint": ">=5.1.0"
+    }
+  },
+  "./node_modules/tslint-react": {
+    "_from": "tslint-react@3.4.0",
+    "_resolved": "https://registry.npmjs.org/tslint-react/-/tslint-react-3.4.0.tgz",
+    "bugs": {
+      "url": "https://github.com/palantir/tslint-react/issues"
+    },
+    "description": "Lint rules related to React & JSX for TSLint",
+    "docs": "https://github.com/palantir/tslint-react#rules",
+    "homepage": "https://github.com/palantir/tslint-react#readme",
+    "main": "tslint-react.json",
+    "name": "tslint-react",
+    "path": "./node_modules/tslint-react",
+    "peerDependencies": {
+      "tslint": "^5.1.0",
+      "typescript": ">=2.1.0 || >=2.1.0-dev || >=2.2.0-dev || >=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev"
+    }
+  },
+  "./node_modules/tslint": {
+    "_from": "tslint@5.8.0",
+    "_resolved": "https://registry.npmjs.org/tslint/-/tslint-5.8.0.tgz",
+    "bugs": {
+      "url": "https://github.com/palantir/tslint/issues"
+    },
+    "description": "An extensible static analysis linter for the TypeScript language",
+    "docs": "https://palantir.github.io/tslint/rules/{RULE}",
+    "homepage": "https://github.com/palantir/tslint#readme",
+    "main": "./lib/index.js",
+    "name": "tslint",
+    "path": "./node_modules/tslint",
+    "peerDependencies": {
+      "typescript": ">=2.1.0 || >=2.1.0-dev || >=2.2.0-dev || >=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev"
+    }
+  }
+}

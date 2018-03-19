@@ -1,9 +1,12 @@
 {
   "adjacent-overload-signatures": {
+    "documentation": "https://palantir.github.io/tslint/rules/adjacent-overload-signatures",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "align": {
+    "documentation": "https://palantir.github.io/tslint/rules/align",
+    "hasFix": true,
     "ruleArguments": [
       "parameters",
       "arguments",
@@ -13,6 +16,7 @@
     "source": "tslint"
   },
   "array-bracket-spacing": {
+    "documentation": "https://eslint.org/docs/rules/array-bracket-spacing",
     "ruleArguments": [
       "never"
     ],
@@ -20,6 +24,8 @@
     "source": "tslint-eslint-rules"
   },
   "array-type": {
+    "documentation": "https://palantir.github.io/tslint/rules/array-type",
+    "hasFix": true,
     "ruleArguments": [
       "array"
     ],
@@ -27,14 +33,18 @@
     "source": "tslint"
   },
   "arrow-return-shorthand": {
+    "documentation": "https://palantir.github.io/tslint/rules/arrow-return-shorthand",
+    "hasFix": true,
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "await-promise": {
+    "documentation": "https://palantir.github.io/tslint/rules/await-promise",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "ban": {
+    "documentation": "https://palantir.github.io/tslint/rules/ban",
     "ruleArguments": [
       [
         "alert"
@@ -44,14 +54,17 @@
     "source": "tslint"
   },
   "ban-comma-operator": {
+    "documentation": "https://palantir.github.io/tslint/rules/ban-comma-operator",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "ban-types": {
+    "documentation": "https://palantir.github.io/tslint/rules/ban-types",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "brace-style": {
+    "documentation": "https://eslint.org/docs/rules/brace-style",
     "ruleArguments": [
       "1tbs",
       {
@@ -62,18 +75,23 @@
     "source": "tslint-eslint-rules"
   },
   "callable-types": {
+    "documentation": "https://palantir.github.io/tslint/rules/callable-types",
+    "hasFix": true,
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "chai-prefer-contains-to-index-of": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "class-name": {
+    "documentation": "https://palantir.github.io/tslint/rules/class-name",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "comment-format": {
+    "documentation": "https://palantir.github.io/tslint/rules/comment-format",
     "ruleArguments": [
       "check-space"
     ],
@@ -81,6 +99,8 @@
     "source": "tslint"
   },
   "curly": {
+    "documentation": "https://palantir.github.io/tslint/rules/curly",
+    "hasFix": true,
     "ruleArguments": [
       "ignore-same-line"
     ],
@@ -88,6 +108,7 @@
     "source": "tslint"
   },
   "cyclomatic-complexity": {
+    "documentation": "https://palantir.github.io/tslint/rules/cyclomatic-complexity",
     "ruleArguments": [
       9
     ],
@@ -95,26 +116,33 @@
     "source": "tslint"
   },
   "encoding": {
+    "documentation": "https://palantir.github.io/tslint/rules/encoding",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "eofline": {
+    "documentation": "https://palantir.github.io/tslint/rules/eofline",
+    "hasFix": true,
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "forin": {
+    "documentation": "https://palantir.github.io/tslint/rules/forin",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "handle-callback-err": {
+    "documentation": "https://eslint.org/docs/rules/handle-callback-err",
     "ruleSeverity": "error",
     "source": "tslint-eslint-rules"
   },
   "import-spacing": {
+    "documentation": "https://palantir.github.io/tslint/rules/import-spacing",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "indent": {
+    "documentation": "https://palantir.github.io/tslint/rules/indent",
     "ruleArguments": [
       "spaces"
     ],
@@ -122,10 +150,12 @@
     "source": "tslint"
   },
   "jquery-deferred-must-complete": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "jsx-equals-spacing": {
+    "documentation": "https://github.com/palantir/tslint-react#rules",
     "ruleArguments": [
       "never"
     ],
@@ -133,34 +163,43 @@
     "source": "tslint-react"
   },
   "jsx-key": {
+    "documentation": "https://github.com/palantir/tslint-react#rules",
     "ruleSeverity": "error",
     "source": "tslint-react"
   },
   "jsx-no-bind": {
+    "documentation": "https://github.com/palantir/tslint-react#rules",
     "ruleSeverity": "error",
     "source": "tslint-react"
   },
   "jsx-no-string-ref": {
+    "documentation": "https://github.com/palantir/tslint-react#rules",
     "ruleSeverity": "error",
     "source": "tslint-react"
   },
   "jsx-self-close": {
+    "documentation": "https://github.com/palantir/tslint-react#rules",
     "ruleSeverity": "error",
     "source": "tslint-react"
   },
   "jsx-wrap-multiline": {
+    "documentation": "https://github.com/palantir/tslint-react#rules",
     "ruleSeverity": "error",
     "source": "tslint-react"
   },
   "label-position": {
+    "documentation": "https://palantir.github.io/tslint/rules/label-position",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "linebreak-style": {
+    "documentation": "https://palantir.github.io/tslint/rules/linebreak-style",
+    "hasFix": true,
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "max-line-length": {
+    "documentation": "https://palantir.github.io/tslint/rules/max-line-length",
     "ruleArguments": [
       100
     ],
@@ -168,50 +207,65 @@
     "source": "tslint"
   },
   "mocha-avoid-only": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "mocha-no-side-effect-code": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "mocha-unneeded-done": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "new-parens": {
+    "documentation": "https://palantir.github.io/tslint/rules/new-parens",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-absolute-import-to-own-parent": {
+    "documentation": "https://github.com/bettermarks/bm-tslint-rules#rules",
     "ruleSeverity": "error",
     "source": "bm-tslint-rules"
   },
   "no-angle-bracket-type-assertion": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-angle-bracket-type-assertion",
+    "hasFix": true,
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-arg": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-arg",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-banned-terms": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "no-bitwise": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-bitwise",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-boolean-literal-compare": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-boolean-literal-compare",
+    "hasFix": true,
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-conditional-assignment": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-conditional-assignment",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-consecutive-blank-lines": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-consecutive-blank-lines",
+    "hasFix": true,
     "ruleArguments": [
       3
     ],
@@ -219,6 +273,7 @@
     "source": "tslint"
   },
   "no-constant-condition": {
+    "documentation": "https://eslint.org/docs/rules/no-constant-condition",
     "ruleSeverity": "error",
     "source": "tslint-eslint-rules",
     "sameName": [
@@ -226,10 +281,12 @@
     ]
   },
   "no-construct": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-construct",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-control-regex": {
+    "documentation": "https://eslint.org/docs/rules/no-control-regex",
     "ruleSeverity": "error",
     "source": "tslint-eslint-rules",
     "sameName": [
@@ -237,110 +294,138 @@
     ]
   },
   "no-cookies": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "no-debugger": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-debugger",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-delete-expression": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "no-disable-auto-sanitization": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "no-document-domain": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "no-document-write": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "no-duplicate-imports": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-duplicate-imports",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-duplicate-super": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-duplicate-super",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-duplicate-switch-case": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-duplicate-switch-case",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-duplicate-variable": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-duplicate-variable",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-empty": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-empty",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-empty-character-class": {
+    "documentation": "https://eslint.org/docs/rules/no-empty-character-class",
     "ruleSeverity": "error",
     "source": "tslint-eslint-rules"
   },
   "no-empty-interface": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-empty-interface",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-eval": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-eval",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-ex-assign": {
+    "documentation": "https://eslint.org/docs/rules/no-ex-assign",
     "ruleSeverity": "error",
     "source": "tslint-eslint-rules"
   },
   "no-exec-script": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "no-extra-boolean-cast": {
+    "documentation": "https://eslint.org/docs/rules/no-extra-boolean-cast",
     "ruleSeverity": "error",
     "source": "tslint-eslint-rules"
   },
   "no-extra-semi": {
+    "documentation": "https://eslint.org/docs/rules/no-extra-semi",
     "ruleSeverity": "error",
     "source": "tslint-eslint-rules"
   },
   "no-floating-promises": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-floating-promises",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-for-in": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "no-for-in-array": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-for-in-array",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-function-constructor-with-string-args": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "no-function-expression": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "no-implicit-dependencies": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-implicit-dependencies",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-import-side-effect": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-import-side-effect",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-inferrable-types": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-inferrable-types",
+    "hasFix": true,
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-inner-declarations": {
+    "documentation": "https://eslint.org/docs/rules/no-inner-declarations",
     "ruleArguments": [
       "both"
     ],
@@ -348,14 +433,18 @@
     "source": "tslint-eslint-rules"
   },
   "no-inner-html": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "no-internal-module": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-internal-module",
+    "hasFix": true,
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-invalid-regexp": {
+    "documentation": "https://eslint.org/docs/rules/no-invalid-regexp",
     "ruleSeverity": "error",
     "source": "tslint-eslint-rules",
     "sameName": [
@@ -363,58 +452,73 @@
     ]
   },
   "no-invalid-template-strings": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-invalid-template-strings",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-invalid-this": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-invalid-this",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-irregular-whitespace": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-irregular-whitespace",
+    "hasFix": true,
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-jquery-raw-elements": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "no-misused-new": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-misused-new",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-multi-spaces": {
+    "documentation": "https://eslint.org/docs/rules/no-multi-spaces",
     "ruleSeverity": "error",
     "source": "tslint-eslint-rules"
   },
   "no-non-null-assertion": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-non-null-assertion",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-object-literal-type-assertion": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-object-literal-type-assertion",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-octal-literal": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "no-parameter-reassignment": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-parameter-reassignment",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-redundant-jsdoc": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-redundant-jsdoc",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-reference": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-reference",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-reference-import": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-reference-import",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-regex-spaces": {
+    "documentation": "https://eslint.org/docs/rules/no-regex-spaces",
     "ruleSeverity": "error",
     "source": "tslint-eslint-rules",
     "sameName": [
@@ -422,98 +526,129 @@
     ]
   },
   "no-return-await": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-return-await",
+    "hasFix": true,
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-sparse-arrays": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-sparse-arrays",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-string-based-set-immediate": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "no-string-based-set-interval": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "no-string-based-set-timeout": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "no-string-literal": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-string-literal",
+    "hasFix": true,
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-string-throw": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-string-throw",
+    "hasFix": true,
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-submodule-imports": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-submodule-imports",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-switch-case-fall-through": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-switch-case-fall-through",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-this-assignment": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-this-assignment",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-trailing-whitespace": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-trailing-whitespace",
+    "hasFix": true,
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-typeof-undefined": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "no-unnecessary-bind": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "no-unnecessary-callback-wrapper": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-unnecessary-callback-wrapper",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-unnecessary-class": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-unnecessary-class",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-unnecessary-field-initialization": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "no-unnecessary-initializer": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-unnecessary-initializer",
+    "hasFix": true,
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-unnecessary-local-variable": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "no-unnecessary-override": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "no-unnecessary-qualifier": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-unnecessary-qualifier",
+    "hasFix": true,
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-unnecessary-semicolons": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "no-unnecessary-type-assertion": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-unnecessary-type-assertion",
+    "hasFix": true,
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-unsafe-finally": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-unsafe-finally",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-unsupported-browser-code": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
@@ -525,6 +660,8 @@
     "source": "tslint-no-unused-expression-chai"
   },
   "no-unused-variable": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-unused-variable",
+    "hasFix": true,
     "ruleArguments": [
       "react"
     ],
@@ -532,30 +669,37 @@
     "source": "tslint"
   },
   "no-use-before-declare": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-use-before-declare",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-useless-files": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "no-var-requires": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-var-requires",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "no-with-statement": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "non-literal-require": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "number-literal-format": {
+    "documentation": "https://palantir.github.io/tslint/rules/number-literal-format",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "object-curly-spacing": {
+    "documentation": "https://eslint.org/docs/rules/object-curly-spacing",
     "ruleArguments": [
       "never"
     ],
@@ -563,6 +707,8 @@
     "source": "tslint-eslint-rules"
   },
   "object-literal-key-quotes": {
+    "documentation": "https://palantir.github.io/tslint/rules/object-literal-key-quotes",
+    "hasFix": true,
     "ruleArguments": [
       "as-needed"
     ],
@@ -570,6 +716,8 @@
     "source": "tslint"
   },
   "one-line": {
+    "documentation": "https://palantir.github.io/tslint/rules/one-line",
+    "hasFix": true,
     "ruleArguments": [
       "check-open-brace",
       "check-whitespace"
@@ -578,38 +726,50 @@
     "source": "tslint"
   },
   "possible-timing-attack": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "prefer-array-literal": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "prefer-const": {
+    "documentation": "https://palantir.github.io/tslint/rules/prefer-const",
+    "hasFix": true,
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "prefer-for-of": {
+    "documentation": "https://palantir.github.io/tslint/rules/prefer-for-of",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "prefer-object-spread": {
+    "documentation": "https://palantir.github.io/tslint/rules/prefer-object-spread",
+    "hasFix": true,
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "prefer-template": {
+    "documentation": "https://palantir.github.io/tslint/rules/prefer-template",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "promise-function-async": {
+    "documentation": "https://palantir.github.io/tslint/rules/promise-function-async",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "promise-must-complete": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "quotemark": {
+    "documentation": "https://palantir.github.io/tslint/rules/quotemark",
+    "hasFix": true,
     "ruleArguments": [
       "single",
       "avoid-escape"
@@ -618,86 +778,108 @@
     "source": "tslint"
   },
   "radix": {
+    "documentation": "https://palantir.github.io/tslint/rules/radix",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "react-a11y-anchors": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "react-a11y-aria-unsupported-elements": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "react-a11y-event-has-role": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "react-a11y-image-button-has-alt": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "react-a11y-img-has-alt": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "react-a11y-lang": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "react-a11y-meta": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "react-a11y-props": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "react-a11y-proptypes": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "react-a11y-role": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "react-a11y-role-has-required-aria-props": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "react-a11y-role-supports-aria-props": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "react-a11y-tabindex-no-positive": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "react-a11y-titles": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "react-anchor-blank-noopener": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "react-iframe-missing-sandbox": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "react-no-dangerous-html": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "react-this-binding-issue": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "react-unused-props-and-state": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "semicolon": {
+    "documentation": "https://palantir.github.io/tslint/rules/semicolon",
+    "hasFix": true,
     "ruleArguments": [
       "always"
     ],
@@ -705,6 +887,8 @@
     "source": "tslint"
   },
   "space-before-function-paren": {
+    "documentation": "https://palantir.github.io/tslint/rules/space-before-function-paren",
+    "hasFix": true,
     "ruleArguments": [
       {
         "anonymous": "always",
@@ -718,6 +902,7 @@
     "source": "tslint"
   },
   "space-in-parens": {
+    "documentation": "https://eslint.org/docs/rules/space-in-parens",
     "ruleArguments": [
       "never"
     ],
@@ -725,22 +910,29 @@
     "source": "tslint-eslint-rules"
   },
   "space-within-parens": {
+    "documentation": "https://palantir.github.io/tslint/rules/space-within-parens",
+    "hasFix": true,
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "switch-default": {
+    "documentation": "https://palantir.github.io/tslint/rules/switch-default",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "switch-final-break": {
+    "documentation": "https://palantir.github.io/tslint/rules/switch-final-break",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "ter-arrow-spacing": {
+    "documentation": "https://eslint.org/docs/rules/ter-arrow-spacing",
     "ruleSeverity": "error",
     "source": "tslint-eslint-rules"
   },
   "ter-indent": {
+    "documentation": "https://eslint.org/docs/rules/ter-indent",
+    "hasFix": true,
     "ruleArguments": [
       2,
       {
@@ -751,6 +943,8 @@
     "source": "tslint-eslint-rules"
   },
   "trailing-comma": {
+    "documentation": "https://palantir.github.io/tslint/rules/trailing-comma",
+    "hasFix": true,
     "ruleArguments": [
       {
         "multiline": "never",
@@ -761,14 +955,18 @@
     "source": "tslint"
   },
   "triple-equals": {
+    "documentation": "https://palantir.github.io/tslint/rules/triple-equals",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "type-literal-delimiter": {
+    "documentation": "https://palantir.github.io/tslint/rules/type-literal-delimiter",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "typedef-whitespace": {
+    "documentation": "https://palantir.github.io/tslint/rules/typedef-whitespace",
+    "hasFix": true,
     "ruleArguments": [
       {
         "call-signature": "nospace",
@@ -782,26 +980,32 @@
     "source": "tslint"
   },
   "underscore-consistent-invocation": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "unified-signatures": {
+    "documentation": "https://palantir.github.io/tslint/rules/unified-signatures",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "use-default-type-parameter": {
+    "documentation": "https://palantir.github.io/tslint/rules/use-default-type-parameter",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "use-isnan": {
+    "documentation": "https://palantir.github.io/tslint/rules/use-isnan",
     "ruleSeverity": "error",
     "source": "tslint"
   },
   "use-named-parameter": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
   "valid-typeof": {
+    "documentation": "https://eslint.org/docs/rules/valid-typeof",
     "ruleSeverity": "error",
     "source": "tslint-eslint-rules",
     "sameName": [
@@ -809,6 +1013,8 @@
     ]
   },
   "whitespace": {
+    "documentation": "https://palantir.github.io/tslint/rules/whitespace",
+    "hasFix": true,
     "ruleArguments": [
       "check-branch",
       "check-decl",

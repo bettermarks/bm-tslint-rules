@@ -2,8 +2,6 @@
   "./node_modules/tslint-microsoft-contrib:no-constant-condition": {
     "type": "maintainability",
     "description": "Do not use constant expressions in conditions.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Error",
@@ -11,26 +9,28 @@
     "level": "Opportunity for Excellence",
     "group": "Correctness",
     "commonWeaknessEnumeration": "398, 570, 571, 670",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noConstantConditionRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "./node_modules/tslint-microsoft-contrib:no-control-regex": {
     "type": "maintainability",
     "description": "Do not use control characters in regular expressions",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
     "severity": "Important",
     "level": "Opportunity for Excellence",
     "group": "Correctness",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noControlRegexRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "./node_modules/tslint-microsoft-contrib:no-duplicate-case": {
     "type": "maintainability",
     "description": "Do not use duplicate case labels in switch statements.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Error",
@@ -39,39 +39,42 @@
     "recommendation": "false,",
     "group": "Deprecated",
     "commonWeaknessEnumeration": "398, 710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noDuplicateCaseRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "./node_modules/tslint-microsoft-contrib:no-invalid-regexp": {
     "type": "maintainability",
     "description": "Do not use invalid regular expression strings in the RegExp constructor.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Error",
     "severity": "Critical",
     "level": "Opportunity for Excellence",
     "group": "Correctness",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noInvalidRegexpRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "./node_modules/tslint-microsoft-contrib:no-regex-spaces": {
     "type": "maintainability",
     "description": "Do not use multiple spaces in a regular expression literal. Similar to the ESLint no-regex-spaces rule",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Error",
     "severity": "Critical",
     "level": "Opportunity for Excellence",
     "group": "Correctness",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noRegexSpacesRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "./node_modules/tslint-microsoft-contrib:valid-typeof": {
     "type": "maintainability",
     "description": "Ensures that the results of typeof are compared against a valid string.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Error",
@@ -79,19 +82,20 @@
     "level": "Opportunity for Excellence",
     "recommendation": "false,",
     "group": "Deprecated",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/validTypeofRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "adjacent-overload-signatures": {
     "description": "Enforces function overloads to be consecutive.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "rationale": "Improves readability and organization by grouping naturally related items together.",
     "type": "typescript",
     "typescriptOnly": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/adjacent-overload-signatures",
+    "path": "./node_modules/tslint/lib/rules/adjacentOverloadSignaturesRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "align": {
     "description": "Enforces vertical alignment.",
@@ -122,7 +126,10 @@
     ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/align",
+    "path": "./node_modules/tslint/lib/rules/alignRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "array-bracket-spacing": {
     "description": "enforce consistent spacing inside array brackets",
@@ -167,7 +174,10 @@
     ],
     "typescriptOnly": false,
     "type": "style",
-    "source": "tslint-eslint-rules"
+    "documentation": "https://eslint.org/docs/rules/array-bracket-spacing",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/arrayBracketSpacingRule.js",
+    "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules"
   },
   "array-type": {
     "description": "Requires using either 'T[]' or 'Array<T>' for arrays.",
@@ -197,7 +207,10 @@
     ],
     "type": "style",
     "typescriptOnly": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/array-type",
+    "path": "./node_modules/tslint/lib/rules/arrayTypeRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "arrow-parens": {
     "description": "Requires parentheses around the parameters of arrow function definitions.",
@@ -219,7 +232,10 @@
     ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/arrow-parens",
+    "path": "./node_modules/tslint/lib/rules/arrowParensRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "arrow-return-shorthand": {
     "description": "Suggests to convert `() => { return x; }` to `() => x`.",
@@ -240,7 +256,10 @@
     ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/arrow-return-shorthand",
+    "path": "./node_modules/tslint/lib/rules/arrowReturnShorthandRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "await-promise": {
     "description": "Warns for an awaited value that is not a Promise.",
@@ -264,7 +283,10 @@
     "type": "functionality",
     "typescriptOnly": true,
     "requiresTypeInfo": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/await-promise",
+    "path": "./node_modules/tslint/lib/rules/awaitPromiseRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "ban": {
     "description": "Bans the use of specific functions or global methods.",
@@ -350,18 +372,19 @@
     ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/ban",
+    "path": "./node_modules/tslint/lib/rules/banRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "ban-comma-operator": {
     "description": "Bans the comma operator.",
-    "options": null,
-    "optionsDescription": "",
-    "optionExamples": [
-      true
-    ],
     "type": "typescript",
     "typescriptOnly": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/ban-comma-operator",
+    "path": "./node_modules/tslint/lib/rules/banCommaOperatorRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "ban-types": {
     "description": "\nBans specific types from being used. Does not ban the\ncorresponding runtime objects from being used.",
@@ -391,40 +414,46 @@
     ],
     "type": "typescript",
     "typescriptOnly": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/ban-types",
+    "path": "./node_modules/tslint/lib/rules/banTypesRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "binary-expression-operand-order": {
     "description": "\nIn a binary expression, a literal should always be on the right-hand side if possible.\nFor example, prefer 'x + 1' over '1 + x'.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/binary-expression-operand-order",
+    "path": "./node_modules/tslint/lib/rules/binaryExpressionOperandOrderRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "block-spacing": {
-    "source": "tslint-eslint-rules"
+    "documentation": "https://eslint.org/docs/rules/block-spacing",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/blockSpacingRule.js",
+    "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules"
   },
   "brace-style": {
-    "source": "tslint-eslint-rules"
+    "documentation": "https://eslint.org/docs/rules/brace-style",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/braceStyleRule.js",
+    "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules"
   },
   "callable-types": {
     "description": "An interface or literal type with just a call signature can be written as a function type.",
     "rationale": "style",
-    "optionsDescription": "Not configurable.",
-    "options": null,
     "type": "style",
     "typescriptOnly": true,
     "hasFix": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/callable-types",
+    "path": "./node_modules/tslint/lib/rules/callableTypesRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "chai-prefer-contains-to-index-of": {
     "type": "maintainability",
     "description": "Avoid Chai assertions that invoke indexOf and compare for a -1 result.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -432,13 +461,14 @@
     "level": "Opportunity for Excellence",
     "group": "Clarity",
     "commonWeaknessEnumeration": "398, 710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/chaiPreferContainsToIndexOfRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "chai-vague-errors": {
     "type": "maintainability",
     "description": "Avoid Chai assertions that result in vague errors",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -446,19 +476,20 @@
     "level": "Opportunity for Excellence",
     "group": "Clarity",
     "commonWeaknessEnumeration": "398, 710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/chaiVagueErrorsRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "class-name": {
     "description": "Enforces PascalCased class and interface names.",
     "rationale": "Makes it easy to differentiate classes from regular variables at a glance.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/class-name",
+    "path": "./node_modules/tslint/lib/rules/classNameRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "comment-format": {
     "description": "Enforces formatting rules for single-line comments.",
@@ -523,7 +554,10 @@
     ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/comment-format",
+    "path": "./node_modules/tslint/lib/rules/commentFormatRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "completed-docs": {
     "description": "Enforces documentation for important items be filled out.",
@@ -902,7 +936,10 @@
     "type": "style",
     "typescriptOnly": false,
     "requiresTypeInfo": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/completed-docs",
+    "path": "./node_modules/tslint/lib/rules/completedDocsRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "curly": {
     "description": "Enforces braces for `if`/`for`/`do`/`while` statements.",
@@ -932,7 +969,10 @@
     "type": "functionality",
     "typescriptOnly": false,
     "hasFix": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/curly",
+    "path": "./node_modules/tslint/lib/rules/curlyRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "cyclomatic-complexity": {
     "description": "Enforces a threshold of cyclomatic complexity.",
@@ -952,50 +992,47 @@
     ],
     "type": "maintainability",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/cyclomatic-complexity",
+    "path": "./node_modules/tslint/lib/rules/cyclomaticComplexityRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "deprecation": {
     "description": "Warns when deprecated APIs are used.",
     "descriptionDetails": "Any usage of an identifier\n            with the @deprecated JSDoc annotation will trigger a warning.\n            See http://usejsdoc.org/tags-deprecated.html",
     "rationale": "Deprecated APIs should be avoided, and usage updated.",
-    "optionsDescription": "",
-    "options": null,
-    "optionExamples": [],
     "type": "maintainability",
     "typescriptOnly": false,
     "requiresTypeInfo": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/deprecation",
+    "path": "./node_modules/tslint/lib/rules/deprecationRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "encoding": {
     "description": "Enforces UTF-8 file encoding.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      "true"
-    ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/encoding",
+    "path": "./node_modules/tslint/lib/rules/encodingRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "eofline": {
     "description": "Ensures the file ends with a newline.",
     "descriptionDetails": "Fix for single-line files is not supported.",
     "rationale": "It is a [standard convention](http://stackoverflow.com/q/729692/3124288) to end files with a newline.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "hasFix": true,
     "type": "maintainability",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/eofline",
+    "path": "./node_modules/tslint/lib/rules/eoflineRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "export-name": {
     "type": "maintainability",
     "description": "The name of the exported module must match the filename of the source file",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Ignored",
     "issueType": "Warning",
@@ -1003,7 +1040,10 @@
     "level": "Opportunity for Excellence",
     "group": "Clarity",
     "commonWeaknessEnumeration": "710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/exportNameRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "file-header": {
     "description": "Enforces a certain header comment for all files, matched by a regular expression.",
@@ -1019,25 +1059,24 @@
     ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/file-header",
+    "path": "./node_modules/tslint/lib/rules/fileHeaderRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "forin": {
     "description": "Requires a `for ... in` statement to be filtered with an `if` statement.",
     "rationale": "\n```ts\nfor (let key in someObject) {\n    if (someObject.hasOwnProperty(key)) {\n        // code here\n    }\n}\n```\nPrevents accidental iteration over properties inherited from an object's prototype.\nSee [MDN's `for...in`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)\ndocumentation for more information about `for...in` loops.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/forin",
+    "path": "./node_modules/tslint/lib/rules/forinRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "function-name": {
     "type": "maintainability",
     "description": "Applies a naming convention to function names and method names",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -1045,7 +1084,10 @@
     "level": "Opportunity for Excellence",
     "group": "Clarity",
     "commonWeaknessEnumeration": "398, 710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/functionNameRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "handle-callback-err": {
     "description": "enforce error handling in callbacks",
@@ -1076,7 +1118,10 @@
     ],
     "typescriptOnly": false,
     "type": "maintainability",
-    "source": "tslint-eslint-rules"
+    "documentation": "https://eslint.org/docs/rules/handle-callback-err",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/handleCallbackErrRule.js",
+    "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules"
   },
   "import-blacklist": {
     "description": "\nDisallows importing the specified modules directly via `import` and `require`.\nInstead only sub modules may be imported from that module.",
@@ -1099,14 +1144,15 @@
     ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/import-blacklist",
+    "path": "./node_modules/tslint/lib/rules/importBlacklistRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "import-name": {
     "type": "maintainability",
     "description": "The name of the imported module must match the name of the thing being imported",
     "hasFix": true,
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Ignored",
     "issueType": "Warning",
@@ -1114,18 +1160,19 @@
     "level": "Opportunity for Excellence",
     "group": "Clarity",
     "commonWeaknessEnumeration": "710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/importNameRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "import-spacing": {
     "description": "Ensures proper spacing between import statement keywords",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/import-spacing",
+    "path": "./node_modules/tslint/lib/rules/importSpacingRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "indent": {
     "description": "Enforces indentation with tabs or spaces.",
@@ -1170,13 +1217,14 @@
     ],
     "type": "maintainability",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/indent",
+    "path": "./node_modules/tslint/lib/rules/indentRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "insecure-random": {
     "type": "functionality",
     "description": "Do not use insecure sources for random bytes",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "SDL",
     "issueType": "Error",
@@ -1184,7 +1232,10 @@
     "level": "Opportunity for Excellence",
     "group": "Security",
     "commonWeaknessEnumeration": "330",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/insecureRandomRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "interface-name": {
     "description": "Requires interface names to begin with a capital 'I'",
@@ -1209,33 +1260,35 @@
     ],
     "type": "style",
     "typescriptOnly": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/interface-name",
+    "path": "./node_modules/tslint/lib/rules/interfaceNameRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "interface-over-type-literal": {
     "description": "Prefer an interface declaration over a type literal (`type T = { ... }`)",
     "rationale": "Interfaces are generally preferred over type literals because interfaces can be implemented, extended and merged.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "style",
     "typescriptOnly": true,
     "hasFix": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/interface-over-type-literal",
+    "path": "./node_modules/tslint/lib/rules/interfaceOverTypeLiteralRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "jquery-deferred-must-complete": {
     "type": "maintainability",
     "description": "When a JQuery Deferred instance is created, then either reject() or resolve() must be called on it within all code branches in the scope.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Error",
     "severity": "Critical",
     "level": "Opportunity for Excellence",
     "group": "Correctness",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/jqueryDeferredMustCompleteRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "jsdoc-format": {
     "description": "Enforces basic format rules for JSDoc comments.",
@@ -1262,18 +1315,19 @@
     ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/jsdoc-format",
+    "path": "./node_modules/tslint/lib/rules/jsdocFormatRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "jsx-alignment": {
     "description": "Enforces consistent and readable vertical alignment of JSX tags and attributes",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      "true"
-    ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint-react"
+    "documentation": "https://github.com/palantir/tslint-react#rules",
+    "path": "./node_modules/tslint-react/rules/jsxAlignmentRule.js",
+    "source": "tslint-react",
+    "sourcePath": "./node_modules/tslint-react"
   },
   "jsx-ban-elements": {
     "description": "\nBans specific JSX elements from being used.",
@@ -1303,7 +1357,10 @@
     ],
     "type": "typescript",
     "typescriptOnly": true,
-    "source": "tslint-react"
+    "documentation": "https://github.com/palantir/tslint-react#rules",
+    "path": "./node_modules/tslint-react/rules/jsxBanElementsRule.js",
+    "source": "tslint-react",
+    "sourcePath": "./node_modules/tslint-react"
   },
   "jsx-ban-props": {
     "description": "Bans the use of specific props.",
@@ -1324,7 +1381,10 @@
     ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint-react"
+    "documentation": "https://github.com/palantir/tslint-react#rules",
+    "path": "./node_modules/tslint-react/rules/jsxBanPropsRule.js",
+    "source": "tslint-react",
+    "sourcePath": "./node_modules/tslint-react"
   },
   "jsx-boolean-value": {
     "description": "Enforce boolean attribute notation in jsx.",
@@ -1349,7 +1409,10 @@
     ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint-react"
+    "documentation": "https://github.com/palantir/tslint-react#rules",
+    "path": "./node_modules/tslint-react/rules/jsxBooleanValueRule.js",
+    "source": "tslint-react",
+    "sourcePath": "./node_modules/tslint-react"
   },
   "jsx-curly-spacing": {
     "description": "Checks JSX curly braces spacing",
@@ -1374,7 +1437,10 @@
     ],
     "type": "style",
     "typescriptOnly": true,
-    "source": "tslint-react"
+    "documentation": "https://github.com/palantir/tslint-react#rules",
+    "path": "./node_modules/tslint-react/rules/jsxCurlySpacingRule.js",
+    "source": "tslint-react",
+    "sourcePath": "./node_modules/tslint-react"
   },
   "jsx-equals-spacing": {
     "description": "\nDisallow or enforce spaces around equal signs in JSX attributes",
@@ -1399,104 +1465,94 @@
     "optionsDescription": "\nOne of the following two options must be provided:\n\n* `\"always\"` requires JSX attributes to have spaces before and after the equals sign\n* `\"never\"` requires JSX attributes to NOT have spaces before and after the equals sign",
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint-react"
+    "documentation": "https://github.com/palantir/tslint-react#rules",
+    "path": "./node_modules/tslint-react/rules/jsxEqualsSpacingRule.js",
+    "source": "tslint-react",
+    "sourcePath": "./node_modules/tslint-react"
   },
   "jsx-key": {
     "description": "Warn if an element that likely requires a key prop — namely,             one present in an array literal or an arrow function expression.",
-    "options": null,
-    "optionsDescription": "",
-    "optionExamples": [
-      "true"
-    ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint-react"
+    "documentation": "https://github.com/palantir/tslint-react#rules",
+    "path": "./node_modules/tslint-react/rules/jsxKeyRule.js",
+    "source": "tslint-react",
+    "sourcePath": "./node_modules/tslint-react"
   },
   "jsx-no-bind": {
     "description": "Forbids function binding in JSX attributes. This has the same intent             as jsx-no-lambda in helping you avoid excessive re-renders.",
     "descriptionDetails": "Note that this currently only does a simple syntactic check,             not a semantic one (it doesn't use the type checker). So it may             have some rare false positives if you define your own .bind function             and supply this as a parameter.",
-    "options": null,
-    "optionsDescription": "",
-    "optionExamples": [
-      "true"
-    ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint-react"
+    "documentation": "https://github.com/palantir/tslint-react#rules",
+    "path": "./node_modules/tslint-react/rules/jsxNoBindRule.js",
+    "source": "tslint-react",
+    "sourcePath": "./node_modules/tslint-react"
   },
   "jsx-no-lambda": {
     "description": "Checks for fresh lambda literals used in JSX attributes",
     "descriptionDetails": "Creating new anonymous functions (with either the function syntax or             ES2015 arrow syntax) inside the render call stack works against pure component             rendering. When doing an equality check between two lambdas, React will always             consider them unequal values and force the component to re-render more often than necessary.",
-    "options": null,
-    "optionsDescription": "",
-    "optionExamples": [
-      "true"
-    ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint-react"
+    "documentation": "https://github.com/palantir/tslint-react#rules",
+    "path": "./node_modules/tslint-react/rules/jsxNoLambdaRule.js",
+    "source": "tslint-react",
+    "sourcePath": "./node_modules/tslint-react"
   },
   "jsx-no-multiline-js": {
     "description": "Checks for multiline JS expressions inside JSX expressions",
     "descriptionDetails": "This helps reduce mental overhead when parsing JSX syntax",
-    "options": null,
-    "optionsDescription": "",
-    "optionExamples": [
-      "true"
-    ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint-react"
+    "documentation": "https://github.com/palantir/tslint-react#rules",
+    "path": "./node_modules/tslint-react/rules/jsxNoMultilineJsRule.js",
+    "source": "tslint-react",
+    "sourcePath": "./node_modules/tslint-react"
   },
   "jsx-no-string-ref": {
     "description": "Checks for string literal refs",
     "descriptionDetails": "This syntax is deprecated and will be removed in a future version of React",
-    "options": null,
-    "optionsDescription": "",
-    "optionExamples": [
-      "true"
-    ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint-react"
+    "documentation": "https://github.com/palantir/tslint-react#rules",
+    "path": "./node_modules/tslint-react/rules/jsxNoStringRefRule.js",
+    "source": "tslint-react",
+    "sourcePath": "./node_modules/tslint-react"
   },
   "jsx-self-close": {
     "description": "Checks that JSX elements with no children are self-closing",
-    "options": null,
-    "optionsDescription": "",
-    "optionExamples": [
-      "true"
-    ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint-react"
+    "documentation": "https://github.com/palantir/tslint-react#rules",
+    "path": "./node_modules/tslint-react/rules/jsxSelfCloseRule.js",
+    "source": "tslint-react",
+    "sourcePath": "./node_modules/tslint-react"
   },
   "jsx-use-translation-function": {
-    "source": "tslint-react"
+    "documentation": "https://github.com/palantir/tslint-react#rules",
+    "path": "./node_modules/tslint-react/rules/jsxUseTranslationFunctionRule.js",
+    "source": "tslint-react",
+    "sourcePath": "./node_modules/tslint-react"
   },
   "jsx-wrap-multiline": {
     "description": "Checks that multiline JSX elements are wrapped in parens",
-    "options": null,
-    "optionsDescription": "",
-    "optionExamples": [
-      "true"
-    ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint-react"
+    "documentation": "https://github.com/palantir/tslint-react#rules",
+    "path": "./node_modules/tslint-react/rules/jsxWrapMultilineRule.js",
+    "source": "tslint-react",
+    "sourcePath": "./node_modules/tslint-react"
   },
   "label-position": {
     "description": "Only allows labels in sensible locations.",
     "descriptionDetails": "This rule only allows labels to be on `do/for/while/switch` statements.",
     "rationale": "\nLabels in JavaScript only can be used in conjunction with `break` or `continue`,\nconstructs meant to be used for loop flow control. While you can theoretically use\nlabels on any block statement in JS, it is considered poor code structure to do so.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/label-position",
+    "path": "./node_modules/tslint/lib/rules/labelPositionRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "linebreak-style": {
     "description": "Enforces a consistent linebreak style.",
@@ -1521,19 +1577,20 @@
     "type": "maintainability",
     "typescriptOnly": false,
     "hasFix": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/linebreak-style",
+    "path": "./node_modules/tslint/lib/rules/linebreakStyleRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "match-default-export-name": {
     "description": "\nRequires that a default import have the same name as the declaration it imports.\nDoes nothing for anonymous default exports.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "style",
     "typescriptOnly": true,
     "requiresTypeInfo": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/match-default-export-name",
+    "path": "./node_modules/tslint/lib/rules/matchDefaultExportNameRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "max-classes-per-file": {
     "description": "\nA file may not contain more than the specified number of classes",
@@ -1570,7 +1627,10 @@
     ],
     "type": "maintainability",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/max-classes-per-file",
+    "path": "./node_modules/tslint/lib/rules/maxClassesPerFileRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "max-file-line-count": {
     "description": "Requires files to remain under a certain number of lines",
@@ -1588,13 +1648,14 @@
     ],
     "type": "maintainability",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/max-file-line-count",
+    "path": "./node_modules/tslint/lib/rules/maxFileLineCountRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "max-func-body-length": {
     "type": "maintainability",
     "description": "Avoid long functions.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -1603,7 +1664,10 @@
     "group": "Clarity",
     "recommendation": "[true, 100, {\"ignore-parameters-to-function-regex\": \"describe\"}],",
     "commonWeaknessEnumeration": "398, 710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/maxFuncBodyLengthRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "max-line-length": {
     "description": "Requires lines to be under a certain max length.",
@@ -1621,7 +1685,10 @@
     ],
     "type": "maintainability",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/max-line-length",
+    "path": "./node_modules/tslint/lib/rules/maxLineLengthRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "member-access": {
     "description": "Requires explicit visibility declarations for class members.",
@@ -1655,7 +1722,10 @@
     "type": "typescript",
     "typescriptOnly": true,
     "hasFix": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/member-access",
+    "path": "./node_modules/tslint/lib/rules/memberAccessRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "member-ordering": {
     "description": "Enforces member ordering.",
@@ -1746,13 +1816,14 @@
     ],
     "type": "typescript",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/member-ordering",
+    "path": "./node_modules/tslint/lib/rules/memberOrderingRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "missing-jsdoc": {
     "type": "maintainability",
     "description": "All files must have a top level JSDoc comment.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -1760,13 +1831,14 @@
     "level": "Opportunity for Excellence",
     "group": "Clarity",
     "commonWeaknessEnumeration": "398, 710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/missingJsdocRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "missing-optional-annotation": {
     "type": "maintainability",
     "description": "Deprecated - This rule is now enforced by the TypeScript compiler",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Ignored",
     "issueType": "Warning",
@@ -1774,58 +1846,62 @@
     "level": "Opportunity for Excellence",
     "group": "Deprecated",
     "recommendation": "false,  // now supported by TypeScript compiler",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/missingOptionalAnnotationRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "mocha-avoid-only": {
     "type": "maintainability",
     "description": "Do not invoke Mocha's describe.only, it.only or context.only functions.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Error",
     "severity": "Critical",
     "level": "Opportunity for Excellence",
     "group": "Correctness",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/mochaAvoidOnlyRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "mocha-no-side-effect-code": {
     "type": "maintainability",
     "description": "All test logic in a Mocha test case should be within Mocha lifecycle method.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Ignored",
     "issueType": "Warning",
     "severity": "Moderate",
     "level": "Opportunity for Excellence",
     "group": "Correctness",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/mochaNoSideEffectCodeRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "mocha-unneeded-done": {
     "type": "maintainability",
     "description": "A function declares a MochaDone parameter but only resolves it synchronously in the main function.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Ignored",
     "issueType": "Warning",
     "severity": "Low",
     "level": "Opportunity for Excellence",
     "group": "Clarity",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/mochaUnneededDoneRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "new-parens": {
     "description": "Requires parentheses when invoking a constructor via the `new` keyword.",
     "rationale": "Maintains stylistic consistency with other function calls.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/new-parens",
+    "path": "./node_modules/tslint/lib/rules/newParensRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "newline-before-return": {
     "description": "Enforces blank line before return when not the only line in the block.",
@@ -1837,7 +1913,10 @@
     ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/newline-before-return",
+    "path": "./node_modules/tslint/lib/rules/newlineBeforeReturnRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-absolute-import-to-own-parent": {
     "description": "In a mono-repo with each folder under src being an alias, you should avoid using the alias to import things within an alias.",
@@ -1845,51 +1924,46 @@
     "optionsDescription": "",
     "type": "typescript",
     "typescriptOnly": true,
-    "source": "bm-tslint-rules"
+    "documentation": "https://github.com/bettermarks/bm-tslint-rules#rules",
+    "path": "./dist/noAbsoluteImportToOwnParentRule.js",
+    "source": "bm-tslint-rules",
+    "sourcePath": "."
   },
   "no-angle-bracket-type-assertion": {
     "description": "Requires the use of `as Type` for type assertions instead of `<Type>`.",
     "hasFix": true,
     "rationale": "\nBoth formats of type assertions have the same effect, but only `as` type assertions\nwork in `.tsx` files. This rule ensures that you have a consistent type assertion style\nacross your codebase.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "style",
     "typescriptOnly": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-angle-bracket-type-assertion",
+    "path": "./node_modules/tslint/lib/rules/noAngleBracketTypeAssertionRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-any": {
     "description": "Disallows usages of `any` as a type declaration.",
     "hasFix": false,
     "rationale": "Using `any` as a type declaration nullifies the compile-time benefits of the type system.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "typescript",
     "typescriptOnly": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-any",
+    "path": "./node_modules/tslint/lib/rules/noAnyRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-arg": {
     "description": "Disallows use of `arguments.callee`.",
     "rationale": "\nUsing `arguments.callee` makes various performance optimizations impossible.\nSee [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments/callee)\nfor more details on why to avoid `arguments.callee`.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-arg",
+    "path": "./node_modules/tslint/lib/rules/noArgRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-backbone-get-set-outside-model": {
     "type": "maintainability",
     "description": "Avoid using `model.get('x')` and `model.set('x', value)` Backbone accessors outside of the owning model.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -1897,13 +1971,14 @@
     "level": "Opportunity for Excellence",
     "group": "Correctness",
     "commonWeaknessEnumeration": "398, 710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noBackboneGetSetOutsideModelRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-banned-terms": {
     "type": "maintainability",
     "description": "Do not use banned terms: caller, callee, eval, arguments.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "SDL",
     "issueType": "Error",
@@ -1911,46 +1986,43 @@
     "level": "Mandatory",
     "group": "Security",
     "commonWeaknessEnumeration": "676, 242, 116",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noBannedTermsRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-bitwise": {
     "description": "Disallows bitwise operators.",
     "descriptionDetails": "\nSpecifically, the following bitwise operators are banned:\n`&`, `&=`, `|`, `|=`,\n`^`, `^=`, `<<`, `<<=`,\n`>>`, `>>=`, `>>>`, `>>>=`, and `~`.\nThis rule does not ban the use of `&` and `|` for intersection and union types.",
     "rationale": "\nBitwise operators are often typos - for example `bool1 & bool2` instead of `bool1 && bool2`.\nThey also can be an indicator of overly clever code which decreases maintainability.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-bitwise",
+    "path": "./node_modules/tslint/lib/rules/noBitwiseRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-boolean-literal-compare": {
     "description": "Warns on comparison to a boolean literal, as in `x === true`.",
     "hasFix": true,
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "style",
     "typescriptOnly": true,
     "requiresTypeInfo": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-boolean-literal-compare",
+    "path": "./node_modules/tslint/lib/rules/noBooleanLiteralCompareRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-conditional-assignment": {
     "description": "Disallows any type of assignment in conditionals.",
     "descriptionDetails": "This applies to `do-while`, `for`, `if`, and `while` statements and conditional (ternary) expressions.",
     "rationale": "\nAssignments in conditionals are often typos:\nfor example `if (var1 = var2)` instead of `if (var1 == var2)`.\nThey also can be an indicator of overly clever code which decreases maintainability.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-conditional-assignment",
+    "path": "./node_modules/tslint/lib/rules/noConditionalAssignmentRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-consecutive-blank-lines": {
     "description": "Disallows one or more blank lines in a row.",
@@ -1970,7 +2042,10 @@
     ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-consecutive-blank-lines",
+    "path": "./node_modules/tslint/lib/rules/noConsecutiveBlankLinesRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-console": {
     "description": "Bans the use of specified `console` methods.",
@@ -1991,10 +2066,16 @@
     ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-console",
+    "path": "./node_modules/tslint/lib/rules/noConsoleRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-constant-condition": {
+    "documentation": "https://eslint.org/docs/rules/no-constant-condition",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/noConstantConditionRule.js",
     "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules",
     "sameName": [
       "./node_modules/tslint-microsoft-contrib:no-constant-condition"
     ]
@@ -2003,17 +2084,18 @@
     "description": "Disallows access to the constructors of `String`, `Number`, and `Boolean`.",
     "descriptionDetails": "Disallows constructor use such as `new Number(foo)` but does not disallow `Number(foo)`.",
     "rationale": "\nThere is little reason to use `String`, `Number`, or `Boolean` as constructors.\nIn almost all cases, the regular function-call version is more appropriate.\n[More details](http://stackoverflow.com/q/4719320/3124288) are available on StackOverflow.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-construct",
+    "path": "./node_modules/tslint/lib/rules/noConstructRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-control-regex": {
+    "documentation": "https://eslint.org/docs/rules/no-control-regex",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/noControlRegexRule.js",
     "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules",
     "sameName": [
       "./node_modules/tslint-microsoft-contrib:no-control-regex"
     ]
@@ -2021,8 +2103,6 @@
   "no-cookies": {
     "type": "maintainability",
     "description": "Do not use cookies",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "SDL",
     "issueType": "Error",
@@ -2030,51 +2110,49 @@
     "level": "Mandatory",
     "group": "Security",
     "commonWeaknessEnumeration": "315, 539, 565, 614",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noCookiesRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-debugger": {
     "description": "Disallows `debugger` statements.",
     "rationale": "In general, `debugger` statements aren't appropriate for production code.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-debugger",
+    "path": "./node_modules/tslint/lib/rules/noDebuggerRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-default-export": {
     "description": "Disallows default exports in ES6-style modules.",
     "descriptionDetails": "Use named exports instead.",
     "rationale": "\nNamed imports/exports [promote clarity](https://github.com/palantir/tslint/issues/1182#issue-151780453).\nIn addition, current tooling differs on the correct way to handle default imports/exports.\nAvoiding them all together can help avoid tooling bugs and conflicts.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "maintainability",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-default-export",
+    "path": "./node_modules/tslint/lib/rules/noDefaultExportRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-delete-expression": {
     "type": "maintainability",
     "description": "Do not delete expressions. Only properties should be deleted",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "SDL",
     "issueType": "Error",
     "severity": "Critical",
     "level": "Mandatory",
     "group": "Security",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noDeleteExpressionRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-disable-auto-sanitization": {
     "type": "maintainability",
     "description": "Do not disable auto-sanitization of HTML because this opens up your page to an XSS attack. ",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "SDL",
     "issueType": "Error",
@@ -2082,26 +2160,28 @@
     "level": "Mandatory",
     "group": "Security",
     "commonWeaknessEnumeration": "157, 159, 75, 79, 85, 749, 676",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noDisableAutoSanitizationRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-document-domain": {
     "type": "maintainability",
     "description": "Do not write to document.domain. Scripts setting document.domain to any value should be validated to ensure that the value is on a list of allowed sites.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "SDL",
     "issueType": "Error",
     "severity": "Critical",
     "level": "Mandatory",
     "group": "Security",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noDocumentDomainRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-document-write": {
     "type": "maintainability",
     "description": "Do not use document.write",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "SDL",
     "issueType": "Error",
@@ -2109,10 +2189,16 @@
     "level": "Mandatory",
     "group": "Security",
     "commonWeaknessEnumeration": "79, 85",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noDocumentWriteRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-duplicate-case": {
+    "documentation": "https://eslint.org/docs/rules/no-duplicate-case",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/noDuplicateCaseRule.js",
     "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules",
     "sameName": [
       "./node_modules/tslint-microsoft-contrib:no-duplicate-case"
     ]
@@ -2120,20 +2206,16 @@
   "no-duplicate-imports": {
     "description": "\nDisallows multiple import statements from the same module.",
     "rationale": "\nUsing a single import statement per module will make the code clearer because you can see everything being imported\nfrom that module on one line.",
-    "optionsDescription": "Not configurable",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "maintainability",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-duplicate-imports",
+    "path": "./node_modules/tslint/lib/rules/noDuplicateImportsRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-duplicate-parameter-names": {
     "type": "maintainability",
     "description": "Deprecated - This rule is now enforced by the TypeScript compiler",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Ignored",
     "issueType": "Warning",
@@ -2141,30 +2223,29 @@
     "level": "Opportunity for Excellence",
     "group": "Deprecated",
     "recommendation": "false, // now supported by TypeScript compiler",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noDuplicateParameterNamesRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-duplicate-super": {
     "description": "Warns if 'super()' appears twice in a constructor.",
     "rationale": "The second call to 'super()' will fail at runtime.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-duplicate-super",
+    "path": "./node_modules/tslint/lib/rules/noDuplicateSuperRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-duplicate-switch-case": {
     "description": "Prevents duplicate cases in switch statements.",
-    "optionExamples": [
-      true
-    ],
-    "options": null,
-    "optionsDescription": "",
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-duplicate-switch-case",
+    "path": "./node_modules/tslint/lib/rules/noDuplicateSwitchCaseRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-duplicate-variable": {
     "description": "Disallows duplicate variable declarations in the same block scope.",
@@ -2186,7 +2267,10 @@
     ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-duplicate-variable",
+    "path": "./node_modules/tslint/lib/rules/noDuplicateVariableRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-empty": {
     "description": "Disallows empty blocks.",
@@ -2208,25 +2292,30 @@
     ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-empty",
+    "path": "./node_modules/tslint/lib/rules/noEmptyRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-empty-character-class": {
-    "source": "tslint-eslint-rules"
+    "documentation": "https://eslint.org/docs/rules/no-empty-character-class",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/noEmptyCharacterClassRule.js",
+    "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules"
   },
   "no-empty-interface": {
     "description": "Forbids empty interfaces.",
     "rationale": "An empty interface is equivalent to its supertype (or `{}`).",
-    "optionsDescription": "Not configurable.",
-    "options": null,
     "type": "typescript",
     "typescriptOnly": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-empty-interface",
+    "path": "./node_modules/tslint/lib/rules/noEmptyInterfaceRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-empty-interfaces": {
     "type": "maintainability",
     "description": "Do not use empty interfaces.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Ignored",
     "issueType": "Warning",
@@ -2235,13 +2324,14 @@
     "group": "Deprecated",
     "recommendation": "false, // use tslint no-empty-interface rule instead",
     "commonWeaknessEnumeration": "398, 710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noEmptyInterfacesRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-empty-line-after-opening-brace": {
     "type": "maintainability",
     "description": "Avoid an empty line after an opening brace",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Ignored",
     "issueType": "Warning",
@@ -2250,28 +2340,30 @@
     "group": "Whitespace",
     "recommendation": "false,",
     "commonWeaknessEnumeration": "710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noEmptyLineAfterOpeningBraceRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-eval": {
     "description": "Disallows `eval` function invocations.",
     "rationale": "\n`eval()` is dangerous as it allows arbitrary code execution with full privileges. There are\n[alternatives](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval)\nfor most of the use cases for `eval()`.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-eval",
+    "path": "./node_modules/tslint/lib/rules/noEvalRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-ex-assign": {
-    "source": "tslint-eslint-rules"
+    "documentation": "https://eslint.org/docs/rules/no-ex-assign",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/noExAssignRule.js",
+    "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules"
   },
   "no-exec-script": {
     "type": "maintainability",
     "description": "Do not use the execScript functions",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "SDL",
     "issueType": "Error",
@@ -2279,13 +2371,22 @@
     "level": "Mandatory",
     "group": "Security",
     "commonWeaknessEnumeration": "95, 676",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noExecScriptRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-extra-boolean-cast": {
-    "source": "tslint-eslint-rules"
+    "documentation": "https://eslint.org/docs/rules/no-extra-boolean-cast",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/noExtraBooleanCastRule.js",
+    "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules"
   },
   "no-extra-semi": {
-    "source": "tslint-eslint-rules"
+    "documentation": "https://eslint.org/docs/rules/no-extra-semi",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/noExtraSemiRule.js",
+    "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules"
   },
   "no-floating-promises": {
     "description": "Promises returned by functions must be handled appropriately.",
@@ -2311,13 +2412,14 @@
     "type": "functionality",
     "typescriptOnly": true,
     "requiresTypeInfo": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-floating-promises",
+    "path": "./node_modules/tslint/lib/rules/noFloatingPromisesRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-for-in": {
     "type": "maintainability",
     "description": "Avoid use of for-in statements. They can be replaced by Object.keys",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -2325,26 +2427,25 @@
     "level": "Opportunity for Excellence",
     "group": "Clarity",
     "commonWeaknessEnumeration": "398, 710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noForInRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-for-in-array": {
     "description": "Disallows iterating over an array with a for-in loop.",
     "descriptionDetails": "\nA for-in loop (`for (var k in o)`) iterates over the properties of an Object.\n\nWhile it is legal to use for-in loops with array types, it is not common.\nfor-in will iterate over the indices of the array as strings, omitting any \"holes\" in\nthe array.\n\nMore common is to use for-of, which iterates over the values of an array.\nIf you want to iterate over the indices, alternatives include:\n\narray.forEach((value, index) => { ... });\nfor (const [index, value] of array.entries()) { ... }\nfor (let i = 0; i < array.length; i++) { ... }\n",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "requiresTypeInfo": true,
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-for-in-array",
+    "path": "./node_modules/tslint/lib/rules/noForInArrayRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-function-constructor-with-string-args": {
     "type": "maintainability",
     "description": "Do not use the version of the Function constructor that accepts a string argument to define the body of the function",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "SDL",
     "issueType": "Error",
@@ -2352,13 +2453,14 @@
     "level": "Mandatory",
     "group": "Security",
     "commonWeaknessEnumeration": "95, 676, 242, 116",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noFunctionConstructorWithStringArgsRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-function-expression": {
     "type": "maintainability",
     "description": "Do not use function expressions; use arrow functions (lambdas) instead.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -2366,13 +2468,14 @@
     "level": "Opportunity for Excellence",
     "group": "Clarity",
     "commonWeaknessEnumeration": "398, 710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noFunctionExpressionRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-http-string": {
     "type": "maintainability",
     "description": "Do not use strings that start with 'http:'. URL strings should start with 'https:'. ",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "SDL",
     "issueType": "Error",
@@ -2381,7 +2484,10 @@
     "group": "Security",
     "recommendation": "[true, \"http://www.example.com/?.*\", \"http://www.examples.com/?.*\"],",
     "commonWeaknessEnumeration": "319",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noHttpStringRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-implicit-dependencies": {
     "description": "Disallows importing modules that are not listed as dependency in the project's package.json",
@@ -2412,7 +2518,10 @@
     ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-implicit-dependencies",
+    "path": "./node_modules/tslint/lib/rules/noImplicitDependenciesRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-import-side-effect": {
     "description": "Avoid import statements with side-effect.",
@@ -2442,13 +2551,14 @@
     "rationale": "Imports with side effects may have behavior which is hard for static verification.",
     "type": "typescript",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-import-side-effect",
+    "path": "./node_modules/tslint/lib/rules/noImportSideEffectRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-increment-decrement": {
     "type": "maintainability",
     "description": "Avoid use of increment and decrement operators particularly as part of complicated expressions",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -2456,7 +2566,10 @@
     "level": "Opportunity for Excellence",
     "group": "Correctness",
     "commonWeaknessEnumeration": "398, 710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noIncrementDecrementRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-inferrable-types": {
     "description": "Disallows explicit type declarations for variables or parameters initialized to a number, string, or boolean.",
@@ -2489,28 +2602,30 @@
     ],
     "type": "typescript",
     "typescriptOnly": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-inferrable-types",
+    "path": "./node_modules/tslint/lib/rules/noInferrableTypesRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-inferred-empty-object-type": {
     "description": "Disallow type inference of {} (empty object type) at function and constructor call sites",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "functionality",
     "typescriptOnly": true,
     "requiresTypeInfo": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-inferred-empty-object-type",
+    "path": "./node_modules/tslint/lib/rules/noInferredEmptyObjectTypeRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-inner-declarations": {
-    "source": "tslint-eslint-rules"
+    "documentation": "https://eslint.org/docs/rules/no-inner-declarations",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/noInnerDeclarationsRule.js",
+    "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules"
   },
   "no-inner-html": {
     "type": "maintainability",
     "description": "Do not write values to innerHTML, outerHTML, or set HTML using the JQuery html() function.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "SDL",
     "issueType": "Error",
@@ -2518,37 +2633,39 @@
     "level": "Mandatory",
     "group": "Security",
     "commonWeaknessEnumeration": "79, 85, 710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noInnerHtmlRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-internal-module": {
     "description": "Disallows internal `module`",
     "rationale": "Using `module` leads to a confusion of concepts with external modules. Use the newer `namespace` keyword instead.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "typescript",
     "typescriptOnly": true,
     "hasFix": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-internal-module",
+    "path": "./node_modules/tslint/lib/rules/noInternalModuleRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-invalid-regexp": {
+    "documentation": "https://eslint.org/docs/rules/no-invalid-regexp",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/noInvalidRegexpRule.js",
     "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules",
     "sameName": [
       "./node_modules/tslint-microsoft-contrib:no-invalid-regexp"
     ]
   },
   "no-invalid-template-strings": {
     "description": "Warns on use of `${` in non-template strings.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-invalid-template-strings",
+    "path": "./node_modules/tslint/lib/rules/noInvalidTemplateStringsRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-invalid-this": {
     "description": "Disallows using the `this` keyword outside of classes.",
@@ -2574,25 +2691,24 @@
     ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-invalid-this",
+    "path": "./node_modules/tslint/lib/rules/noInvalidThisRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-irregular-whitespace": {
     "description": "Disallow irregular whitespace outside of strings and comments",
     "hasFix": true,
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-irregular-whitespace",
+    "path": "./node_modules/tslint/lib/rules/noIrregularWhitespaceRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-jquery-raw-elements": {
     "type": "maintainability",
     "description": "Do not create HTML elements using JQuery and string concatenation. It is error prone and can hide subtle defects.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -2600,7 +2716,10 @@
     "level": "Opportunity for Excellence",
     "group": "Correctness",
     "commonWeaknessEnumeration": "398, 710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noJqueryRawElementsRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-magic-numbers": {
     "description": "\nDisallows the use constant number values outside of variable assignments.\nWhen no list of allowed values is specified, -1, 0 and 1 are allowed by default.",
@@ -2624,24 +2743,23 @@
     ],
     "type": "typescript",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-magic-numbers",
+    "path": "./node_modules/tslint/lib/rules/noMagicNumbersRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-mergeable-namespace": {
     "description": "Disallows mergeable namespaces in the same file.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "maintainability",
     "typescriptOnly": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-mergeable-namespace",
+    "path": "./node_modules/tslint/lib/rules/noMergeableNamespaceRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-missing-visibility-modifiers": {
     "type": "maintainability",
     "description": "Deprecated - This rule is in the TSLint product as `member-access`",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Ignored",
     "issueType": "Warning",
@@ -2650,27 +2768,29 @@
     "group": "Deprecated",
     "recommendation": "false, // use tslint member-access rule instead",
     "commonWeaknessEnumeration": "398, 710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noMissingVisibilityModifiersRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-misused-new": {
     "description": "Warns on apparent attempts to define constructors for interfaces or `new` for classes.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "functionality",
     "typescriptOnly": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-misused-new",
+    "path": "./node_modules/tslint/lib/rules/noMisusedNewRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-multi-spaces": {
-    "source": "tslint-eslint-rules"
+    "documentation": "https://eslint.org/docs/rules/no-multi-spaces",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/noMultiSpacesRule.js",
+    "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules"
   },
   "no-multiline-string": {
     "type": "maintainability",
     "description": "Do not declare multiline strings",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -2679,13 +2799,14 @@
     "group": "Clarity",
     "recommendation": "true, // multiline-strings often introduce unnecessary whitespace into the string literals",
     "commonWeaknessEnumeration": "710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noMultilineStringRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-multiple-var-decl": {
     "type": "maintainability",
     "description": "Deprecated - This rule is now part of the base TSLint product as the rule named 'one-variable-per-declaration'",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Ignored",
     "issueType": "Warning",
@@ -2694,7 +2815,10 @@
     "group": "Deprecated",
     "recommendation": "false,         // use tslint one-variable-per-declaration rule instead",
     "commonWeaknessEnumeration": "710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noMultipleVarDeclRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-namespace": {
     "description": "Disallows use of internal `module`s and `namespace`s.",
@@ -2721,114 +2845,108 @@
     ],
     "type": "typescript",
     "typescriptOnly": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-namespace",
+    "path": "./node_modules/tslint/lib/rules/noNamespaceRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-non-null-assertion": {
     "description": "Disallows non-null assertions using the `!` postfix operator.",
     "rationale": "Using non-null assertion cancels the benefits of the strict null checking mode.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "typescript",
     "typescriptOnly": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-non-null-assertion",
+    "path": "./node_modules/tslint/lib/rules/noNonNullAssertionRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-null-keyword": {
     "description": "Disallows use of the `null` keyword literal.",
     "rationale": "\nInstead of having the dual concepts of `null` and`undefined` in a codebase,\nthis rule ensures that only `undefined` is used.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "functionality",
     "typescriptOnly": false,
     "hasFix": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-null-keyword",
+    "path": "./node_modules/tslint/lib/rules/noNullKeywordRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-object-literal-type-assertion": {
     "description": "\nForbids an object literal to appear in a type assertion expression.\nCasting to `any` is still allowed.",
     "rationale": "\nAlways prefer `const x: T = { ... };` to `const x = { ... } as T;`.\nThe type assertion in the latter case is either unnecessary or hides an error.\nThe compiler will warn for excess properties with this syntax, but not missing required fields.\nFor example: `const x: { foo: number } = {}` will fail to compile, but\n`const x = {} as { foo: number }` will succeed.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "functionality",
     "typescriptOnly": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-object-literal-type-assertion",
+    "path": "./node_modules/tslint/lib/rules/noObjectLiteralTypeAssertionRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-octal-literal": {
     "type": "maintainability",
     "description": "Do not use octal literals or escaped octal sequences",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "SDL",
     "issueType": "Error",
     "severity": "Critical",
     "level": "Mandatory",
     "group": "Security",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noOctalLiteralRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-parameter-properties": {
     "description": "Disallows parameter properties in class constructors.",
     "rationale": "\nParameter properties can be confusing to those new to TS as they are less explicit\nthan other ways of declaring and initializing class members.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "style",
     "typescriptOnly": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-parameter-properties",
+    "path": "./node_modules/tslint/lib/rules/noParameterPropertiesRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-parameter-reassignment": {
     "description": "Disallows reassigning parameters.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "typescript",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-parameter-reassignment",
+    "path": "./node_modules/tslint/lib/rules/noParameterReassignmentRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-redundant-jsdoc": {
     "description": "Forbids JSDoc which duplicates TypeScript functionality.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "style",
     "typescriptOnly": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-redundant-jsdoc",
+    "path": "./node_modules/tslint/lib/rules/noRedundantJsdocRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-reference": {
     "description": "Disallows `/// <reference path=>` imports (use ES6-style imports instead).",
     "rationale": "\nUsing `/// <reference path=>` comments to load other files is outdated.\nUse ES6-style imports to reference other files.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "typescript",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-reference",
+    "path": "./node_modules/tslint/lib/rules/noReferenceRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-reference-import": {
     "description": "Don't `<reference types=\"foo\" />` if you import `foo` anyway.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
     "type": "style",
     "typescriptOnly": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-reference-import",
+    "path": "./node_modules/tslint/lib/rules/noReferenceImportRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-regex-spaces": {
+    "documentation": "https://eslint.org/docs/rules/no-regex-spaces",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/noRegexSpacesRule.js",
     "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules",
     "sameName": [
       "./node_modules/tslint-microsoft-contrib:no-regex-spaces"
     ]
@@ -2836,8 +2954,6 @@
   "no-relative-imports": {
     "type": "maintainability",
     "description": "Do not use relative paths when importing external modules or ES6 import declarations",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Ignored",
     "issueType": "Warning",
@@ -2845,25 +2961,24 @@
     "level": "Opportunity for Excellence",
     "group": "Clarity",
     "commonWeaknessEnumeration": "710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noRelativeImportsRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-require-imports": {
     "description": "Disallows invocation of `require()`.",
     "rationale": "Prefer the newer ES6-style imports over `require()`.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "maintainability",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-require-imports",
+    "path": "./node_modules/tslint/lib/rules/noRequireImportsRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-reserved-keywords": {
     "type": "maintainability",
     "description": "Do not use reserved keywords as names of local variables, fields, functions, or other identifiers.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "SDL",
     "issueType": "Error",
@@ -2871,20 +2986,21 @@
     "level": "Mandatory",
     "group": "Security",
     "commonWeaknessEnumeration": "398",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noReservedKeywordsRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-return-await": {
     "description": "Disallows unnecessary `return await`.",
     "rationale": "\nAn async function always wraps the return value in a Promise.\nUsing `return await` just adds extra time before the overreaching promise is resolved without changing the semantics.\n        ",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "functionality",
     "typescriptOnly": false,
     "hasFix": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-return-await",
+    "path": "./node_modules/tslint/lib/rules/noReturnAwaitRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-shadowed-variable": {
     "description": "Disallows shadowing variable declarations.",
@@ -2936,13 +3052,14 @@
     ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-shadowed-variable",
+    "path": "./node_modules/tslint/lib/rules/noShadowedVariableRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-single-line-block-comment": {
     "type": "maintainability",
     "description": "Avoid single line block comments; use single line comments instead",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -2950,25 +3067,24 @@
     "level": "Opportunity for Excellence",
     "group": "Whitespace",
     "commonWeaknessEnumeration": "710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noSingleLineBlockCommentRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-sparse-arrays": {
     "description": "Forbids array literals to contain missing elements.",
     "rationale": "Missing elements are probably an accidentally duplicated comma.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-sparse-arrays",
+    "path": "./node_modules/tslint/lib/rules/noSparseArraysRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-stateless-class": {
     "type": "maintainability",
     "description": "A stateless class represents a failure in the object oriented design of the system.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -2977,13 +3093,14 @@
     "recommendation": "false,",
     "group": "Deprecated",
     "commonWeaknessEnumeration": "398, 710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noStatelessClassRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-string-based-set-immediate": {
     "type": "maintainability",
     "description": "Do not use the version of setImmediate that accepts code as a string argument.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "SDL",
     "issueType": "Error",
@@ -2991,13 +3108,14 @@
     "level": "Mandatory",
     "group": "Security",
     "commonWeaknessEnumeration": "95, 676, 242, 116",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noStringBasedSetImmediateRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-string-based-set-interval": {
     "type": "maintainability",
     "description": "Do not use the version of setInterval that accepts code as a string argument.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "SDL",
     "issueType": "Error",
@@ -3005,13 +3123,14 @@
     "level": "Mandatory",
     "group": "Security",
     "commonWeaknessEnumeration": "95, 676, 242, 116",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noStringBasedSetIntervalRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-string-based-set-timeout": {
     "type": "maintainability",
     "description": "Do not use the version of setTimeout that accepts code as a string argument.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "SDL",
     "issueType": "Error",
@@ -3019,29 +3138,31 @@
     "level": "Mandatory",
     "group": "Security",
     "commonWeaknessEnumeration": "95, 676, 242, 116",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noStringBasedSetTimeoutRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-string-literal": {
     "description": "\nForbids unnecessary string literal property access.\nAllows `obj[\"prop-erty\"]` (can't be a regular property access).\nDisallows `obj[\"property\"]` (should be `obj.property`).",
     "rationale": "\nIf `--noImplicitAny` is turned off,\nproperty access via a string literal will be 'any' if the property does not exist.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "functionality",
     "typescriptOnly": false,
     "hasFix": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-string-literal",
+    "path": "./node_modules/tslint/lib/rules/noStringLiteralRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-string-throw": {
     "description": "Flags throwing plain strings or concatenations of strings because only Errors produce proper stack traces.",
     "hasFix": true,
-    "options": null,
-    "optionsDescription": "Not configurable.",
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-string-throw",
+    "path": "./node_modules/tslint/lib/rules/noStringThrowRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-submodule-imports": {
     "description": "\nDisallows importing any submodule.",
@@ -3064,13 +3185,14 @@
     ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-submodule-imports",
+    "path": "./node_modules/tslint/lib/rules/noSubmoduleImportsRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-suspicious-comment": {
     "type": "maintainability",
     "description": "Do not use suspicious comments, such as BUG, HACK, FIXME, LATER, LATER2, TODO",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -3078,20 +3200,21 @@
     "level": "Opportunity for Excellence",
     "group": "Clarity",
     "commonWeaknessEnumeration": "546",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noSuspiciousCommentRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-switch-case-fall-through": {
     "description": "Disallows falling through case statements.",
     "descriptionDetails": "\nFor example, the following is not allowed:\n\n```ts\nswitch(foo) {\n    case 1:\n        someFunc(foo);\n    case 2:\n        someOtherFunc(foo);\n}\n```\n\nHowever, fall through is allowed when case statements are consecutive or\na magic `/* falls through */` comment is present. The following is valid:\n\n```ts\nswitch(foo) {\n    case 1:\n        someFunc(foo);\n        /* falls through */\n    case 2:\n    case 3:\n        someOtherFunc(foo);\n}\n```",
     "rationale": "Fall though in switch statements is often unintentional and a bug.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-switch-case-fall-through",
+    "path": "./node_modules/tslint/lib/rules/noSwitchCaseFallThroughRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-this-assignment": {
     "description": "Disallows unnecessary references to `this`.",
@@ -3124,7 +3247,10 @@
     "rationale": "Assigning a variable to `this` instead of properly using arrow lambdas may be a symptom of pre-ES6 practices or not manging scope well.",
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-this-assignment",
+    "path": "./node_modules/tslint/lib/rules/noThisAssignmentRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-trailing-whitespace": {
     "description": "Disallows trailing whitespace at the end of a line.",
@@ -3156,13 +3282,14 @@
     ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-trailing-whitespace",
+    "path": "./node_modules/tslint/lib/rules/noTrailingWhitespaceRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-typeof-undefined": {
     "type": "maintainability",
     "description": "Do not use the idiom typeof `x === 'undefined'`. You can safely use the simpler x === undefined or perhaps x == null if you want to check for either null or undefined.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -3170,7 +3297,10 @@
     "level": "Opportunity for Excellence",
     "group": "Clarity",
     "commonWeaknessEnumeration": "710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noTypeofUndefinedRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-unbound-method": {
     "description": "Warns when a method is used as outside of a method call.",
@@ -3191,16 +3321,20 @@
     "type": "functionality",
     "typescriptOnly": true,
     "requiresTypeInfo": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-unbound-method",
+    "path": "./node_modules/tslint/lib/rules/noUnboundMethodRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-unexpected-multiline": {
-    "source": "tslint-eslint-rules"
+    "documentation": "https://eslint.org/docs/rules/no-unexpected-multiline",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/noUnexpectedMultilineRule.js",
+    "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules"
   },
   "no-unexternalized-strings": {
     "type": "maintainability",
     "description": "Ensures that double quoted strings are passed to a localize call to provide proper strings for different locales",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Ignored",
     "issueType": "Warning",
@@ -3208,13 +3342,14 @@
     "level": "Opportunity for Excellence",
     "group": "Configurable",
     "recommendation": "false, // the VS Code team has a specific localization process that this rule enforces",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noUnexternalizedStringsRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-unnecessary-bind": {
     "type": "maintainability",
     "description": "Do not bind `this` as the context for a function literal or lambda expression.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -3222,18 +3357,19 @@
     "level": "Opportunity for Excellence",
     "group": "Correctness",
     "commonWeaknessEnumeration": "398, 710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noUnnecessaryBindRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-unnecessary-callback-wrapper": {
     "description": "\nReplaces `x => f(x)` with just `f`.\nTo catch more cases, enable `only-arrow-functions` and `arrow-return-shorthand` too.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-unnecessary-callback-wrapper",
+    "path": "./node_modules/tslint/lib/rules/noUnnecessaryCallbackWrapperRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-unnecessary-class": {
     "description": "\nDisallows classes that are not strictly necessary.",
@@ -3256,13 +3392,14 @@
     ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-unnecessary-class",
+    "path": "./node_modules/tslint/lib/rules/noUnnecessaryClassRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-unnecessary-field-initialization": {
     "type": "maintainability",
     "description": "Do not unnecessarily initialize the fields of a class to values they already have.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -3270,25 +3407,24 @@
     "level": "Opportunity for Excellence",
     "group": "Clarity",
     "commonWeaknessEnumeration": "398, 710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noUnnecessaryFieldInitializationRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-unnecessary-initializer": {
     "description": "Forbids a 'var'/'let' statement or destructuring initializer to be initialized to 'undefined'.",
     "hasFix": true,
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-unnecessary-initializer",
+    "path": "./node_modules/tslint/lib/rules/noUnnecessaryInitializerRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-unnecessary-local-variable": {
     "type": "maintainability",
     "description": "Do not declare a variable only to return it from the function on the next line.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -3296,13 +3432,14 @@
     "level": "Opportunity for Excellence",
     "group": "Clarity",
     "commonWeaknessEnumeration": "563, 710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noUnnecessaryLocalVariableRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-unnecessary-override": {
     "type": "maintainability",
     "description": "Do not write a method that only calls super() on the parent method with the same arguments.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -3310,26 +3447,25 @@
     "level": "Opportunity for Excellence",
     "group": "Correctness",
     "commonWeaknessEnumeration": "398, 710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noUnnecessaryOverrideRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-unnecessary-qualifier": {
     "description": "Warns when a namespace qualifier (`A.x`) is unnecessary.",
     "hasFix": true,
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "style",
     "typescriptOnly": true,
     "requiresTypeInfo": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-unnecessary-qualifier",
+    "path": "./node_modules/tslint/lib/rules/noUnnecessaryQualifierRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-unnecessary-semicolons": {
     "type": "maintainability",
     "description": "Remove unnecessary semicolons",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -3337,7 +3473,10 @@
     "level": "Opportunity for Excellence",
     "group": "Whitespace",
     "commonWeaknessEnumeration": "398, 710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noUnnecessarySemicolonsRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-unnecessary-type-assertion": {
     "description": "Warns if a type assertion does not change the type of an expression.",
@@ -3355,45 +3494,45 @@
     "hasFix": true,
     "typescriptOnly": true,
     "requiresTypeInfo": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-unnecessary-type-assertion",
+    "path": "./node_modules/tslint/lib/rules/noUnnecessaryTypeAssertionRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-unsafe-any": {
     "description": "\nWarns when using an expression of type 'any' in a dynamic way.\nUses are only allowed if they would work for `{} | null | undefined`.\nType casts and tests are allowed.\nExpressions that work on all values (such as `\"\" + x`) are allowed.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "functionality",
     "typescriptOnly": true,
     "requiresTypeInfo": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-unsafe-any",
+    "path": "./node_modules/tslint/lib/rules/noUnsafeAnyRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-unsafe-finally": {
     "description": "\nDisallows control flow statements, such as `return`, `continue`,\n`break` and `throws` in finally blocks.",
     "descriptionDetails": "",
     "rationale": "\nWhen used inside `finally` blocks, control flow statements,\nsuch as `return`, `continue`, `break` and `throws`\noverride any other control flow statements in the same try/catch scope.\nThis is confusing and unexpected behavior.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-unsafe-finally",
+    "path": "./node_modules/tslint/lib/rules/noUnsafeFinallyRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-unsupported-browser-code": {
     "type": "maintainability",
     "description": "Avoid writing browser-specific code for unsupported browser versions",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
     "severity": "Low",
     "level": "Opportunity for Excellence",
     "group": "Clarity",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noUnsupportedBrowserCodeRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-unused-expression": {
     "description": "Disallows unused expression statements.",
@@ -3422,7 +3561,10 @@
     ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-unused-expression",
+    "path": "./node_modules/tslint/lib/rules/noUnusedExpressionRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-unused-expression-chai": {
     "description": "Disallows unused expression statements.",
@@ -3451,7 +3593,9 @@
     ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint-no-unused-expression-chai"
+    "path": "./node_modules/tslint-no-unused-expression-chai/rules/noUnusedExpressionChaiRule.js",
+    "source": "tslint-no-unused-expression-chai",
+    "sourcePath": "./node_modules/tslint-no-unused-expression-chai"
   },
   "no-unused-variable": {
     "description": "Disallows unused imports, variables, functions and\n            private class members. Similar to tsc's --noUnusedParameters and --noUnusedLocals\n            options, but does not interrupt code compilation.",
@@ -3494,26 +3638,25 @@
     "type": "functionality",
     "typescriptOnly": true,
     "requiresTypeInfo": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-unused-variable",
+    "path": "./node_modules/tslint/lib/rules/noUnusedVariableRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-use-before-declare": {
     "description": "Disallows usage of variables before their declaration.",
     "descriptionDetails": "\nThis rule is primarily useful when using the `var` keyword -\nthe compiler will detect if a `let` and `const` variable is used before it is declared.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "functionality",
     "typescriptOnly": false,
     "requiresTypeInfo": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-use-before-declare",
+    "path": "./node_modules/tslint/lib/rules/noUseBeforeDeclareRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-useless-files": {
     "type": "maintainability",
     "description": "Locates files that only contain commented out code, whitespace characters, or have no content",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": false,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -3521,38 +3664,35 @@
     "level": "Opportunity for Excellence",
     "group": "Clarity",
     "commonWeaknessEnumeration": "398",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noUselessFilesRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-var-keyword": {
     "description": "Disallows usage of the `var` keyword.",
     "descriptionDetails": "Use `let` or `const` instead.",
     "hasFix": true,
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-var-keyword",
+    "path": "./node_modules/tslint/lib/rules/noVarKeywordRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-var-requires": {
     "description": "Disallows the use of require statements except in import statements.",
     "descriptionDetails": "\nIn other words, the use of forms such as `var module = require(\"module\")` are banned.\nInstead use ES6 style imports or `import foo = require('foo')` imports.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "typescript",
     "typescriptOnly": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-var-requires",
+    "path": "./node_modules/tslint/lib/rules/noVarRequiresRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-var-self": {
     "type": "maintainability",
     "description": "Do not use var self = this; instead, manage scope with arrow functions/lambdas.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -3561,7 +3701,10 @@
     "group": "Deprecated",
     "recommendation": "false,",
     "commonWeaknessEnumeration": "398, 710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noVarSelfRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "no-void-expression": {
     "description": "Requires expressions of type `void` to appear in statement position.",
@@ -3580,13 +3723,14 @@
     "requiresTypeInfo": true,
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/no-void-expression",
+    "path": "./node_modules/tslint/lib/rules/noVoidExpressionRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-with-statement": {
     "type": "maintainability",
     "description": "Do not use with statements. Assign the item to a new variable instead",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -3594,13 +3738,14 @@
     "level": "Opportunity for Excellence",
     "group": "Correctness",
     "commonWeaknessEnumeration": "398, 710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/noWithStatementRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "non-literal-require": {
     "type": "functionality",
     "description": "Detect require includes that are not for string literals",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "SDL",
     "issueType": "Error",
@@ -3608,21 +3753,25 @@
     "level": "Mandatory",
     "group": "Security",
     "commonWeaknessEnumeration": "95,676",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/nonLiteralRequireRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "number-literal-format": {
     "description": "Checks that decimal literals should begin with '0.' instead of just '.', and should not end with a trailing '0'.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/number-literal-format",
+    "path": "./node_modules/tslint/lib/rules/numberLiteralFormatRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "object-curly-spacing": {
-    "source": "tslint-eslint-rules"
+    "documentation": "https://eslint.org/docs/rules/object-curly-spacing",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/objectCurlySpacingRule.js",
+    "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules"
   },
   "object-literal-key-quotes": {
     "description": "Enforces consistent object literal property quote style.",
@@ -3650,7 +3799,10 @@
     ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/object-literal-key-quotes",
+    "path": "./node_modules/tslint/lib/rules/objectLiteralKeyQuotesRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "object-literal-shorthand": {
     "description": "Enforces/disallows use of ES6 object literal shorthand.",
@@ -3671,7 +3823,10 @@
     ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/object-literal-shorthand",
+    "path": "./node_modules/tslint/lib/rules/objectLiteralShorthandRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "object-literal-sort-keys": {
     "description": "\nChecks ordering of keys in object literals.\n\nWhen using the default alphabetical ordering, additional blank lines may be used to group\nobject properties together while keeping the elements within each group in alphabetical order.\n        ",
@@ -3694,7 +3849,10 @@
     ],
     "type": "maintainability",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/object-literal-sort-keys",
+    "path": "./node_modules/tslint/lib/rules/objectLiteralSortKeysRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "one-line": {
     "description": "Requires the specified tokens to be on the same line as the expression preceding them.",
@@ -3725,7 +3883,10 @@
     "type": "style",
     "typescriptOnly": false,
     "hasFix": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/one-line",
+    "path": "./node_modules/tslint/lib/rules/oneLineRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "one-variable-per-declaration": {
     "description": "Disallows multiple variable definitions in the same declaration statement.",
@@ -3750,7 +3911,10 @@
     ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/one-variable-per-declaration",
+    "path": "./node_modules/tslint/lib/rules/oneVariablePerDeclarationRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "only-arrow-functions": {
     "description": "Disallows traditional (non-arrow) function expressions.",
@@ -3778,7 +3942,10 @@
     ],
     "type": "typescript",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/only-arrow-functions",
+    "path": "./node_modules/tslint/lib/rules/onlyArrowFunctionsRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "ordered-imports": {
     "description": "Requires that import statements be alphabetized and grouped.",
@@ -3831,13 +3998,14 @@
     ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/ordered-imports",
+    "path": "./node_modules/tslint/lib/rules/orderedImportsRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "possible-timing-attack": {
     "type": "functionality",
     "description": "Avoid timing attacks by not making direct comaprisons to sensitive data",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -3845,13 +4013,14 @@
     "level": "Opportunity for Excellence",
     "group": "Security",
     "commonWeaknessEnumeration": "710,749",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/possibleTimingAttackRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "prefer-array-literal": {
     "type": "maintainability",
     "description": "Use array literal syntax when declaring or instantiating array types.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -3859,7 +4028,10 @@
     "level": "Opportunity for Excellence",
     "group": "Clarity",
     "commonWeaknessEnumeration": "398, 710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/preferArrayLiteralRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "prefer-conditional-expression": {
     "description": "\nRecommends to use a conditional expression instead of assigning to the same thing in each branch of an if statement.",
@@ -3880,7 +4052,10 @@
     ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/prefer-conditional-expression",
+    "path": "./node_modules/tslint/lib/rules/preferConditionalExpressionRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "prefer-const": {
     "description": "Requires that variable declarations use `const` instead of `let` and `var` if possible.",
@@ -3910,19 +4085,20 @@
     ],
     "type": "maintainability",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/prefer-const",
+    "path": "./node_modules/tslint/lib/rules/preferConstRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "prefer-for-of": {
     "description": "Recommends a 'for-of' loop over a standard 'for' loop if the index is only used to access the array being iterated.",
     "rationale": "A for(... of ...) loop is easier to implement and read when the index is not needed.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "typescript",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/prefer-for-of",
+    "path": "./node_modules/tslint/lib/rules/preferForOfRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "prefer-function-over-method": {
     "description": "Warns for class methods that do not use 'this'.",
@@ -3944,32 +4120,31 @@
     ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/prefer-function-over-method",
+    "path": "./node_modules/tslint/lib/rules/preferFunctionOverMethodRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "prefer-method-signature": {
     "description": "Prefer `foo(): void` over `foo: () => void` in interfaces and types.",
     "hasFix": true,
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/prefer-method-signature",
+    "path": "./node_modules/tslint/lib/rules/preferMethodSignatureRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "prefer-object-spread": {
     "description": "Enforces the use of the ES2015 object spread operator over `Object.assign()` where appropriate.",
     "rationale": "Object spread allows for better type checking and inference.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "functionality",
     "typescriptOnly": false,
     "hasFix": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/prefer-object-spread",
+    "path": "./node_modules/tslint/lib/rules/preferObjectSpreadRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "prefer-switch": {
     "description": "Prefer a `switch` statement to an `if` statement with simple `===` comparisons.",
@@ -3993,7 +4168,10 @@
     ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/prefer-switch",
+    "path": "./node_modules/tslint/lib/rules/preferSwitchRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "prefer-template": {
     "description": "Prefer a template expression over string literal concatenation.",
@@ -4013,13 +4191,14 @@
     ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/prefer-template",
+    "path": "./node_modules/tslint/lib/rules/preferTemplateRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "prefer-type-cast": {
     "type": "maintainability",
     "description": "Prefer the tradition type casts instead of the new 'as-cast' syntax",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Ignored",
     "issueType": "Warning",
@@ -4028,33 +4207,35 @@
     "group": "Configurable",
     "recommendation": "true,   // pick either type-cast format and use it consistently",
     "commonWeaknessEnumeration": "398, 710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/preferTypeCastRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "promise-function-async": {
     "description": "Requires any function or method that returns a promise to be marked async.",
     "rationale": "\nEnsures that each function is only capable of 1) returning a rejected promise, or 2)\nthrowing an Error object. In contrast, non-`async` `Promise`-returning functions\nare technically capable of either. This practice removes a requirement for consuming\ncode to handle both cases.\n        ",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "typescript",
     "typescriptOnly": false,
     "requiresTypeInfo": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/promise-function-async",
+    "path": "./node_modules/tslint/lib/rules/promiseFunctionAsyncRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "promise-must-complete": {
     "type": "maintainability",
     "description": "When a Promise instance is created, then either the reject() or resolve() parameter must be called on it within all code branches in the scope.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Error",
     "severity": "Critical",
     "level": "Opportunity for Excellence",
     "group": "Correctness",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/promiseMustCompleteRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "quotemark": {
     "description": "Requires single or double quotes for string literals.",
@@ -4091,71 +4272,76 @@
     ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/quotemark",
+    "path": "./node_modules/tslint/lib/rules/quotemarkRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "radix": {
     "description": "Requires the radix parameter to be specified when calling `parseInt`.",
     "rationale": "\nFrom [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt):\n> Always specify this parameter to eliminate reader confusion and to guarantee predictable behavior.\n> Different implementations produce different results when a radix is not specified, usually defaulting the value to 10.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/radix",
+    "path": "./node_modules/tslint/lib/rules/radixRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "react-a11y-anchors": {
     "type": "functionality",
     "description": "For accessibility of your website, anchor elements must have a href different from # and a text longer than 4.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
     "severity": "Low",
     "level": "Opportunity for Excellence",
     "group": "Accessibility",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/reactA11yAnchorsRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "react-a11y-aria-unsupported-elements": {
     "type": "maintainability",
     "description": "Enforce that elements that do not support ARIA roles, states, and properties do not have those attributes.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
     "severity": "Important",
     "level": "Opportunity for Excellence",
     "group": "Accessibility",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/reactA11yAriaUnsupportedElementsRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "react-a11y-event-has-role": {
     "type": "maintainability",
     "description": "Elements with event handlers must have role attribute.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
     "severity": "Important",
     "level": "Opportunity for Excellence",
     "group": "Accessibility",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/reactA11yEventHasRoleRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "react-a11y-image-button-has-alt": {
     "type": "maintainability",
     "description": "Enforce that inputs element with type=\"image\" must have alt attribute.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
     "severity": "Important",
     "level": "Opportunity for Excellence",
     "group": "Accessibility",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/reactA11yImageButtonHasAltRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "react-a11y-img-has-alt": {
     "type": "maintainability",
@@ -4172,130 +4358,140 @@
     "severity": "Important",
     "level": "Opportunity for Excellence",
     "group": "Accessibility",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/reactA11yImgHasAltRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "react-a11y-lang": {
     "type": "functionality",
     "description": "For accessibility of your website, html elements must have a valid lang attribute.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
     "severity": "Low",
     "level": "Opportunity for Excellence",
     "group": "Accessibility",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/reactA11yLangRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "react-a11y-meta": {
     "type": "functionality",
     "description": "For accessibility of your website, HTML meta elements must not have http-equiv=\"refresh\".",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Ignored",
     "issueType": "Warning",
     "severity": "Low",
     "level": "Opportunity for Excellence",
     "group": "Accessibility",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/reactA11yMetaRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "react-a11y-props": {
     "type": "maintainability",
     "description": "Enforce all `aria-*` attributes are valid. Elements cannot use an invalid `aria-*` attribute.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
     "severity": "Important",
     "level": "Opportunity for Excellence",
     "group": "Accessibility",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/reactA11yPropsRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "react-a11y-proptypes": {
     "type": "maintainability",
     "description": "Enforce ARIA state and property values are valid.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
     "severity": "Important",
     "level": "Opportunity for Excellence",
     "group": "Accessibility",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/reactA11yProptypesRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "react-a11y-role": {
     "type": "maintainability",
     "description": "Elements with aria roles must use a **valid**, **non-abstract** aria role.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
     "severity": "Important",
     "level": "Opportunity for Excellence",
     "group": "Accessibility",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/reactA11yRoleRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "react-a11y-role-has-required-aria-props": {
     "type": "maintainability",
     "description": "Elements with aria roles must have all required attributes according to the role.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
     "severity": "Important",
     "level": "Opportunity for Excellence",
     "group": "Accessibility",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/reactA11yRoleHasRequiredAriaPropsRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "react-a11y-role-supports-aria-props": {
     "type": "maintainability",
     "description": "Enforce that elements with explicit or implicit roles defined contain only `aria-*` properties supported by that `role`.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
     "severity": "Important",
     "level": "Opportunity for Excellence",
     "group": "Accessibility",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/reactA11yRoleSupportsAriaPropsRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "react-a11y-tabindex-no-positive": {
     "type": "maintainability",
     "description": "Enforce tabindex value is **not greater than zero**.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
     "severity": "Important",
     "level": "Opportunity for Excellence",
     "group": "Accessibility",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/reactA11yTabindexNoPositiveRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "react-a11y-titles": {
     "type": "functionality",
     "description": "For accessibility of your website, HTML title elements must be concise and non-empty.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
     "severity": "Moderate",
     "level": "Opportunity for Excellence",
     "group": "Accessibility",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/reactA11yTitlesRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "react-anchor-blank-noopener": {
     "type": "functionality",
     "description": "Anchor tags with target=\"_blank\" should also include rel=\"noopener noreferrer\"",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "SDL",
     "issueType": "Error",
@@ -4303,13 +4499,14 @@
     "level": "Mandatory",
     "group": "Security",
     "commonWeaknessEnumeration": "242,676",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/reactAnchorBlankNoopenerRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "react-iframe-missing-sandbox": {
     "type": "functionality",
     "description": "React iframes must specify a sandbox attribute",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "SDL",
     "issueType": "Error",
@@ -4317,13 +4514,14 @@
     "level": "Opportunity for Excellence",
     "group": "Security",
     "commonWeaknessEnumeration": "915",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/reactIframeMissingSandboxRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "react-no-dangerous-html": {
     "type": "maintainability",
     "description": "Do not use React's dangerouslySetInnerHTML API.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "SDL",
     "issueType": "Error",
@@ -4331,26 +4529,28 @@
     "level": "Mandatory",
     "group": "Security",
     "commonWeaknessEnumeration": "79, 85, 710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/reactNoDangerousHtmlRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "react-this-binding-issue": {
     "type": "maintainability",
     "description": "When using React components you must be careful to correctly bind the `this` reference on any methods that you pass off to child components as callbacks.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Error",
     "severity": "Critical",
     "level": "Opportunity for Excellence",
     "group": "Correctness",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/reactThisBindingIssueRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "react-tsx-curly-spacing": {
     "type": "style",
     "description": "Consistently use spaces around the brace characters of JSX attributes.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -4358,13 +4558,14 @@
     "level": "Opportunity for Excellence",
     "recommendation": "false,",
     "group": "Deprecated",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/reactTsxCurlySpacingRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "react-unused-props-and-state": {
     "type": "maintainability",
     "description": "Remove unneeded properties defined in React Props and State interfaces",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -4372,31 +4573,30 @@
     "level": "Opportunity for Excellence",
     "group": "Correctness",
     "commonWeaknessEnumeration": "398",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/reactUnusedPropsAndStateRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "restrict-plus-operands": {
     "description": "When adding two variables, operands must both be of type number or of type string.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "functionality",
     "typescriptOnly": false,
     "requiresTypeInfo": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/restrict-plus-operands",
+    "path": "./node_modules/tslint/lib/rules/restrictPlusOperandsRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "return-undefined": {
     "description": "Prefer `return;` in void functions and `return undefined;` in value-returning functions.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "style",
     "typescriptOnly": false,
     "requiresTypeInfo": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/return-undefined",
+    "path": "./node_modules/tslint/lib/rules/returnUndefinedRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "semicolon": {
     "description": "Enforces consistent semicolon usage at the end of every statement.",
@@ -4443,7 +4643,10 @@
     ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/semicolon",
+    "path": "./node_modules/tslint/lib/rules/semicolonRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "sort-imports": {
     "description": "enforce sorting import declarations within module",
@@ -4483,7 +4686,10 @@
     ],
     "typescriptOnly": false,
     "type": "style",
-    "source": "tslint-eslint-rules"
+    "documentation": "https://eslint.org/docs/rules/sort-imports",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/sortImportsRule.js",
+    "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules"
   },
   "space-before-function-paren": {
     "description": "Require or disallow a space before function parenthesis",
@@ -4550,7 +4756,10 @@
     "optionsDescription": "\nOne argument which is an object which may contain the keys `anonymous`, `named`, and `asyncArrow`\nThese should be set to either `\"always\"` or `\"never\"`.\n\n* `\"anonymous\"` checks before the opening paren in anonymous functions\n* `\"named\"` checks before the opening paren in named functions\n* `\"asyncArrow\"` checks before the opening paren in async arrow functions\n* `\"method\"` checks before the opening paren in class methods\n* `\"constructor\"` checks before the opening paren in class constructors\n        ",
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/space-before-function-paren",
+    "path": "./node_modules/tslint/lib/rules/spaceBeforeFunctionParenRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "space-in-parens": {
     "description": "require or disallow spaces inside parentheses",
@@ -4596,7 +4805,10 @@
     ],
     "typescriptOnly": false,
     "type": "style",
-    "source": "tslint-eslint-rules"
+    "documentation": "https://eslint.org/docs/rules/space-in-parens",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/spaceInParensRule.js",
+    "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules"
   },
   "space-within-parens": {
     "description": "Enforces spaces within parentheses or disallow them.",
@@ -4608,7 +4820,10 @@
     },
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/space-within-parens",
+    "path": "./node_modules/tslint/lib/rules/spaceWithinParensRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "strict-boolean-expressions": {
     "description": "\nRestricts the types allowed in boolean expressions. By default only booleans are allowed.\n\nThe following nodes are checked:\n\n* Arguments to the `!`, `&&`, and `||` operators\n* The condition in a conditional expression (`cond ? x : y`)\n* Conditions for `if`, `for`, `while`, and `do-while` statements.",
@@ -4645,30 +4860,29 @@
     "type": "functionality",
     "typescriptOnly": true,
     "requiresTypeInfo": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/strict-boolean-expressions",
+    "path": "./node_modules/tslint/lib/rules/strictBooleanExpressionsRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "strict-type-predicates": {
     "description": "\nWarns for type predicates that are always true or always false.\nWorks for 'typeof' comparisons to constants (e.g. 'typeof foo === \"string\"'), and equality comparison to 'null'/'undefined'.\n(TypeScript won't let you compare '1 === 2', but it has an exception for '1 === undefined'.)\nDoes not yet work for 'instanceof'.\nDoes *not* warn for 'if (x.y)' where 'x.y' is always truthy. For that, see strict-boolean-expressions.\n\nThis rule requires `strictNullChecks` to work properly.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "functionality",
     "typescriptOnly": true,
     "requiresTypeInfo": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/strict-type-predicates",
+    "path": "./node_modules/tslint/lib/rules/strictTypePredicatesRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "switch-default": {
     "description": "Require a `default` case in all `switch` statements.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/switch-default",
+    "path": "./node_modules/tslint/lib/rules/switchDefaultRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "switch-final-break": {
     "description": "Checks whether the final clause of a switch statement ends in `break;`.",
@@ -4688,7 +4902,10 @@
     ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/switch-final-break",
+    "path": "./node_modules/tslint/lib/rules/switchFinalBreakRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "ter-arrow-body-style": {
     "description": "require braces in arrow function body",
@@ -4739,7 +4956,10 @@
     ],
     "typescriptOnly": false,
     "type": "style",
-    "source": "tslint-eslint-rules"
+    "documentation": "https://eslint.org/docs/rules/ter-arrow-body-style",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/terArrowBodyStyleRule.js",
+    "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules"
   },
   "ter-arrow-parens": {
     "description": "require parens in arrow function arguments",
@@ -4774,7 +4994,10 @@
     ],
     "typescriptOnly": false,
     "type": "style",
-    "source": "tslint-eslint-rules"
+    "documentation": "https://eslint.org/docs/rules/ter-arrow-parens",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/terArrowParensRule.js",
+    "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules"
   },
   "ter-arrow-spacing": {
     "description": "require space before/after arrow function's arrow",
@@ -4804,7 +5027,10 @@
     ],
     "typescriptOnly": false,
     "type": "style",
-    "source": "tslint-eslint-rules"
+    "documentation": "https://eslint.org/docs/rules/ter-arrow-spacing",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/terArrowSpacingRule.js",
+    "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules"
   },
   "ter-func-call-spacing": {
     "hasFix": true,
@@ -4840,7 +5066,10 @@
     ],
     "typescriptOnly": false,
     "type": "style",
-    "source": "tslint-eslint-rules"
+    "documentation": "https://eslint.org/docs/rules/ter-func-call-spacing",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/terFuncCallSpacingRule.js",
+    "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules"
   },
   "ter-indent": {
     "hasFix": true,
@@ -4939,7 +5168,10 @@
     ],
     "typescriptOnly": false,
     "type": "maintainability",
-    "source": "tslint-eslint-rules"
+    "documentation": "https://eslint.org/docs/rules/ter-indent",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/terIndentRule.js",
+    "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules"
   },
   "ter-max-len": {
     "description": "enforce a maximum line length",
@@ -5005,7 +5237,10 @@
     ],
     "typescriptOnly": false,
     "type": "style",
-    "source": "tslint-eslint-rules"
+    "documentation": "https://eslint.org/docs/rules/ter-max-len",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/terMaxLenRule.js",
+    "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules"
   },
   "ter-no-irregular-whitespace": {
     "description": "disallow irregular whitespace (recommended)",
@@ -5017,7 +5252,10 @@
     ],
     "typescriptOnly": false,
     "type": "typescript",
-    "source": "tslint-eslint-rules"
+    "documentation": "https://eslint.org/docs/rules/ter-no-irregular-whitespace",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/terNoIrregularWhitespaceRule.js",
+    "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules"
   },
   "ter-no-sparse-arrays": {
     "description": "disallow sparse arrays (recommended)",
@@ -5029,7 +5267,10 @@
     ],
     "typescriptOnly": false,
     "type": "typescript",
-    "source": "tslint-eslint-rules"
+    "documentation": "https://eslint.org/docs/rules/ter-no-sparse-arrays",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/terNoSparseArraysRule.js",
+    "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules"
   },
   "ter-prefer-arrow-callback": {
     "description": "require arrow functions as callbacks",
@@ -5061,7 +5302,10 @@
     ],
     "typescriptOnly": false,
     "type": "typescript",
-    "source": "tslint-eslint-rules"
+    "documentation": "https://eslint.org/docs/rules/ter-prefer-arrow-callback",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/terPreferArrowCallbackRule.js",
+    "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules"
   },
   "trailing-comma": {
     "description": "\nRequires or disallows trailing commas in array and object literals, destructuring assignments, function typings,\nnamed imports and exports and function parameters.",
@@ -5227,7 +5471,10 @@
     ],
     "type": "maintainability",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/trailing-comma",
+    "path": "./node_modules/tslint/lib/rules/trailingCommaRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "triple-equals": {
     "description": "Requires `===` and `!==` in place of `==` and `!=`.",
@@ -5257,18 +5504,19 @@
     ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/triple-equals",
+    "path": "./node_modules/tslint/lib/rules/tripleEqualsRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "type-literal-delimiter": {
     "description": "\nChecks that type literal members are separated by semicolons.\nEnforces a trailing semicolon for multiline type literals.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "style",
     "typescriptOnly": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/type-literal-delimiter",
+    "path": "./node_modules/tslint/lib/rules/typeLiteralDelimiterRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "typedef": {
     "description": "Requires type definitions to exist.",
@@ -5302,7 +5550,10 @@
     ],
     "type": "typescript",
     "typescriptOnly": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/typedef",
+    "path": "./node_modules/tslint/lib/rules/typedefRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "typedef-whitespace": {
     "description": "Requires or disallows whitespace for type definitions.",
@@ -5428,25 +5679,24 @@
     "type": "typescript",
     "typescriptOnly": true,
     "hasFix": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/typedef-whitespace",
+    "path": "./node_modules/tslint/lib/rules/typedefWhitespaceRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "typeof-compare": {
     "description": "Makes sure result of `typeof` is compared to correct string values",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "functionality",
     "typescriptOnly": false,
     "deprecationMessage": "",
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/typeof-compare",
+    "path": "./node_modules/tslint/lib/rules/typeofCompareRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "underscore-consistent-invocation": {
     "type": "maintainability",
     "description": "Enforce a consistent usage of the _ functions",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -5454,48 +5704,43 @@
     "level": "Opportunity for Excellence",
     "group": "Clarity",
     "commonWeaknessEnumeration": "398, 710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/underscoreConsistentInvocationRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "unified-signatures": {
     "description": "Warns for any two overloads that could be unified into one by using a union or an optional/rest parameter.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "typescript",
     "typescriptOnly": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/unified-signatures",
+    "path": "./node_modules/tslint/lib/rules/unifiedSignaturesRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "use-default-type-parameter": {
     "description": "Warns if an explicitly specified type argument is the default for that type parameter.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      "true"
-    ],
     "type": "functionality",
     "typescriptOnly": true,
     "requiresTypeInfo": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/use-default-type-parameter",
+    "path": "./node_modules/tslint/lib/rules/useDefaultTypeParameterRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "use-isnan": {
     "description": "Enforces use of the `isNaN()` function to check for NaN references instead of a comparison to the `NaN` constant.",
     "rationale": "\nSince `NaN !== NaN`, comparisons with regular operators will produce unexpected results.\nSo, instead of `if (myVar === NaN)`, do `if (isNaN(myVar))`.",
-    "optionsDescription": "Not configurable.",
-    "options": null,
-    "optionExamples": [
-      true
-    ],
     "type": "functionality",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/use-isnan",
+    "path": "./node_modules/tslint/lib/rules/useIsnanRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "use-named-parameter": {
     "type": "maintainability",
     "description": "Do not reference the arguments object by numerical index; instead, use a named parameter.",
-    "options": null,
-    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -5503,7 +5748,10 @@
     "level": "Opportunity for Excellence",
     "group": "Correctness",
     "commonWeaknessEnumeration": "710",
-    "source": "tslint-microsoft-contrib"
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/useNamedParameterRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "valid-jsdoc": {
     "hasFix": false,
@@ -5552,10 +5800,16 @@
     ],
     "typescriptOnly": false,
     "type": "maintainability",
-    "source": "tslint-eslint-rules"
+    "documentation": "https://eslint.org/docs/rules/valid-jsdoc",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/validJsdocRule.js",
+    "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules"
   },
   "valid-typeof": {
+    "documentation": "https://eslint.org/docs/rules/valid-typeof",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/validTypeofRule.js",
     "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules",
     "sameName": [
       "./node_modules/tslint-microsoft-contrib:valid-typeof"
     ]
@@ -5589,7 +5843,10 @@
     ],
     "type": "style",
     "typescriptOnly": false,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/variable-name",
+    "path": "./node_modules/tslint/lib/rules/variableNameRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "whitespace": {
     "description": "Enforces whitespace style conventions.",
@@ -5626,6 +5883,9 @@
     "type": "style",
     "typescriptOnly": false,
     "hasFix": true,
-    "source": "tslint"
+    "documentation": "https://palantir.github.io/tslint/rules/whitespace",
+    "path": "./node_modules/tslint/lib/rules/whitespaceRule.js",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   }
 }
