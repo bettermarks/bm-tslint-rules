@@ -3570,7 +3570,7 @@
     "description": "Disallows unused expression statements.",
     "descriptionDetails": "\nUnused expressions are expression statements which are not assignments or function calls\n(and thus usually no-ops).",
     "rationale": "\nDetects potential errors where an assignment or function call was intended.",
-    "optionsDescription": "\nTwo arguments may be optionally provided:\n\n* `allow-fast-null-checks` allows to use logical operators to perform fast null checks and perform\nmethod or function calls for side effects (e.g. `e && e.preventDefault()`).\n* `allow-new` allows 'new' expressions for side effects (e.g. `new ModifyGlobalState();`.\n* `allow-tagged-template` allows tagged templates for side effects (e.g. `this.add\\`foo\\`;`.",
+    "optionsDescription": "\nThe following arguments may be optionally provided:\n\n* `allow-fast-null-checks` allows to use logical operators to perform fast null checks\n  and perform method or function calls for side effects (e.g. `e && e.preventDefault()`).\n* `allow-new` allows 'new' expressions for side effects (e.g. `new ModifyGlobalState();`.\n* `allow-tagged-template` allows tagged templates for side effects\n  (e.g. `this.add\\`foo\\`;`).\n* `should` supports chai assertions using `should` in addition to `expect`;`.\n",
     "options": {
       "type": "array",
       "items": {
@@ -3578,17 +3578,27 @@
         "enum": [
           "allow-fast-null-checks",
           "allow-new",
-          "allow-tagged-template"
+          "allow-tagged-template",
+          "should"
         ]
       },
       "minLength": 0,
-      "maxLength": 3
+      "maxLength": 4
     },
     "optionExamples": [
       true,
       [
         true,
         "allow-fast-null-checks"
+      ],
+      [
+        true,
+        "should"
+      ],
+      [
+        true,
+        "allow-fast-null-checks",
+        "should"
       ]
     ],
     "type": "functionality",
