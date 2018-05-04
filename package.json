@@ -36,8 +36,8 @@
     "tslint-react": "3.4.0"
   },
   "devDependencies": {
-    "@types/node": "^8.9.0",
-    "ts-node": "^4.1.0",
+    "@types/node": "^8.10.12",
+    "ts-node": "^6.0.2",
     "tslint-report": "github:karfau/tslint-report#3df3499",
     "typescript": "~2.7.2"
   }
