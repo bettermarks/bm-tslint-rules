@@ -1,5 +1,7 @@
 import {Icon} from 'components/';
                    ~~~~~~~~~~~~~ [importing parent path  components/ is not allowed.]
+import {Icon} from 'components';
+                   ~~~~~~~~~~~~ [importing parent path  components is not allowed.]
 
 import {Thing} from 'components/nested/Thing';
                     ~~~~~~~~~~~~~~~~~~~~~~~~~ [importing parent path  components/nested/Thing is not allowed.]
