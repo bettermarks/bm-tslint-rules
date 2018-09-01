@@ -9,30 +9,29 @@ jobs:
     steps:
       - checkout
 
-      # Download and cache dependencies
-      - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "package-lock.json" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
-
-      - run: npm ci
-
-      - save_cache:
-          paths:
-            - node_modules
-          key: v1-dependencies-{{ checksum "package-lock.json" }}
+      - run: npm install
 
       - run:
           name: Perform tslint Check
           command: npm run tslint
 
       - run:
-          name: check if the build in dist up to date
+          name: build and create report
           command: |
             npm run build
+            npm run report
             git add . # make sure line endings are sanitized by git
             git diff HEAD --exit-code
+
+      - store_artifacts:
+          path: tslint.report.active.json
+          destination: tslint.report.active.json
+      - store_artifacts:
+          path: tslint.report.available.json
+          destination: tslint.report.available.json
+      - store_artifacts:
+          path: tslint.report.sources.json
+          destination: tslint.report.sources.json
 
       - run:
           name: run tests
