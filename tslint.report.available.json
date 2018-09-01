@@ -1356,7 +1356,7 @@
       ]
     ],
     "type": "typescript",
-    "typescriptOnly": true,
+    "typescriptOnly": false,
     "documentation": "https://github.com/palantir/tslint-react#rules",
     "path": "./node_modules/tslint-react/rules/jsxBanElementsRule.js",
     "source": "tslint-react",
@@ -1436,7 +1436,7 @@
       "[true, \"never\"]"
     ],
     "type": "style",
-    "typescriptOnly": true,
+    "typescriptOnly": false,
     "documentation": "https://github.com/palantir/tslint-react#rules",
     "path": "./node_modules/tslint-react/rules/jsxCurlySpacingRule.js",
     "source": "tslint-react",
@@ -1528,7 +1528,30 @@
     "source": "tslint-react",
     "sourcePath": "./node_modules/tslint-react"
   },
+  "jsx-space-before-trailing-slash": {
+    "description": "Checks that self-closing JSX elements have a space before the '/>' part.",
+    "type": "style",
+    "typescriptOnly": false,
+    "documentation": "https://github.com/palantir/tslint-react#rules",
+    "path": "./node_modules/tslint-react/rules/jsxSpaceBeforeTrailingSlashRule.js",
+    "source": "tslint-react",
+    "sourcePath": "./node_modules/tslint-react"
+  },
   "jsx-use-translation-function": {
+    "description": "\nEnforces use of a translation function. Most plain string literals are disallowed in JSX when enabled.",
+    "options": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "allow-punctuation",
+          "allow-htmlentities"
+        ]
+      }
+    },
+    "optionsDescription": "\nWhether to allow punctuation and or HTML entities",
+    "type": "functionality",
+    "typescriptOnly": false,
     "documentation": "https://github.com/palantir/tslint-react#rules",
     "path": "./node_modules/tslint-react/rules/jsxUseTranslationFunctionRule.js",
     "source": "tslint-react",
