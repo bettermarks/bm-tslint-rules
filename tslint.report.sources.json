@@ -57,8 +57,8 @@
     }
   },
   "./node_modules/tslint-react": {
-    "_from": "tslint-react@3.4.0",
-    "_resolved": "https://registry.npmjs.org/tslint-react/-/tslint-react-3.4.0.tgz",
+    "_from": "tslint-react@3.6.0",
+    "_resolved": "https://registry.npmjs.org/tslint-react/-/tslint-react-3.6.0.tgz",
     "bugs": {
       "url": "https://github.com/palantir/tslint-react/issues"
     },
@@ -70,7 +70,7 @@
     "path": "./node_modules/tslint-react",
     "peerDependencies": {
       "tslint": "^5.1.0",
-      "typescript": ">=2.1.0 || >=2.1.0-dev || >=2.2.0-dev || >=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev"
+      "typescript": ">=2.1.0 || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev"
     }
   },
   "./node_modules/tslint": {
