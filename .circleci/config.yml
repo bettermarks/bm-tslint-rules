@@ -9,18 +9,7 @@ jobs:
     steps:
       - checkout
 
-      # Download and cache dependencies
-#      - restore_cache:
-#          keys:
-#          - v2-dependencies-{{ checksum "package-lock.json" }}
-          # fallback to using the latest cache if no exact match is found
-
       - run: npm install
-
-#      - save_cache:
-#          paths:
-#            - node_modules
-#          key: v2-dependencies-{{ checksum "package-lock.json" }}
 
       - run:
           name: Perform tslint Check
