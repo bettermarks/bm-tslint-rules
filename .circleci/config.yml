@@ -28,12 +28,22 @@ jobs:
           command: npm run tslint
 
       - run:
-          name: check if build and report are up to date
+          name: build and create report
           command: |
             npm run build
             npm run report
             git add . # make sure line endings are sanitized by git
             git diff HEAD --exit-code
+
+      - store_artifacts:
+          path: tslint.report.active.json
+          destination: tslint.report.active.json
+      - store_artifacts:
+          path: tslint.report.available.json
+          destination: tslint.report.available.json
+      - store_artifacts:
+          path: tslint.report.sources.json
+          destination: tslint.report.sources.json
 
       - run:
           name: run tests
