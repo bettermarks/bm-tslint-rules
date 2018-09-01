@@ -3,5 +3,6 @@
     "config:base"
   ],
   "bumpVersion": "patch",
-  "prConcurrentLimit": 1
+  "prConcurrentLimit": 2,
+  "prHourlyLimit": 0
 }
