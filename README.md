@@ -1,5 +1,8 @@
 # bm-tslint-rules
 
+![David](https://david-dm.org/bettermarks/bm-tslint-rules.svg)
+[![CircleCI](https://circleci.com/gh/bettermarks/bm-tslint-rules.svg?style=svg)](https://circleci.com/gh/bettermarks/bm-tslint-rules)
+
 This is a utility package to ease adding tslint checking to a project.
 
 ## Dependencies
