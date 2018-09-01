@@ -8,8 +8,8 @@
     "path": "."
   },
   "./node_modules/tslint-eslint-rules": {
-    "_from": "tslint-eslint-rules@4.1.1",
-    "_resolved": "https://registry.npmjs.org/tslint-eslint-rules/-/tslint-eslint-rules-4.1.1.tgz",
+    "_from": "tslint-eslint-rules@5.4.0",
+    "_resolved": "https://registry.npmjs.org/tslint-eslint-rules/-/tslint-eslint-rules-5.4.0.tgz",
     "bugs": {
       "url": "https://github.com/buzinas/tslint-eslint-rules/issues"
     },
@@ -20,7 +20,8 @@
     "name": "tslint-eslint-rules",
     "path": "./node_modules/tslint-eslint-rules",
     "peerDependencies": {
-      "tslint": "^5.0.0"
+      "tslint": "^5.0.0",
+      "typescript": "^2.2.0 || ^3.0.0"
     }
   },
   "./node_modules/tslint-microsoft-contrib": {

@@ -2095,6 +2095,24 @@
     "sourcePath": "./node_modules/tslint"
   },
   "no-constant-condition": {
+    "description": "disallow use of constant expressions in conditions (recommended)",
+    "rationale": "\nA constant expression (for example, a literal) as a test condition might be a typo or\ndevelopment trigger for a specific behavior. For example, the following code looks as if it is\nnot ready for production.\n",
+    "optionsDescription": "\n- `\"checkLoops\"` Setting this option to `false` allows constant expressions in loops (default: `true`).\n",
+    "options": {
+      "type": "object",
+      "properties": {
+        "checkLoops": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "optionExamples": [
+      "\n\"no-constant-condition\": true\n",
+      "\n\"no-constant-condition\": [true, { \"checkLoops\": false }]\n"
+    ],
+    "typescriptOnly": false,
+    "type": "functionality",
     "documentation": "https://eslint.org/docs/rules/no-constant-condition",
     "path": "./node_modules/tslint-eslint-rules/dist/rules/noConstantConditionRule.js",
     "source": "tslint-eslint-rules",
@@ -5065,6 +5083,35 @@
     "source": "tslint-eslint-rules",
     "sourcePath": "./node_modules/tslint-eslint-rules"
   },
+  "ter-computed-property-spacing": {
+    "hasFix": true,
+    "description": "require or disallow padding inside computed properties",
+    "rationale": "\nWhile formatting preferences are very personal, a number of style guides require or disallow spaces between computed properties in the following situations:\n    ",
+    "optionsDescription": "\nThe rule takes in one option, which defines to require or forbid whitespace.\n\n* `\"never\"` (default) disallows spaces inside computed property brackets\n* `\"always\"` requires one or more spaces inside computed property brackets\n    ",
+    "options": {
+      "type": "array",
+      "items": [
+        {
+          "enum": [
+            "always",
+            "never"
+          ]
+        }
+      ],
+      "maxLength": 1
+    },
+    "optionExamples": [
+      "\n\"ter-computed-property-spacing\": [true]\n",
+      "\n\"ter-computed-property-spacing\": [true, \"always\"]\n      ",
+      "\n\"ter-computed-property-spacing\": [true, \"never\"]\n      "
+    ],
+    "typescriptOnly": false,
+    "type": "style",
+    "documentation": "https://eslint.org/docs/rules/ter-computed-property-spacing",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/terComputedPropertySpacingRule.js",
+    "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules"
+  },
   "ter-func-call-spacing": {
     "hasFix": true,
     "description": "require or disallow spacing between function identifiers and their invocations",
@@ -5275,6 +5322,35 @@
     "source": "tslint-eslint-rules",
     "sourcePath": "./node_modules/tslint-eslint-rules"
   },
+  "ter-newline-after-var": {
+    "hasFix": true,
+    "description": "require or disallow an empty line after variable declarations",
+    "rationale": "\nThis rule enforces a coding style where empty lines are required or disallowed after `var`, `let`, or `const`\nstatements to achieve a consistent coding style across the project.\n",
+    "optionsDescription": "\nThis rule has a string option:\n\n* `\"always\"` (default) requires an empty line after `var`, `let`, or `const`.\n  Comments on a line directly after var statements are treated like additional var statements.\n* `\"never\"` disallows empty lines after `var`, `let`, or `const`.\n",
+    "options": {
+      "type": "array",
+      "items": [
+        {
+          "enum": [
+            "always",
+            "never"
+          ]
+        }
+      ],
+      "maxLength": 1
+    },
+    "optionExamples": [
+      "\n\"ter-newline-after-var\": [true]\n",
+      "\n\"ter-newline-after-var\": [true, \"always\"]\n",
+      "\n\"ter-newline-after-var\": [true, \"never\"]\n"
+    ],
+    "typescriptOnly": false,
+    "type": "style",
+    "documentation": "https://eslint.org/docs/rules/ter-newline-after-var",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/terNewlineAfterVarRule.js",
+    "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules"
+  },
   "ter-no-irregular-whitespace": {
     "description": "disallow irregular whitespace (recommended)",
     "rationale": "\nInvalid or irregular whitespace causes issues with ECMAScript 5 parsers and also makes code\nharder to debug in a similar nature to mixed tabs and spaces.\n",
@@ -5290,6 +5366,94 @@
     "source": "tslint-eslint-rules",
     "sourcePath": "./node_modules/tslint-eslint-rules"
   },
+  "ter-no-mixed-spaces-and-tabs": {
+    "description": "Enforces indentation with unmixed tabs or spaces.",
+    "rationale": "\nUsing only one of tabs or spaces for indentation leads to more consistent editor behavior,\ncleaner diffs in version control, and easier programmatic manipulation.",
+    "optionsDescription": "\nThis rule takes an object argument with an optional `type` property which can be set to:\n\n* `spaces` enforces consistent spaces for indentation.\n* `tabs` enforces consistent tabs for indentation.\n\nIf the above is not provided, the rule will enforce either all tabs or all spaces on each\nline, although different lines may differ between tabs and spaces.\n\nOptionally, a `smartTabs` boolean property can be specified.  If set to true, smart tabs\nallow mixing tabs and spaces if tabs are used for indentation and spaces for alignment, eg.\n\n    function main() {\n    // --->const a = 1,\n    // --->......b = 2;\n\n        const a = 1,\n              b = 2;\n    }\n",
+    "options": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "tabs",
+                "spaces"
+              ]
+            },
+            "smartTabs": {
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": false
+        }
+      ],
+      "minLength": 0,
+      "maxLength": 1
+    },
+    "optionExamples": [
+      "\n\"ter-no-mixed-spaces-and-tabs\": { \"type\": \"tabs\" } ]\n",
+      "\n\"ter-no-mixed-spaces-and-tabs\": { \"type\": \"spaces\" } ]\n",
+      "\n\"ter-no-mixed-spaces-and-tabs\": { \"smartTabs\": true } ]\n",
+      "\n\"ter-no-mixed-spaces-and-tabs\": { \"type\": \"tabs\", \"smartTabs\": true } ]\n"
+    ],
+    "type": "maintainability",
+    "typescriptOnly": false,
+    "documentation": "https://eslint.org/docs/rules/ter-no-mixed-spaces-and-tabs",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/terNoMixedSpacesAndTabsRule.js",
+    "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules"
+  },
+  "ter-no-proto": {
+    "hasFix": false,
+    "description": "disallow the use of `__proto__` property",
+    "rationale": "`__proto__` property has been deprecated as of ECMAScript 3.1 and shouldn’t be used in the code. Use getPrototypeOf method instead.",
+    "optionsDescription": "",
+    "options": {},
+    "optionExamples": [
+      "\n\"ter-no-proto\": true\n"
+    ],
+    "typescriptOnly": false,
+    "type": "functionality",
+    "documentation": "https://eslint.org/docs/rules/ter-no-proto",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/terNoProtoRule.js",
+    "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules"
+  },
+  "ter-no-script-url": {
+    "hasFix": false,
+    "description": "disallow use of `javascript:` urls.",
+    "rationale": "Using `javascript:` URLs is considered by some as a form of `eval`. Code passed in `javascript:` URLs has to be parsed and evaluated by the browser in the same way that eval is processed.",
+    "optionsDescription": "",
+    "options": {},
+    "optionExamples": [
+      "\n\"ter-no-script-url\": true\n"
+    ],
+    "typescriptOnly": false,
+    "type": "functionality",
+    "documentation": "https://eslint.org/docs/rules/ter-no-script-url",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/terNoScriptUrlRule.js",
+    "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules"
+  },
+  "ter-no-self-compare": {
+    "hasFix": false,
+    "description": "disallow comparisons where both sides are exactly the same",
+    "rationale": "Comparing a variable against itself is usually an error, either a typo or refactoring error. It is confusing to the reader and may potentially introduce a runtime error.",
+    "optionsDescription": "",
+    "options": {},
+    "optionExamples": [
+      "\n\"ter-no-self-compare\": true\n"
+    ],
+    "typescriptOnly": false,
+    "type": "maintainability",
+    "documentation": "https://eslint.org/docs/rules/ter-no-self-compare",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/terNoSelfCompareRule.js",
+    "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules"
+  },
   "ter-no-sparse-arrays": {
     "description": "disallow sparse arrays (recommended)",
     "rationale": "\nInvalid or irregular whitespace causes issues with ECMAScript 5 parsers and also makes code\nharder to debug in a similar nature to mixed tabs and spaces.\n",
@@ -5302,6 +5466,77 @@
     "type": "typescript",
     "documentation": "https://eslint.org/docs/rules/ter-no-sparse-arrays",
     "path": "./node_modules/tslint-eslint-rules/dist/rules/terNoSparseArraysRule.js",
+    "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules"
+  },
+  "ter-no-tabs": {
+    "hasFix": false,
+    "description": "disallow all tabs",
+    "rationale": "\nThis rule looks for tabs anywhere inside a file: code, comments or anything else, and disallows their usage.\n",
+    "optionsDescription": "",
+    "options": {},
+    "optionExamples": [
+      "\n\"ter-no-tabs\": true\n"
+    ],
+    "typescriptOnly": false,
+    "type": "style",
+    "documentation": "https://eslint.org/docs/rules/ter-no-tabs",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/terNoTabsRule.js",
+    "source": "tslint-eslint-rules",
+    "sourcePath": "./node_modules/tslint-eslint-rules"
+  },
+  "ter-padded-blocks": {
+    "hasFix": false,
+    "description": "enforces consistent empty line padding within blocks",
+    "rationale": "\nSome style guides require block statements to start and end with blank\nlines. The goal is to improve readability by visually separating the\nblock content and the surrounding code.\n",
+    "optionsDescription": "This rule has one option, which can be a string option or an object option",
+    "options": {
+      "type": "array",
+      "items": [
+        {
+          "enum": [
+            "always",
+            "never"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "blocks": {
+              "enum": [
+                "always",
+                "never"
+              ]
+            },
+            "classes": {
+              "enum": [
+                "always",
+                "never"
+              ]
+            },
+            "switches": {
+              "enum": [
+                "always",
+                "never"
+              ]
+            }
+          },
+          "additionalProperties": false
+        }
+      ],
+      "maxLength": 1
+    },
+    "optionExamples": [
+      "\n\"ter-padded-blocks\": [true]\n",
+      "\n\"ter-padded-blocks\": [true, \"always\"]\n",
+      "\n\"ter-padded-blocks\": [true, \"never\"]\n",
+      "\n\"ter-padded-blocks\": [true, { \"blocks\": \"always\" }]\n",
+      "\n\"ter-padded-blocks\": [true, { \"blocks\": \"never\" }]\n"
+    ],
+    "typescriptOnly": false,
+    "type": "style",
+    "documentation": "https://eslint.org/docs/rules/ter-padded-blocks",
+    "path": "./node_modules/tslint-eslint-rules/dist/rules/terPaddedBlocksRule.js",
     "source": "tslint-eslint-rules",
     "sourcePath": "./node_modules/tslint-eslint-rules"
   },
