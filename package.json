@@ -1,6 +1,6 @@
 {
   "name": "bm-tslint-rules",
-  "version": "0.2.11",
+  "version": "0.2.13",
   "description": "default tslint rules to use for projects using typescript",
   "repository": "https://github.com/bettermarks/bm-tslint-rules",
   "bugs": "https://github.com/bettermarks/bm-tslint-rules/issues",
@@ -37,8 +37,8 @@
   },
   "devDependencies": {
     "@types/node": "10.9.4",
-    "ts-node": "6.2.0",
+    "ts-node": "7.0.1",
     "tslint-report": "github:karfau/tslint-report#3df3499",
-    "typescript": "2.7.2"
+    "typescript": "2.9.2"
   }
 }
