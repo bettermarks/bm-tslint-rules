@@ -28,9 +28,10 @@ jobs:
           command: npm run tslint
 
       - run:
-          name: check if the build in dist up to date
+          name: check if build and report are up to date
           command: |
             npm run build
+            npm run report
             git add . # make sure line endings are sanitized by git
             git diff HEAD --exit-code
 
