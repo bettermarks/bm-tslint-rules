@@ -92,6 +92,7 @@
   },
   "comment-format": {
     "documentation": "https://palantir.github.io/tslint/rules/comment-format",
+    "hasFix": true,
     "ruleArguments": [
       "check-space"
     ],
@@ -143,6 +144,7 @@
   },
   "indent": {
     "documentation": "https://palantir.github.io/tslint/rules/indent",
+    "hasFix": true,
     "ruleArguments": [
       "spaces"
     ],
@@ -661,6 +663,7 @@
     "source": "tslint-no-unused-expression-chai"
   },
   "no-unused-variable": {
+    "deprecated": "Since TypeScript 2.9. Please use the built-in compiler checks instead.",
     "documentation": "https://palantir.github.io/tslint/rules/no-unused-variable",
     "hasFix": true,
     "ruleArguments": [
@@ -923,6 +926,7 @@
   },
   "switch-final-break": {
     "documentation": "https://palantir.github.io/tslint/rules/switch-final-break",
+    "hasFix": true,
     "ruleSeverity": "error",
     "source": "tslint"
   },

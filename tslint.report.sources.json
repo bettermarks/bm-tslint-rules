@@ -75,8 +75,8 @@
     }
   },
   "./node_modules/tslint": {
-    "_from": "tslint@5.8.0",
-    "_resolved": "https://registry.npmjs.org/tslint/-/tslint-5.8.0.tgz",
+    "_from": "tslint@5.11.0",
+    "_resolved": "https://registry.npmjs.org/tslint/-/tslint-5.11.0.tgz",
     "bugs": {
       "url": "https://github.com/palantir/tslint/issues"
     },
@@ -87,7 +87,7 @@
     "name": "tslint",
     "path": "./node_modules/tslint",
     "peerDependencies": {
-      "typescript": ">=2.1.0 || >=2.1.0-dev || >=2.2.0-dev || >=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev"
+      "typescript": ">=2.1.0 || >=2.1.0-dev || >=2.2.0-dev || >=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev"
     }
   }
 }
