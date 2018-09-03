@@ -92,6 +92,7 @@
   },
   "comment-format": {
     "documentation": "https://palantir.github.io/tslint/rules/comment-format",
+    "hasFix": true,
     "ruleArguments": [
       "check-space"
     ],
@@ -143,6 +144,7 @@
   },
   "indent": {
     "documentation": "https://palantir.github.io/tslint/rules/indent",
+    "hasFix": true,
     "ruleArguments": [
       "spaces"
     ],
@@ -660,15 +662,6 @@
     "ruleSeverity": "error",
     "source": "tslint-no-unused-expression-chai"
   },
-  "no-unused-variable": {
-    "documentation": "https://palantir.github.io/tslint/rules/no-unused-variable",
-    "hasFix": true,
-    "ruleArguments": [
-      "react"
-    ],
-    "ruleSeverity": "error",
-    "source": "tslint"
-  },
   "no-use-before-declare": {
     "documentation": "https://palantir.github.io/tslint/rules/no-use-before-declare",
     "ruleSeverity": "error",
@@ -923,6 +916,7 @@
   },
   "switch-final-break": {
     "documentation": "https://palantir.github.io/tslint/rules/switch-final-break",
+    "hasFix": true,
     "ruleSeverity": "error",
     "source": "tslint"
   },

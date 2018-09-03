@@ -146,10 +146,6 @@
       "allow-fast-null-checks",
       "should"
     ],
-    "no-unused-variable": [
-      true,
-      "react"
-    ],
     "no-use-before-declare": true,
     "no-useless-files": true,
     "no-void-expression": false,
