@@ -662,6 +662,13 @@
     "ruleSeverity": "error",
     "source": "tslint-no-unused-expression-chai"
   },
+  "no-unused-variable": {
+    "deprecated": "Since TypeScript 2.9. Please use the built-in compiler checks instead.",
+    "documentation": "https://palantir.github.io/tslint/rules/no-unused-variable",
+    "hasFix": true,
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
   "no-use-before-declare": {
     "documentation": "https://palantir.github.io/tslint/rules/no-use-before-declare",
     "ruleSeverity": "error",
