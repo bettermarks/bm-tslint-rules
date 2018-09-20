@@ -146,6 +146,13 @@
       "allow-fast-null-checks",
       "should"
     ],
+    "no-unused-variable": [
+      // in agreement with https://github.com/palantir/tslint/issues/4100
+      // this ruleset doesn't force people to switch to compile error
+      // for getting rid of unused things, this currently means
+      // paying the price of the deprecation warning
+      true
+    ],
     "no-use-before-declare": true,
     "no-useless-files": true,
     "no-void-expression": false,
