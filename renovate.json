@@ -4,5 +4,6 @@
   ],
   "bumpVersion": "patch",
   "prConcurrentLimit": 2,
-  "prHourlyLimit": 0
+  "prHourlyLimit": 0,
+  "respectLatest": true
 }
