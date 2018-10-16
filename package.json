@@ -1,6 +1,6 @@
 {
   "name": "bm-tslint-rules",
-  "version": "0.5.9",
+  "version": "0.6.0",
   "description": "default tslint rules to use for projects using typescript",
   "repository": "https://github.com/bettermarks/bm-tslint-rules",
   "bugs": "https://github.com/bettermarks/bm-tslint-rules/issues",
