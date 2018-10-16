@@ -380,11 +380,6 @@
     "ruleSeverity": "error",
     "source": "tslint-eslint-rules"
   },
-  "no-extra-semi": {
-    "documentation": "https://eslint.org/docs/rules/no-extra-semi",
-    "ruleSeverity": "error",
-    "source": "tslint-eslint-rules"
-  },
   "no-floating-promises": {
     "documentation": "https://palantir.github.io/tslint/rules/no-floating-promises",
     "ruleSeverity": "error",
@@ -632,11 +627,6 @@
     "hasFix": true,
     "ruleSeverity": "error",
     "source": "tslint"
-  },
-  "no-unnecessary-semicolons": {
-    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
-    "ruleSeverity": "error",
-    "source": "tslint-microsoft-contrib"
   },
   "no-unnecessary-type-assertion": {
     "documentation": "https://palantir.github.io/tslint/rules/no-unnecessary-type-assertion",

@@ -111,7 +111,7 @@
     "no-eval": true,
     "no-ex-assign": true,
     "no-extra-boolean-cast": true,
-    "no-extra-semi": true,
+    "no-extra-semi": false,
     "no-http-string": false,
     "no-increment-decrement": false,
     "no-inferrable-types": true,
@@ -141,6 +141,7 @@
     "no-trailing-whitespace": true,
     "no-unsafe-any": false,
     "no-unnecessary-class": true,
+    "no-unnecessary-semicolons": false,
     "no-unused-expression-chai": [ // "no-unused-expression" is disabled by extending config with the same name
       true,
       "allow-fast-null-checks",
