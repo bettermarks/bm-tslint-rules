@@ -5,5 +5,11 @@
   "bumpVersion": "patch",
   "prConcurrentLimit": 2,
   "prHourlyLimit": 0,
-  "respectLatest": true
+  "respectLatest": true,
+  "packageRules": [
+    {
+      "packageNames": ["tslint-report"],
+      "extends": [":disableDigestUpdates"]
+    }
+  ]
 }
