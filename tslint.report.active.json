@@ -151,6 +151,11 @@
     "ruleSeverity": "error",
     "source": "tslint"
   },
+  "informative-docs": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
   "jquery-deferred-must-complete": {
     "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
@@ -345,6 +350,11 @@
     "ruleSeverity": "error",
     "source": "tslint"
   },
+  "no-dynamic-delete": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-dynamic-delete",
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
   "no-empty": {
     "documentation": "https://palantir.github.io/tslint/rules/no-empty",
     "ruleSeverity": "error",
@@ -481,6 +491,12 @@
   },
   "no-non-null-assertion": {
     "documentation": "https://palantir.github.io/tslint/rules/no-non-null-assertion",
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "no-null-keyword": {
+    "documentation": "https://palantir.github.io/tslint/rules/no-null-keyword",
+    "hasFix": true,
     "ruleSeverity": "error",
     "source": "tslint"
   },
@@ -679,6 +695,11 @@
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
+  "non-literal-fs-path": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
   "non-literal-require": {
     "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
@@ -743,8 +764,19 @@
     "ruleSeverity": "error",
     "source": "tslint"
   },
+  "prefer-readonly": {
+    "documentation": "https://palantir.github.io/tslint/rules/prefer-readonly",
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
   "prefer-template": {
     "documentation": "https://palantir.github.io/tslint/rules/prefer-template",
+    "ruleSeverity": "error",
+    "source": "tslint"
+  },
+  "prefer-while": {
+    "documentation": "https://palantir.github.io/tslint/rules/prefer-while",
+    "hasFix": true,
     "ruleSeverity": "error",
     "source": "tslint"
   },
@@ -798,6 +830,11 @@
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"
   },
+  "react-a11y-input-elements": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
   "react-a11y-lang": {
     "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
@@ -814,6 +851,11 @@
     "source": "tslint-microsoft-contrib"
   },
   "react-a11y-proptypes": {
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "ruleSeverity": "error",
+    "source": "tslint-microsoft-contrib"
+  },
+  "react-a11y-required": {
     "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
     "source": "tslint-microsoft-contrib"

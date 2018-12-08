@@ -51,6 +51,7 @@
     "curly": [true, "ignore-same-line"],
     "eofline": true,
     "export-name": false,
+    "file-name-casing": false, // it only allows to pick a single casing type, would break lot's of code bases
     "forin": true,
     "function-name": false,
     "handle-callback-err": true,
@@ -63,6 +64,7 @@
     //some overlap with no-multi-spaces but it also covers the missing space after import in
     // import* as React from 'react';
     "import-spacing": true,
+    "informative-docs": true, // since we do a breaking version, let's see what it finds might be disabled in next version
     "insecure-random": false,
     "jsdoc-format": false,
     "jsx-alignment": false, //good for prod?
@@ -88,6 +90,7 @@
     "missing-jsdoc": false,
     "new-parens": true,
     "newline-before-return": false,
+    "newline-per-chained-call": false, // not going to introduce more formatting rules (go prettier or enable yourself)
     "no-absolute-import-to-own-parent": true,
     "no-angle-bracket-type-assertion": true,
     "no-any": false,
@@ -190,6 +193,7 @@
     "react-a11y-img-has-alt": true,
     "react-a11y-lang": true,
     "react-a11y-meta": true,
+    "react-a11y-no-onchange": false, // makes sense but might break to many things
     "react-a11y-props": true,
     "react-a11y-proptypes": true,
     "react-a11y-role": true,
@@ -258,6 +262,7 @@
     ],
     "unified-signatures": true,
     "use-isnan": true,
+    "use-simple-attributes": false, // might make sense, but as a general rule???
     "valid-jsdoc": [
       false,
       {

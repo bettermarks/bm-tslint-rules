@@ -1062,6 +1062,31 @@
   "export-name": {
     "type": "maintainability",
     "description": "The name of the exported module must match the filename of the source file",
+    "options": {
+      "type": "list",
+      "listType": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ignore-case": {
+                "type": "boolean"
+              },
+              "allow": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Ignored",
     "issueType": "Warning",
@@ -1158,6 +1183,39 @@
   "function-name": {
     "type": "maintainability",
     "description": "Applies a naming convention to function names and method names",
+    "optionsDescription": "\nFunction styles should be consistent throughout the code.\nUsers may want functions with multiple descriptors to be validated a certain way.\nAn optional argument specifies validation for private static methods:\n* `validate-private-statics-as-private` enforces validation as private.\n* `validate-private-statics-as-static` enforces validation as static.\n* `validate-private-statics-as-either` enforces validation as either.\n",
+    "options": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string",
+          "enum": [
+            "validate-private-statics-as-private",
+            "validate-private-statics-as-static",
+            "validate-private-statics-as-either"
+          ]
+        }
+      ],
+      "minLength": 0,
+      "maxLength": 2
+    },
+    "optionExamples": [
+      [
+        true,
+        "validate-private-statics-as-either"
+      ],
+      [
+        true,
+        "validate-private-statics-as-private"
+      ],
+      [
+        true,
+        "validate-private-statics-as-static"
+      ],
+      [
+        true
+      ]
+    ],
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -1303,6 +1361,22 @@
     "path": "./node_modules/tslint/lib/rules/indentRule.js",
     "source": "tslint",
     "sourcePath": "./node_modules/tslint"
+  },
+  "informative-docs": {
+    "description": "Enforces that comments do more than just reiterate names of objects.",
+    "rationale": "\nThe documentation for an object should not be equivalent to just the object's name.\nIf we strip out non-alphabet characters, common words such as \"the\" or \"a\",\nand lowercase everything, they shouldn't be the same.\n\nUsing informative documentation can be helpful for variables to help explain their usage.\nAlternately, if something's name is so descriptive that it doesn't need to be fully documented,\njust leave out documentation altogether.\n        ",
+    "issueClass": "Non-SDL",
+    "issueType": "Warning",
+    "severity": "Moderate",
+    "level": "Opportunity for Excellence",
+    "group": "Clarity",
+    "recommendation": "true,",
+    "type": "maintainability",
+    "typescriptOnly": false,
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/informativeDocsRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
   "insecure-random": {
     "type": "functionality",
@@ -1767,7 +1841,7 @@
     "severity": "Moderate",
     "level": "Opportunity for Excellence",
     "group": "Clarity",
-    "recommendation": "[true, 100, {\"ignore-parameters-to-function-regex\": \"^describe$\"}],",
+    "recommendation": "[true, 100, { \"ignore-parameters-to-function-regex\": \"^describe$\" }],",
     "commonWeaknessEnumeration": "398, 710",
     "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "path": "./node_modules/tslint-microsoft-contrib/maxFuncBodyLengthRule.js",
@@ -1958,12 +2032,12 @@
     "type": "maintainability",
     "description": "All files must have a top level JSDoc comment.",
     "typescriptOnly": true,
-    "issueClass": "Non-SDL",
+    "issueClass": "Ignored",
     "issueType": "Warning",
     "severity": "Low",
     "level": "Opportunity for Excellence",
-    "group": "Clarity",
-    "commonWeaknessEnumeration": "398, 710",
+    "group": "Deprecated",
+    "recommendation": "false,",
     "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "path": "./node_modules/tslint-microsoft-contrib/missingJsdocRule.js",
     "source": "tslint-microsoft-contrib",
@@ -1978,7 +2052,7 @@
     "severity": "Low",
     "level": "Opportunity for Excellence",
     "group": "Deprecated",
-    "recommendation": "false,  // now supported by TypeScript compiler",
+    "recommendation": "false, // now supported by TypeScript compiler",
     "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "path": "./node_modules/tslint-microsoft-contrib/missingOptionalAnnotationRule.js",
     "source": "tslint-microsoft-contrib",
@@ -2765,6 +2839,18 @@
   "no-increment-decrement": {
     "type": "maintainability",
     "description": "Avoid use of increment and decrement operators particularly as part of complicated expressions",
+    "options": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "allow-for-loops"
+        ]
+      },
+      "minLength": 0,
+      "maxLength": 1
+    },
+    "optionsDescription": "One argument may be optionally provided: \n\n' +\n        '* `allow-for-loops` allows increments and decrement operators to be used in for loop headers.",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -3022,7 +3108,7 @@
     "severity": "Low",
     "level": "Opportunity for Excellence",
     "group": "Deprecated",
-    "recommendation": "false,         // use tslint one-variable-per-declaration rule instead",
+    "recommendation": "false, // use tslint one-variable-per-declaration rule instead",
     "commonWeaknessEnumeration": "710",
     "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "path": "./node_modules/tslint-microsoft-contrib/noMultipleVarDeclRule.js",
@@ -3163,7 +3249,19 @@
   "no-relative-imports": {
     "type": "maintainability",
     "description": "Do not use relative paths when importing external modules or ES6 import declarations",
-    "typescriptOnly": true,
+    "options": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "allow-siblings"
+        ]
+      },
+      "minLength": 0,
+      "maxLength": 1
+    },
+    "optionsDescription": "One argument may be optionally provided: \n\n' +\n            '* `allow-siblings` allows relative imports for files in the same or nested folders.",
+    "typescriptOnly": false,
     "issueClass": "Ignored",
     "issueType": "Warning",
     "severity": "Low",
@@ -3414,6 +3512,13 @@
   "no-suspicious-comment": {
     "type": "maintainability",
     "description": "Do not use suspicious comments, such as BUG, HACK, FIXME, LATER, LATER2, TODO",
+    "options": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "optionsDescription": "One argument may be optionally provided: \n\n' +\n            '* an array of regex that disable the warning if one or several of them\n            are found in the comment text. (Example: `['https://github.com/my-org/my-project/*']`)",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -3991,6 +4096,21 @@
     "source": "tslint-microsoft-contrib",
     "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
+  "non-literal-fs-path": {
+    "type": "functionality",
+    "description": "Detect calls to fs functions with a non literal filepath",
+    "typescriptOnly": true,
+    "issueClass": "SDL",
+    "issueType": "Error",
+    "severity": "Critical",
+    "level": "Mandatory",
+    "group": "Security",
+    "commonWeaknessEnumeration": "22",
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/nonLiteralFsPathRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
+  },
   "non-literal-require": {
     "type": "functionality",
     "description": "Detect require includes that are not for string literals",
@@ -4482,7 +4602,7 @@
     "severity": "Low",
     "level": "Opportunity for Excellence",
     "group": "Configurable",
-    "recommendation": "true,   // pick either type-cast format and use it consistently",
+    "recommendation": "true, // pick either type-cast format and use it consistently",
     "commonWeaknessEnumeration": "398, 710",
     "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "path": "./node_modules/tslint-microsoft-contrib/preferTypeCastRule.js",
@@ -4609,6 +4729,19 @@
   "react-a11y-anchors": {
     "type": "functionality",
     "description": "For accessibility of your website, anchor elements must have a href different from # and a text longer than 4.",
+    "options": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "ignore-case",
+          "ignore-whitespace"
+        ]
+      },
+      "minLength": 0,
+      "maxLength": 2
+    },
+    "optionsDescription": "\nOptional arguments to relax the same HREF same link text rule are provided:\n* `ignore-case` ignore differences in cases.\n* `{\"ignore-whitespace\": \"trim\"}` ignore differences only in leading/trailing whitespace.\n* `{\"ignore-whitespace\": \"all\"}` ignore differences in all whitespace.\n",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Warning",
@@ -4682,6 +4815,20 @@
     "source": "tslint-microsoft-contrib",
     "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
+  "react-a11y-input-elements": {
+    "type": "functionality",
+    "description": "For accessibility of your website, HTML input boxes and text areas must include default, place-holding characters.",
+    "typescriptOnly": true,
+    "issueClass": "Non-SDL",
+    "issueType": "Warning",
+    "severity": "Moderate",
+    "level": "Opportunity for Excellence",
+    "group": "Accessibility",
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/reactA11yInputElementsRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
+  },
   "react-a11y-lang": {
     "type": "functionality",
     "description": "For accessibility of your website, html elements must have a valid lang attribute.",
@@ -4710,6 +4857,26 @@
     "source": "tslint-microsoft-contrib",
     "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
+  "react-a11y-no-onchange": {
+    "type": "functionality",
+    "description": "For accessibility of your website, enforce usage of onBlur over onChange on select menus.",
+    "options": "string[]",
+    "optionsDescription": "Additional tag names to validate.",
+    "optionExamples": [
+      "true",
+      "[true, [\"Select\"]]"
+    ],
+    "typescriptOnly": false,
+    "issueClass": "Non-SDL",
+    "issueType": "Warning",
+    "severity": "Important",
+    "level": "Opportunity for Excellence",
+    "group": "Accessibility",
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/reactA11yNoOnchangeRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
+  },
   "react-a11y-props": {
     "type": "maintainability",
     "description": "Enforce all `aria-*` attributes are valid. Elements cannot use an invalid `aria-*` attribute.",
@@ -4735,6 +4902,20 @@
     "group": "Accessibility",
     "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "path": "./node_modules/tslint-microsoft-contrib/reactA11yProptypesRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
+  },
+  "react-a11y-required": {
+    "type": "functionality",
+    "description": "Enforce that required input elements must have aria-required set to true",
+    "typescriptOnly": true,
+    "issueClass": "Non-SDL",
+    "issueType": "Warning",
+    "severity": "Low",
+    "level": "Opportunity for Excellence",
+    "group": "Accessibility",
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/reactA11yRequiredRule.js",
     "source": "tslint-microsoft-contrib",
     "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
@@ -4810,7 +4991,19 @@
   },
   "react-anchor-blank-noopener": {
     "type": "functionality",
-    "description": "Anchor tags with target=\"_blank\" should also include rel=\"noopener noreferrer\"",
+    "description": "Anchor tags with target=\"_blank\" should also include rel=\"noreferrer\"",
+    "options": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "force-rel-redundancy"
+        ]
+      },
+      "minLength": 0,
+      "maxLength": 1
+    },
+    "optionsDescription": "One argument may be optionally provided: \n\n' +\n            '* `force-rel-redundancy` ignores the default `rel=\"noreferrer\"`\n            behaviour which implies `rel=\"noreferrer noopener\"`. Instead, force redundancy\n            for `rel` attribute.",
     "typescriptOnly": true,
     "issueClass": "SDL",
     "issueType": "Error",
@@ -4856,6 +5049,34 @@
   "react-this-binding-issue": {
     "type": "maintainability",
     "description": "When using React components you must be careful to correctly bind the `this` reference on any methods that you pass off to child components as callbacks.",
+    "options": {
+      "type": "object",
+      "properties": {
+        "allow-anonymous-listeners": {
+          "type": "boolean"
+        },
+        "bind-decorators": {
+          "type": "list",
+          "listType": {
+            "anyOf": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "optionExamples": [
+      true,
+      [
+        true,
+        {
+          "bind-decorators": [
+            "autobind"
+          ]
+        }
+      ]
+    ],
+    "optionsDescription": "",
     "typescriptOnly": true,
     "issueClass": "Non-SDL",
     "issueType": "Error",
@@ -6287,6 +6508,21 @@
     "commonWeaknessEnumeration": "710",
     "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "path": "./node_modules/tslint-microsoft-contrib/useNamedParameterRule.js",
+    "source": "tslint-microsoft-contrib",
+    "sourcePath": "./node_modules/tslint-microsoft-contrib"
+  },
+  "use-simple-attributes": {
+    "type": "functionality",
+    "description": "Enforce usage of only simple attribute types.",
+    "rationale": "Simpler attributes in JSX and TSX files helps keep code clean and readable.            Separate complex expressions into their own line and use clear variable names to make your code more understandable.",
+    "typescriptOnly": false,
+    "issueClass": "Non-SDL",
+    "issueType": "Error",
+    "severity": "Important",
+    "level": "Opportunity for Excellence",
+    "group": "Correctness",
+    "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
+    "path": "./node_modules/tslint-microsoft-contrib/useSimpleAttributesRule.js",
     "source": "tslint-microsoft-contrib",
     "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
