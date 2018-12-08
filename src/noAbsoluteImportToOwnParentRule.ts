@@ -20,6 +20,7 @@ export class Rule extends Rules.AbstractRule {
   private static _projectRoot: string;
   static getProjectPath(sourceFilePath: string): string {
     if (Rule._projectRoot === undefined || !sourceFilePath.startsWith(Rule._projectRoot)) {
+      // tslint:disable-next-line:no-null-keyword type in tslint only allows null (but checks both)
       const configurationPath = findConfigurationPath(null, sourceFilePath);
       if (configurationPath === undefined) {
         throw new Error('no-absolute-import-to-own-parent couldn\'t find config path');

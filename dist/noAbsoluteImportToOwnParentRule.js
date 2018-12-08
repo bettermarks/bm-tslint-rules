@@ -24,6 +24,7 @@ var Rule = /** @class */ (function (_super) {
     }
     Rule.getProjectPath = function (sourceFilePath) {
         if (Rule._projectRoot === undefined || !sourceFilePath.startsWith(Rule._projectRoot)) {
+            // tslint:disable-next-line:no-null-keyword type in tslint only allows null (but checks both)
             var configurationPath = configuration_1.findConfigurationPath(null, sourceFilePath);
             if (configurationPath === undefined) {
                 throw new Error('no-absolute-import-to-own-parent couldn\'t find config path');
