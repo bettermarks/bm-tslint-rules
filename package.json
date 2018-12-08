@@ -1,6 +1,6 @@
 {
   "name": "bm-tslint-rules",
-  "version": "0.6.11",
+  "version": "0.7.0",
   "description": "default tslint rules to use for projects using typescript",
   "repository": "https://github.com/bettermarks/bm-tslint-rules",
   "bugs": "https://github.com/bettermarks/bm-tslint-rules/issues",
@@ -15,7 +15,7 @@
   },
   "scripts": {
     "preinstall": "npx check-node-version --package",
-    "preversion": "npm run build && npm run test && npm run report",
+    "preversion": "npm i && npm run build && npm run test && npm run report",
     "check": "npx npm-check -u --skip-unused",
     "build": "tsc -p .",
     "report": "tslint-report",
