@@ -75,14 +75,14 @@
     }
   },
   "./node_modules/tslint": {
-    "_from": "tslint@5.11.0",
-    "_resolved": "https://registry.npmjs.org/tslint/-/tslint-5.11.0.tgz",
+    "_from": "tslint@5.12.0",
+    "_resolved": "https://registry.npmjs.org/tslint/-/tslint-5.12.0.tgz",
     "bugs": {
       "url": "https://github.com/palantir/tslint/issues"
     },
     "description": "An extensible static analysis linter for the TypeScript language",
     "docs": "https://palantir.github.io/tslint/rules/{RULE}",
-    "homepage": "https://github.com/palantir/tslint#readme",
+    "homepage": "https://palantir.github.io/tslint",
     "main": "./lib/index.js",
     "name": "tslint",
     "path": "./node_modules/tslint",
