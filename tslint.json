@@ -128,7 +128,8 @@
     "no-multi-spaces": true,
     "no-multiline-string": false,
 //    "no-object-literal-type-assertion": false, // TODO: good candidate, but loooots of usages right now
-    "no-parameter-properties": false,
+    "no-null-keyword": false,
+    "no-parameter-properties": false, // I like the idea, but most types are not ready for it
     "no-regex-spaces": true,
     "no-require-imports": false,
     "no-relative-imports": false,

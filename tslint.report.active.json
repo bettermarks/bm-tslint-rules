@@ -494,12 +494,6 @@
     "ruleSeverity": "error",
     "source": "tslint"
   },
-  "no-null-keyword": {
-    "documentation": "https://palantir.github.io/tslint/rules/no-null-keyword",
-    "hasFix": true,
-    "ruleSeverity": "error",
-    "source": "tslint"
-  },
   "no-object-literal-type-assertion": {
     "documentation": "https://palantir.github.io/tslint/rules/no-object-literal-type-assertion",
     "ruleSeverity": "error",
