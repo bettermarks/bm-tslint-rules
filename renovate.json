@@ -10,6 +10,10 @@
     {
       "packageNames": ["tslint-report"],
       "extends": [":disableDigestUpdates"]
+    },
+    {
+      "packageNames": ["@types/node", "node"],
+      "updateTypes": ["major", "minor"]
     }
   ]
 }
