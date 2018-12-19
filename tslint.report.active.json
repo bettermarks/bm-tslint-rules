@@ -989,6 +989,7 @@
   },
   "type-literal-delimiter": {
     "documentation": "https://palantir.github.io/tslint/rules/type-literal-delimiter",
+    "hasFix": true,
     "ruleSeverity": "error",
     "source": "tslint"
   },
