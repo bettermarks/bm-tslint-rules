@@ -75,8 +75,8 @@
     }
   },
   "./node_modules/tslint": {
-    "_from": "tslint@5.12.0",
-    "_resolved": "https://registry.npmjs.org/tslint/-/tslint-5.12.0.tgz",
+    "_from": "tslint@5.12.1",
+    "_resolved": "https://registry.npmjs.org/tslint/-/tslint-5.12.1.tgz",
     "bugs": {
       "url": "https://github.com/palantir/tslint/issues"
     },
