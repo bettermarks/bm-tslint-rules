@@ -4997,7 +4997,7 @@
   "quotemark": {
     "description": "Enforces quote character for string literals.",
     "hasFix": true,
-    "optionsDescription": "\nFive arguments may be optionally provided:\n\n* `\"single\"` enforces single quotes.\n* `\"double\"` enforces double quotes.\n* `\"backtick\"` enforces backticks.\n* `\"jsx-single\"` enforces single quotes for JSX attributes.\n* `\"jsx-double\"` enforces double quotes for JSX attributes.\n* `\"avoid-template\"` forbids single-line untagged template strings that do not contain string interpolations.\n* `\"avoid-escape\"` allows you to use the \"other\" quotemark in cases where escaping would normally be required.\nFor example, `[true, \"double\", \"avoid-escape\"]` would not report a failure on the string literal\n`'Hello \"World\"'`.",
+    "optionsDescription": "\nFive arguments may be optionally provided:\n\n* `\"single\"` enforces single quotes.\n* `\"double\"` enforces double quotes.\n* `\"backtick\"` enforces backticks.\n* `\"jsx-single\"` enforces single quotes for JSX attributes.\n* `\"jsx-double\"` enforces double quotes for JSX attributes.\n* `\"avoid-template\"` forbids single-line untagged template strings that do not contain string interpolations.\n    Note that backticks may still be used if `\"avoid-escape\"` is enabled and both single and double quotes are\n    present in the string (the latter option takes precedence).\n* `\"avoid-escape\"` allows you to use the \"other\" quotemark in cases where escaping would normally be required.\n    For example, `[true, \"double\", \"avoid-escape\"]` would not report a failure on the string literal\n    `'Hello \"World\"'`.",
     "options": {
       "type": "array",
       "items": {
