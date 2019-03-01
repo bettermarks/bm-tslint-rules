@@ -1,10 +1,11 @@
 {
   "extends": [
     // TSLINT: https://palantir.github.io/tslint/rules/
-    "tslint-eslint-rules", // https://eslint.org/docs/rules/
-    "tslint-microsoft-contrib", // https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules
-    "tslint-react", // https://github.com/palantir/tslint-react#rules
-    "tslint-no-unused-expression-chai" // https://github.com/karfau/tslint-no-unused-expression-chai/tree/should-support
+    "tslint-eslint-rules",
+    "tslint-microsoft-contrib",
+    "tslint-react",
+    "tslint-react-hooks",
+    "tslint-no-unused-expression-chai"
   ],
   "rulesDirectory": "dist",
   "rules": {

@@ -73,6 +73,23 @@
       "tslint": ">=5.1.0"
     }
   },
+  "./node_modules/tslint-react-hooks": {
+    "_from": "tslint-react-hooks@1.1.0",
+    "_resolved": "https://registry.npmjs.org/tslint-react-hooks/-/tslint-react-hooks-1.1.0.tgz",
+    "bugs": {
+      "url": "https://github.com/Gelio/tslint-react-hooks/issues"
+    },
+    "description": "TSLint rule that enforces the Rules of Hooks",
+    "docs": "unknown",
+    "homepage": "https://github.com/Gelio/tslint-react-hooks",
+    "main": "tslint-react-hooks.json",
+    "name": "tslint-react-hooks",
+    "path": "./node_modules/tslint-react-hooks",
+    "peerDependencies": {
+      "tslint": "^5.1.0",
+      "typescript": ">=2.1.0"
+    }
+  },
   "./node_modules/tslint-react": {
     "_from": "tslint-react@3.6.0",
     "_resolved": "https://registry.npmjs.org/tslint-react/-/tslint-react-3.6.0.tgz",

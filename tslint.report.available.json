@@ -5962,6 +5962,19 @@
     "source": "tslint-microsoft-contrib",
     "sourcePath": "./node_modules/tslint-microsoft-contrib"
   },
+  "react-hooks-nesting": {
+    "id": "./node_modules/tslint-react-hooks:react-hooks-nesting",
+    "description": "Enforces Rules of Hooks",
+    "descriptionDetails": "See https://reactjs.org/docs/hooks-rules.html",
+    "hasFix": false,
+    "type": "functionality",
+    "typescriptOnly": false,
+    "requiresTypeInfo": false,
+    "path": "./node_modules/tslint-react-hooks/dist/reactHooksNestingRule.js",
+    "ruleName": "react-hooks-nesting",
+    "source": "tslint-react-hooks",
+    "sourcePath": "./node_modules/tslint-react-hooks"
+  },
   "react-iframe-missing-sandbox": {
     "id": "./node_modules/tslint-microsoft-contrib:react-iframe-missing-sandbox",
     "type": "functionality",
