@@ -10,7 +10,7 @@
     "documentation": "https://palantir.github.io/tslint/rules/align",
     "hasFix": true,
     "ruleSeverity": "error",
-    "type": "style",
+    "type": "formatting",
     "ruleArguments": [
       "parameters",
       "arguments",
@@ -159,7 +159,7 @@
     "documentation": "https://palantir.github.io/tslint/rules/eofline",
     "hasFix": true,
     "ruleSeverity": "error",
-    "type": "maintainability",
+    "type": "formatting",
     "ruleName": "eofline",
     "source": "tslint"
   },
@@ -180,7 +180,7 @@
   "import-spacing": {
     "documentation": "https://palantir.github.io/tslint/rules/import-spacing",
     "ruleSeverity": "error",
-    "type": "style",
+    "type": "formatting",
     "ruleName": "import-spacing",
     "source": "tslint"
   },
@@ -188,7 +188,7 @@
     "documentation": "https://palantir.github.io/tslint/rules/indent",
     "hasFix": true,
     "ruleSeverity": "error",
-    "type": "maintainability",
+    "type": "formatting",
     "ruleArguments": [
       "spaces"
     ],
@@ -267,14 +267,14 @@
     "documentation": "https://palantir.github.io/tslint/rules/linebreak-style",
     "hasFix": true,
     "ruleSeverity": "error",
-    "type": "maintainability",
+    "type": "formatting",
     "ruleName": "linebreak-style",
     "source": "tslint"
   },
   "max-line-length": {
     "documentation": "https://palantir.github.io/tslint/rules/max-line-length",
     "ruleSeverity": "error",
-    "type": "maintainability",
+    "type": "formatting",
     "ruleArguments": [
       100
     ],
@@ -308,7 +308,7 @@
   "new-parens": {
     "documentation": "https://palantir.github.io/tslint/rules/new-parens",
     "ruleSeverity": "error",
-    "type": "style",
+    "type": "formatting",
     "ruleName": "new-parens",
     "source": "tslint"
   },
@@ -368,7 +368,7 @@
     "documentation": "https://palantir.github.io/tslint/rules/no-consecutive-blank-lines",
     "hasFix": true,
     "ruleSeverity": "error",
-    "type": "style",
+    "type": "formatting",
     "ruleArguments": [
       3
     ],
@@ -642,7 +642,7 @@
     "documentation": "https://palantir.github.io/tslint/rules/no-irregular-whitespace",
     "hasFix": true,
     "ruleSeverity": "error",
-    "type": "style",
+    "type": "formatting",
     "ruleName": "no-irregular-whitespace",
     "source": "tslint"
   },
@@ -806,7 +806,7 @@
     "documentation": "https://palantir.github.io/tslint/rules/no-trailing-whitespace",
     "hasFix": true,
     "ruleSeverity": "error",
-    "type": "style",
+    "type": "formatting",
     "ruleName": "no-trailing-whitespace",
     "source": "tslint"
   },
@@ -970,8 +970,9 @@
   },
   "number-literal-format": {
     "documentation": "https://palantir.github.io/tslint/rules/number-literal-format",
+    "hasFix": true,
     "ruleSeverity": "error",
-    "type": "style",
+    "type": "formatting",
     "ruleName": "number-literal-format",
     "source": "tslint"
   },
@@ -1087,7 +1088,7 @@
     "documentation": "https://palantir.github.io/tslint/rules/quotemark",
     "hasFix": true,
     "ruleSeverity": "error",
-    "type": "style",
+    "type": "formatting",
     "ruleArguments": [
       "single",
       "avoid-escape"
@@ -1274,7 +1275,7 @@
     "documentation": "https://palantir.github.io/tslint/rules/semicolon",
     "hasFix": true,
     "ruleSeverity": "error",
-    "type": "style",
+    "type": "formatting",
     "ruleArguments": [
       "always"
     ],
@@ -1356,7 +1357,7 @@
     "documentation": "https://palantir.github.io/tslint/rules/trailing-comma",
     "hasFix": true,
     "ruleSeverity": "error",
-    "type": "maintainability",
+    "type": "formatting",
     "ruleArguments": [
       {
         "multiline": "never",
@@ -1385,7 +1386,7 @@
     "documentation": "https://palantir.github.io/tslint/rules/typedef-whitespace",
     "hasFix": true,
     "ruleSeverity": "error",
-    "type": "typescript",
+    "type": "formatting",
     "ruleArguments": [
       {
         "call-signature": "nospace",
@@ -1448,7 +1449,7 @@
     "documentation": "https://palantir.github.io/tslint/rules/whitespace",
     "hasFix": true,
     "ruleSeverity": "error",
-    "type": "style",
+    "type": "formatting",
     "ruleArguments": [
       "check-branch",
       "check-decl",
