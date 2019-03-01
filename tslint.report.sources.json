@@ -1,7 +1,7 @@
 {
   "./node_modules/tslint": {
-    "_from": "tslint@5.12.1",
-    "_resolved": "https://registry.npmjs.org/tslint/-/tslint-5.12.1.tgz",
+    "_from": "tslint@5.13.1",
+    "_resolved": "https://registry.npmjs.org/tslint/-/tslint-5.13.1.tgz",
     "bugs": {
       "url": "https://github.com/palantir/tslint/issues"
     },
@@ -12,7 +12,7 @@
     "name": "tslint",
     "path": "./node_modules/tslint",
     "peerDependencies": {
-      "typescript": ">=2.1.0 || >=2.1.0-dev || >=2.2.0-dev || >=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev"
+      "typescript": ">=2.1.0 || >=2.1.0-dev || >=2.2.0-dev || >=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev || >=3.0.0-dev || >= 3.1.0-dev || >= 3.2.0-dev"
     }
   },
   ".": {
@@ -58,11 +58,12 @@
     }
   },
   "./node_modules/tslint-no-unused-expression-chai": {
-    "_from": "tslint-no-unused-expression-chai@0.1.3",
-    "_resolved": "https://registry.npmjs.org/tslint-no-unused-expression-chai/-/tslint-no-unused-expression-chai-0.1.3.tgz",
+    "_from": "tslint-no-unused-expression-chai@0.1.4",
+    "_resolved": "https://registry.npmjs.org/tslint-no-unused-expression-chai/-/tslint-no-unused-expression-chai-0.1.4.tgz",
     "bugs": {
       "url": "https://github.com/kwonoj/tslint-no-unused-expression-chai/issues"
     },
+    "deprecated": false,
     "description": "Custom tslint no-unused-expression rule supports chai's expect assertion",
     "docs": "unknown",
     "homepage": "https://github.com/kwonoj/tslint-no-unused-expression-chai#readme",

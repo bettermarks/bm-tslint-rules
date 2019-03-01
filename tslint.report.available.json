@@ -39,7 +39,7 @@
         "statements"
       ]
     ],
-    "type": "style",
+    "type": "formatting",
     "typescriptOnly": false,
     "documentation": "https://palantir.github.io/tslint/rules/align",
     "path": "./node_modules/tslint/lib/rules/alignRule.js",
@@ -151,7 +151,7 @@
         "ban-single-arg-parens"
       ]
     ],
-    "type": "style",
+    "type": "formatting",
     "typescriptOnly": false,
     "documentation": "https://palantir.github.io/tslint/rules/arrow-parens",
     "path": "./node_modules/tslint/lib/rules/arrowParensRule.js",
@@ -310,6 +310,14 @@
             "forEach"
           ],
           "message": "Use a regular for loop instead."
+        },
+        {
+          "name": [
+            "*",
+            "_id",
+            "toString"
+          ],
+          "message": "Use 'toHexString' instead."
         }
       ]
     ],
@@ -975,7 +983,6 @@
     "rationale": "\nHelps ensure important components are documented.\n\nNote: use this rule sparingly. It's better to have self-documenting names on components with single, consice responsibilities.\nComments that only restate the names of variables add nothing to code, and can easily become outdated.\n        ",
     "type": "style",
     "typescriptOnly": false,
-    "requiresTypeInfo": true,
     "documentation": "https://palantir.github.io/tslint/rules/completed-docs",
     "path": "./node_modules/tslint/lib/rules/completedDocsRule.js",
     "ruleName": "completed-docs",
@@ -1093,7 +1100,7 @@
     "descriptionDetails": "Fix for single-line files is not supported.",
     "rationale": "It is a [standard convention](https://stackoverflow.com/q/729692/3124288) to end files with a newline.",
     "hasFix": true,
-    "type": "maintainability",
+    "type": "formatting",
     "typescriptOnly": false,
     "documentation": "https://palantir.github.io/tslint/rules/eofline",
     "path": "./node_modules/tslint/lib/rules/eoflineRule.js",
@@ -1388,9 +1395,9 @@
   },
   "import-blacklist": {
     "id": "./node_modules/tslint:import-blacklist",
-    "description": "\nDisallows importing the specified modules via `import` and `require`,\nor importing specific named exports of the specified modules.",
+    "description": "\nDisallows importing the specified modules via `import` and `require`,\nor importing specific named exports of the specified modules,\nor using imports matching specified regular expression patterns.",
     "rationale": "\nFor some libraries, importing the library directly can cause unused\nsubmodules to be loaded, so you may want to block these imports and\nrequire that users directly import only the submodules they need.\nIn other cases, you may simply want to ban an import because using\nit is undesirable or unsafe.",
-    "optionsDescription": "A list of blacklisted modules or named imports.",
+    "optionsDescription": "A list of blacklisted modules, named imports, or regular expression patterns.",
     "options": {
       "type": "array",
       "items": {
@@ -1409,6 +1416,13 @@
                 "minLength": 1
               }
             }
+          },
+          {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minLength": 1
           }
         ]
       }
@@ -1429,6 +1443,20 @@
             "pullAll"
           ]
         }
+      ],
+      [
+        true,
+        "rxjs",
+        {
+          "lodash": [
+            "pull",
+            "pullAll"
+          ]
+        },
+        [
+          ".*\\.temp$",
+          ".*\\.tmp$"
+        ]
       ]
     ],
     "type": "functionality",
@@ -1460,7 +1488,7 @@
   "import-spacing": {
     "id": "./node_modules/tslint:import-spacing",
     "description": "Ensures proper spacing between import statement keywords",
-    "type": "style",
+    "type": "formatting",
     "typescriptOnly": false,
     "documentation": "https://palantir.github.io/tslint/rules/import-spacing",
     "path": "./node_modules/tslint/lib/rules/importSpacingRule.js",
@@ -1542,7 +1570,7 @@
       ]
     ],
     "hasFix": true,
-    "type": "maintainability",
+    "type": "formatting",
     "typescriptOnly": false,
     "documentation": "https://palantir.github.io/tslint/rules/indent",
     "path": "./node_modules/tslint/lib/rules/indentRule.js",
@@ -1668,7 +1696,7 @@
         "check-multiline-start"
       ]
     ],
-    "type": "style",
+    "type": "formatting",
     "typescriptOnly": false,
     "documentation": "https://palantir.github.io/tslint/rules/jsdoc-format",
     "path": "./node_modules/tslint/lib/rules/jsdocFormatRule.js",
@@ -1986,7 +2014,7 @@
         "CRLF"
       ]
     ],
-    "type": "maintainability",
+    "type": "formatting",
     "typescriptOnly": false,
     "hasFix": true,
     "documentation": "https://palantir.github.io/tslint/rules/linebreak-style",
@@ -2132,7 +2160,7 @@
         }
       ]
     ],
-    "type": "maintainability",
+    "type": "formatting",
     "typescriptOnly": false,
     "documentation": "https://palantir.github.io/tslint/rules/max-line-length",
     "path": "./node_modules/tslint/lib/rules/maxLineLengthRule.js",
@@ -2184,7 +2212,7 @@
     "description": "Enforces member ordering.",
     "hasFix": true,
     "rationale": "\nA consistent ordering for class members can make classes easier to read, navigate, and edit.\n\nA common opposite practice to `member-ordering` is to keep related groups of classes together.\nInstead of creating classes with multiple separate groups, consider splitting class responsibilities\napart across multiple single-responsibility classes.\n        ",
-    "optionsDescription": "\nOne argument, which is an object, must be provided. It should contain an `order` property.\nThe `order` property should have a value of one of the following strings:\n\n* `fields-first`\n* `instance-sandwich`\n* `statics-first`\n\nAlternatively, the value for `order` may be an array consisting of the following strings:\n\n* `public-static-field`\n* `public-static-method`\n* `protected-static-field`\n* `protected-static-method`\n* `private-static-field`\n* `private-static-method`\n* `public-instance-field`\n* `protected-instance-field`\n* `private-instance-field`\n* `public-constructor`\n* `protected-constructor`\n* `private-constructor`\n* `public-instance-method`\n* `protected-instance-method`\n* `private-instance-method`\n\nYou can also omit the access modifier to refer to \"public-\", \"protected-\", and \"private-\" all at once; for example, \"static-field\".\n\nYou can also make your own categories by using an object instead of a string:\n\n    {\n        \"name\": \"static non-private\",\n        \"kinds\": [\n            \"public-static-field\",\n            \"protected-static-field\",\n            \"public-static-method\",\n            \"protected-static-method\"\n        ]\n    }\n\nThe 'alphabetize' option will enforce that members within the same category should be alphabetically sorted by name.",
+    "optionsDescription": "\nOne argument, which is an object, must be provided. It should contain an `order` property.\nThe `order` property should have a value of one of the following strings:\n\n* `fields-first`\n* `instance-sandwich`\n* `statics-first`\n\n`fields-first` puts, in order of precedence:\n\n    * fields before constructors before methods\n    * static members before instance members\n    * public members before protected members before private members\n\n`instance-sandwich` puts, in order of precedence:\n\n    * fields before constructors before methods\n    * static fields before instance fields, but static methods *after* instance methods\n    * public members before protected members before private members\n\n`statics-first` puts, in order of precedence:\n\n    * static members before instance members\n        * public members before protected members before private members\n        * fields before methods\n    * instance fields before constructors before instance methods\n        * fields before constructors before methods\n        * public members before protected members before private members\n\nNote that these presets, despite looking similar, can have subtly different behavior due to the order in which these\nrules are specified. A fully expanded ordering can be found in the PRESETS constant in\nhttps://github.com/palantir/tslint/blob/master/src/rules/memberOrderingRule.ts.\n(You may need to check the version of the file corresponding to your version of tslint.)\n\nAlternatively, the value for `order` may be an array consisting of the following strings:\n\n* `public-static-field`\n* `public-static-method`\n* `protected-static-field`\n* `protected-static-method`\n* `private-static-field`\n* `private-static-method`\n* `public-instance-field`\n* `protected-instance-field`\n* `private-instance-field`\n* `public-constructor`\n* `protected-constructor`\n* `private-constructor`\n* `public-instance-method`\n* `protected-instance-method`\n* `private-instance-method`\n\nYou can also omit the access modifier to refer to \"public-\", \"protected-\", and \"private-\" all at once; for example, \"static-field\".\n\nYou can also make your own categories by using an object instead of a string:\n\n    {\n        \"name\": \"static non-private\",\n        \"kinds\": [\n            \"public-static-field\",\n            \"protected-static-field\",\n            \"public-static-method\",\n            \"protected-static-method\"\n        ]\n    }\n\nThe 'alphabetize' option will enforce that members within the same category should be alphabetically sorted by name.",
     "options": {
       "type": "object",
       "properties": {
@@ -2223,6 +2251,9 @@
               "maxLength": 13
             }
           ]
+        },
+        "alphabetize": {
+          "type": "boolean"
         }
       },
       "additionalProperties": false
@@ -2247,7 +2278,8 @@
             "public-instance-method",
             "protected-instance-method",
             "private-instance-method"
-          ]
+          ],
+          "alphabetize": true
         }
       ],
       [
@@ -2362,7 +2394,7 @@
     "id": "./node_modules/tslint:new-parens",
     "description": "Requires parentheses when invoking a constructor via the `new` keyword.",
     "rationale": "Maintains stylistic consistency with other function calls.",
-    "type": "style",
+    "type": "formatting",
     "typescriptOnly": false,
     "documentation": "https://palantir.github.io/tslint/rules/new-parens",
     "path": "./node_modules/tslint/lib/rules/newParensRule.js",
@@ -2374,12 +2406,13 @@
     "id": "./node_modules/tslint:newline-before-return",
     "description": "Enforces blank line before return when not the only line in the block.",
     "rationale": "Helps maintain a readable style in your codebase.",
+    "hasFix": true,
     "optionsDescription": "Not configurable.",
     "options": {},
     "optionExamples": [
       true
     ],
-    "type": "style",
+    "type": "formatting",
     "typescriptOnly": false,
     "documentation": "https://palantir.github.io/tslint/rules/newline-before-return",
     "path": "./node_modules/tslint/lib/rules/newlineBeforeReturnRule.js",
@@ -2549,7 +2582,7 @@
         2
       ]
     ],
-    "type": "style",
+    "type": "formatting",
     "typescriptOnly": false,
     "documentation": "https://palantir.github.io/tslint/rules/no-consecutive-blank-lines",
     "path": "./node_modules/tslint/lib/rules/noConsecutiveBlankLinesRule.js",
@@ -2713,7 +2746,7 @@
     "id": "./node_modules/tslint:no-default-import",
     "description": "Disallows importing default members from certain ES6-style modules.",
     "descriptionDetails": "Import named members instead.",
-    "rationale": "\nNamed imports/exports [promote clarity](https://github.com/palantir/tslint/issues/1182#issue-151780453).\nIn addition, current tooling differs on the correct way to handle default imports/exports.\nAvoiding them all together can help avoid tooling bugs and conflicts.\n\nThe rule supposed to narrow the scope of your changes in the case of monorepo.\nSay, you have packages `A`, `B`, `C` and `utils`, where `A`, `B`, `C` dependends on `utils`,\nwhich is full of default exports.\n`\"no-default-export\"` requires you to remove default _export_ from `utils`, which leads to changes\nin packages `A`, `B`, `C`. It's harder to get merged bigger changeset by various reasons (harder to get your code approved\ndue to a number of required reviewers; longer build time due to a number of affected packages)\nand could result in ignored `\"no-default-export\"` rule in `utils'`.\n\nUnlike `\"no-default-export\"`, the rule requires you to repalce default _import_ with named only in `A` you work on,\nand `utils` you import from.",
+    "rationale": "\nNamed imports/exports [promote clarity](https://github.com/palantir/tslint/issues/1182#issue-151780453).\nIn addition, current tooling differs on the correct way to handle default imports/exports.\nAvoiding them all together can help avoid tooling bugs and conflicts.\n\nThe rule supposed to narrow the scope of your changes in the case of monorepo.\nSay, you have packages `A`, `B`, `C` and `utils`, where `A`, `B`, `C` dependends on `utils`,\nwhich is full of default exports.\n`\"no-default-export\"` requires you to remove default _export_ from `utils`, which leads to changes\nin packages `A`, `B`, `C`. It's harder to get merged bigger changeset by various reasons (harder to get your code approved\ndue to a number of required reviewers; longer build time due to a number of affected packages)\nand could result in ignored `\"no-default-export\"` rule in `utils'`.\n\nUnlike `\"no-default-export\"`, the rule requires you to replace default _import_ with named only in `A` you work on,\nand `utils` you import from.",
     "optionsDescription": "optionsDescription",
     "options": {
       "type": "array",
@@ -3483,7 +3516,7 @@
     "id": "./node_modules/tslint:no-irregular-whitespace",
     "description": "Disallow irregular whitespace within a file, including strings and comments.",
     "hasFix": true,
-    "type": "style",
+    "type": "formatting",
     "typescriptOnly": false,
     "documentation": "https://palantir.github.io/tslint/rules/no-irregular-whitespace",
     "path": "./node_modules/tslint/lib/rules/noIrregularWhitespaceRule.js",
@@ -3512,21 +3545,40 @@
     "id": "./node_modules/tslint:no-magic-numbers",
     "description": "\nDisallows the use constant number values outside of variable assignments.\nWhen no list of allowed values is specified, -1, 0 and 1 are allowed by default.",
     "rationale": "\nMagic numbers should be avoided as they often lack documentation.\nForcing them to be stored in variables gives them implicit documentation.\n        ",
-    "optionsDescription": "A list of allowed numbers.",
+    "optionsDescription": "\nOptions may either be a list of numbers to ignore (not consider 'magic'), or an object containing up to two properties:\n* `allowed-numbers` as the list of numbers to ignore.\n* `ignore-jsx` to specify that 'magic' numbers should be allowed as JSX attributes.",
     "options": {
       "type": "array",
       "items": {
         "type": "number"
       },
+      "properties": {
+        "type": "object",
+        "allowed-numbers": {
+          "type": "array"
+        },
+        "ignore-jsx": {
+          "type": "boolean"
+        }
+      },
       "minLength": 1
     },
     "optionExamples": [
-      true,
       [
         true,
         1,
         2,
         3
+      ],
+      [
+        true,
+        {
+          "allowed-numbers": [
+            1,
+            2,
+            3
+          ],
+          "ignore-jsx": true
+        }
       ]
     ],
     "type": "typescript",
@@ -3847,6 +3899,35 @@
     "ruleName": "no-reserved-keywords",
     "source": "tslint-microsoft-contrib",
     "sourcePath": "./node_modules/tslint-microsoft-contrib"
+  },
+  "no-restricted-globals": {
+    "id": "./node_modules/tslint:no-restricted-globals",
+    "description": "Disallow specific global variables.",
+    "rationale": "\n```ts\nfunction broken(evt: Event) {\n    // Meant to do something with `evt` but typed it incorrectly.\n    Event.target;  // compiler error\n    event.target;  // should be a lint failure\n}\n\nEarly Internet Explorer versions exposed the current DOM event as a global variable 'event',\nbut using this variable has been considered a bad practice for a long time.\nRestricting this will make sure this variable isn’t used in browser code.\n```\n        ",
+    "descriptionDetails": "\nDisallowing usage of specific global variables can be useful if you want to allow\na set of global variables by enabling an environment, but still want to disallow\nsome of those.\n        ",
+    "optionsDescription": "\nThis rule takes a list of strings, where each string is a global to be restricted.\n`event`, `name` and `length` are restricted by default.\n        ",
+    "options": {
+      "type": "list",
+      "items": {
+        "type": "string"
+      }
+    },
+    "optionExamples": [
+      [
+        true,
+        "name",
+        "length",
+        "event"
+      ]
+    ],
+    "type": "functionality",
+    "typescriptOnly": false,
+    "requiresTypeInfo": true,
+    "documentation": "https://palantir.github.io/tslint/rules/no-restricted-globals",
+    "path": "./node_modules/tslint/lib/rules/noRestrictedGlobalsRule.js",
+    "ruleName": "no-restricted-globals",
+    "source": "tslint",
+    "sourcePath": "./node_modules/tslint"
   },
   "no-return-await": {
     "id": "./node_modules/tslint:no-return-await",
@@ -4193,7 +4274,7 @@
         "ignore-jsdoc"
       ]
     ],
-    "type": "style",
+    "type": "formatting",
     "typescriptOnly": false,
     "documentation": "https://palantir.github.io/tslint/rules/no-trailing-whitespace",
     "path": "./node_modules/tslint/lib/rules/noTrailingWhitespaceRule.js",
@@ -4221,11 +4302,33 @@
   "no-unbound-method": {
     "id": "./node_modules/tslint:no-unbound-method",
     "description": "Warns when a method is used outside of a method call.",
-    "optionsDescription": "You may optionally pass \"ignore-static\" to ignore static methods.",
+    "optionsDescription": "\nYou may additionally pass \"ignore-static\" to ignore static methods, or an options object.\n\nThe object may have three properties:\n\n* \"ignore-static\" - to ignore static methods.\n* \"allow-typeof\" - ignore methods referenced in a typeof expression.\n* \"whitelist\" - ignore method references in parameters of specifed function calls.\n\n",
     "options": {
-      "type": "string",
-      "enum": [
-        "ignore-static"
+      "anyOf": [
+        {
+          "type": "string",
+          "enum": [
+            "ignore-static"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "allow-typeof": {
+              "type": "boolean"
+            },
+            "ignore-static": {
+              "type": "boolean"
+            },
+            "whitelist": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minLength": 1
+            }
+          }
+        }
       ]
     },
     "optionExamples": [
@@ -4233,6 +4336,16 @@
       [
         true,
         "ignore-static"
+      ],
+      [
+        true,
+        {
+          "ignore-static": true,
+          "whitelist": [
+            "expect"
+          ],
+          "allow-typeof": true
+        }
       ]
     ],
     "rationale": "\nClass functions don't preserve the class scope when passed as standalone variables.\nFor example, this code will log the global scope (`window`/`global`), not the class instance:\n\n```\nclass MyClass {\n    public log(): void {\n        console.log(this);\n    }\n}\n\nconst instance = new MyClass();\nconst log = instance.log;\n\nlog();\n```\n\nYou need to either use an arrow lambda (`() => {...}`) or call the function with the correct scope.\n\n```\nclass MyClass {\n    public logArrowBound = (): void => {\n        console.log(bound);\n    };\n\n    public logManualBind(): void {\n        console.log(this);\n    }\n}\n\nconst instance = new MyClass();\nconst logArrowBound = instance.logArrowBound;\nconst logManualBind = instance.logManualBind.bind(instance);\n\nlogArrowBound();\nlogManualBind();\n```\n        ",
@@ -4454,7 +4567,7 @@
   },
   "no-unsafe-any": {
     "id": "./node_modules/tslint:no-unsafe-any",
-    "description": "\nWarns when using an expression of type 'any' in a dynamic way.\nUses are only allowed if they would work for `{} | null | undefined`.\nType casts and tests are allowed.\nExpressions that work on all values (such as `\"\" + x`) are allowed.",
+    "description": "\nWarns when using an expression of type 'any' in a dynamic way.\nUses are only allowed if they would work for `{} | null | undefined`.\nDowncasting to unknown is always safe.\nType casts and tests are allowed.\nExpressions that work on all values (such as `\"\" + x`) are allowed.",
     "rationale": "\nIf you're dealing with data of unknown or \"any\" types, you shouldn't be accessing members of it.\nEither add type annotations for properties that may exist or change the data type to the empty object type `{}`.\n\nAlternately, if you're creating storage or handling for consistent but unknown types, such as in data structures\nor serialization, use `<T>` template types for generic type handling.\n\nAlso see the `no-any` rule.\n        ",
     "type": "functionality",
     "typescriptOnly": true,
@@ -4782,9 +4895,10 @@
   },
   "number-literal-format": {
     "id": "./node_modules/tslint:number-literal-format",
+    "hasFix": true,
     "description": "Checks that decimal literals should begin with '0.' instead of just '.', and should not end with a trailing '0'.",
     "rationale": "\nHelps keep a consistent style with numeric literals.\nNon-standard literals are more difficult to scan through and can be a symptom of typos.\n        ",
-    "type": "style",
+    "type": "formatting",
     "typescriptOnly": false,
     "documentation": "https://palantir.github.io/tslint/rules/number-literal-format",
     "path": "./node_modules/tslint/lib/rules/numberLiteralFormatRule.js",
@@ -4863,13 +4977,14 @@
     "id": "./node_modules/tslint:object-literal-sort-keys",
     "description": "\nChecks ordering of keys in object literals.\n\nWhen using the default alphabetical ordering, additional blank lines may be used to group\nobject properties together while keeping the elements within each group in alphabetical order.\n        ",
     "rationale": "Useful in preventing merge conflicts",
-    "optionsDescription": "\nBy default, this rule checks that keys are in alphabetical order.\nThe following may optionally be passed:\n\n* `ignore-case` will compare keys in a case insensitive way.\n* `locale-compare` will compare keys using the expected sort order of special characters, such as accents.\n* `match-declaration-order` will prefer to use the key ordering of the contextual type of the object literal, as in:\n\n    ```\n    interface I { foo: number; bar: number; }\n    const obj: I = { foo: 1, bar: 2 };\n    ```\n\n    If a contextual type is not found, alphabetical ordering will be used instead.\n* `shorthand-first` will enforce shorthand properties to appear first, as in:\n\n    ```\n    const obj = { a, c, b: true };\n    ```\n",
+    "optionsDescription": "\nBy default, this rule checks that keys are in alphabetical order.\nThe following may optionally be passed:\n\n* `ignore-case` will compare keys in a case insensitive way.\n* `locale-compare` will compare keys using the expected sort order of special characters, such as accents.\n* `match-declaration-order` will prefer to use the key ordering of the contextual type of the object literal, as in:\n\n    ```\n    interface I { foo: number; bar: number; }\n    const obj: I = { foo: 1, bar: 2 };\n    ```\n\nIf a contextual type is not found, alphabetical ordering will be used instead.\n* \"match-declaration-order-only\" exactly like \"match-declaration-order\",\n    but don't fall back to alphabetical if a contextual type is not found.\n\n    Note: If both match-declaration-order-only and match-declaration-order options are present,\n          match-declaration-order-only will take precedence and alphabetical fallback will not occur.\n\n* `shorthand-first` will enforce shorthand properties to appear first, as in:\n\n    ```\n    const obj = { a, c, b: true };\n    ```\n",
     "options": {
       "type": "string",
       "enum": [
         "ignore-case",
         "locale-compare",
         "match-declaration-order",
+        "match-declaration-order-only",
         "shorthand-first"
       ]
     },
@@ -5029,14 +5144,42 @@
   "ordered-imports": {
     "id": "./node_modules/tslint:ordered-imports",
     "description": "Requires that import statements be alphabetized and grouped.",
-    "descriptionDetails": "\nEnforce a consistent ordering for ES6 imports:\n- Named imports must be alphabetized (i.e. \"import {A, B, C} from \"foo\";\")\n    - The exact ordering can be controlled by the named-imports-order option.\n    - \"longName as name\" imports are ordered by \"longName\".\n- Import sources must be alphabetized within groups, i.e.:\n        import * as foo from \"a\";\n        import * as bar from \"b\";\n- Groups of imports are delineated by blank lines. You can use these to group imports\n    however you like, e.g. by first- vs. third-party or thematically or can you can\n    enforce a grouping of third-party, parent directories and the current directory.",
+    "descriptionDetails": "\nEnforce a consistent ordering for ES6 imports:\n- Named imports must be alphabetized (i.e. \"import {A, B, C} from \"foo\";\")\n    - The exact ordering can be controlled by the named-imports-order option.\n    - \"longName as name\" imports are ordered by \"longName\".\n- Import sources must be alphabetized within groups, i.e.:\n        import * as foo from \"a\";\n        import * as bar from \"b\";\n- Groups of imports are delineated by blank lines. You can use this rule to group\n    imports however you like, e.g. by first- vs. third-party or thematically or\n    you can define groups based upon patterns in import path names.",
     "hasFix": true,
-    "optionsDescription": "\nYou may set the `\"import-sources-order\"` option to control the ordering of source\nimports (the `\"foo\"` in `import {A, B, C} from \"foo\"`).\n\nPossible values for `\"import-sources-order\"` are:\n\n* `\"case-insensitive'`: Correct order is `\"Bar\"`, `\"baz\"`, `\"Foo\"`. (This is the default.)\n* `\"lowercase-first\"`: Correct order is `\"baz\"`, `\"Bar\"`, `\"Foo\"`.\n* `\"lowercase-last\"`: Correct order is `\"Bar\"`, `\"Foo\"`, `\"baz\"`.\n* `\"any\"`: Allow any order.\n\nYou may set the `\"grouped-imports\"` option to control the grouping of source\nimports (the `\"foo\"` in `import {A, B, C} from \"foo\"`).\n\nPossible values for `\"grouped-imports\"` are:\n\n* `false`: Do not enforce grouping. (This is the default.)\n* `true`: Group source imports by `\"bar\"`, `\"../baz\"`, `\"./foo\"`.\n\nYou may set the `\"named-imports-order\"` option to control the ordering of named\nimports (the `{A, B, C}` in `import {A, B, C} from \"foo\"`).\n\nPossible values for `\"named-imports-order\"` are:\n\n* `\"case-insensitive'`: Correct order is `{A, b, C}`. (This is the default.)\n* `\"lowercase-first\"`: Correct order is `{b, A, C}`.\n* `\"lowercase-last\"`: Correct order is `{A, C, b}`.\n* `\"any\"`: Allow any order.\n\nYou may set the `\"module-source-path\"` option to control the ordering of imports based full path\nor just the module name\n\nPossible values for `\"module-source-path\"` are:\n\n* `\"full'`: Correct order is  `\"./a/Foo\"`, `\"./b/baz\"`, `\"./c/Bar\"`. (This is the default.)\n* `\"basename\"`: Correct order is `\"./c/Bar\"`, `\"./b/baz\"`, `\"./a/Foo\"`.\n\n        ",
+    "optionsDescription": "\nYou may set the `\"import-sources-order\"` option to control the ordering of source\nimports (the `\"foo\"` in `import {A, B, C} from \"foo\"`).\n\nPossible values for `\"import-sources-order\"` are:\n\n* `\"case-insensitive'`: Correct order is `\"Bar\"`, `\"baz\"`, `\"Foo\"`. (This is the default.)\n* `\"lowercase-first\"`: Correct order is `\"baz\"`, `\"Bar\"`, `\"Foo\"`.\n* `\"lowercase-last\"`: Correct order is `\"Bar\"`, `\"Foo\"`, `\"baz\"`.\n* `\"any\"`: Allow any order.\n\nYou may set the `\"grouped-imports\"` option to control the grouping of source\nimports (the `\"foo\"` in `import {A, B, C} from \"foo\"`).  The grouping used\nis controlled by the `\"groups\"` option.\n\nPossible values for `\"grouped-imports\"` are:\n\n* `false`: Do not enforce grouping. (This is the default.)\n* `true`: Group source imports using default grouping or groups setting.\n\nThe value of `\"groups\"` is a list of group rules of the form:\n\n    [{\n        \"name\": \"optional rule name\",\n        \"match\": \"regex string\",\n        \"order\": 10\n    }, {\n        \"name\": \"pkga imports\",\n        \"match\": \"^@pkga\",\n        \"order\": 20\n    }]\n\nthere is also a simplified form where you only pass a list of patterns and\nthe order is given by the position in the list\n\n    [\"^@pkga\", \"^\\.\\.\"]\n\nThe first rule in the list to match a given import is the group that is used.\nIf no rule in matched then the import will be put in an `unmatched` group\nat the end of all groups. The groups must be ordered based upon the sequential\nvalue of the `order` value. (ie. order 0 is first)\n\nIf no `\"groups\"` options is set, a default grouping is used of third-party,\nparent directories and the current directory. (`\"bar\"`, `\"../baz\"`, `\"./foo\"`.)\n\nYou may set the `\"named-imports-order\"` option to control the ordering of named\nimports (the `{A, B, C}` in `import {A, B, C} from \"foo\"`).\n\nPossible values for `\"named-imports-order\"` are:\n\n* `\"case-insensitive'`: Correct order is `{A, b, C}`. (This is the default.)\n* `\"lowercase-first\"`: Correct order is `{b, A, C}`.\n* `\"lowercase-last\"`: Correct order is `{A, C, b}`.\n* `\"any\"`: Allow any order.\n\nYou may set the `\"module-source-path\"` option to control the ordering of imports based full path\nor just the module name\n\nPossible values for `\"module-source-path\"` are:\n\n* `\"full'`: Correct order is  `\"./a/Foo\"`, `\"./b/baz\"`, `\"./c/Bar\"`. (This is the default.)\n* `\"basename\"`: Correct order is `\"./c/Bar\"`, `\"./b/baz\"`, `\"./a/Foo\"`.\n\n        ",
     "options": {
       "type": "object",
       "properties": {
         "grouped-imports": {
           "type": "boolean"
+        },
+        "groups": {
+          "type": "list",
+          "listType": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "match": {
+                    "type": "string"
+                  },
+                  "order": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "match",
+                  "order"
+                ]
+              }
+            ]
+          }
         },
         "import-sources-order": {
           "type": "string",
@@ -5465,7 +5608,7 @@
         "jsx-double"
       ]
     ],
-    "type": "style",
+    "type": "formatting",
     "typescriptOnly": false,
     "documentation": "https://palantir.github.io/tslint/rules/quotemark",
     "path": "./node_modules/tslint/lib/rules/quotemarkRule.js",
@@ -5999,7 +6142,7 @@
         "ignore-bound-class-methods"
       ]
     ],
-    "type": "style",
+    "type": "formatting",
     "typescriptOnly": false,
     "documentation": "https://palantir.github.io/tslint/rules/semicolon",
     "path": "./node_modules/tslint/lib/rules/semicolonRule.js",
@@ -6195,7 +6338,7 @@
   "strict-boolean-expressions": {
     "id": "./node_modules/tslint:strict-boolean-expressions",
     "description": "\nRestricts the types allowed in boolean expressions. By default only booleans are allowed.\n\nThe following nodes are checked:\n\n* Arguments to the `!`, `&&`, and `||` operators\n* The condition in a conditional expression (`cond ? x : y`)\n* Conditions for `if`, `for`, `while`, and `do-while` statements.",
-    "optionsDescription": "\nThese options may be provided:\n\n* `allow-null-union` allows union types containing `null`.\n  - It does *not* allow `null` itself.\n  - Without the '--strictNullChecks' compiler option, this will allow anything other than a string, number, or enum.\n* `allow-undefined-union` allows union types containing `undefined`.\n  - It does *not* allow `undefined` itself.\n  - Without the '--strictNullChecks' compiler option, this will allow anything other than a string, number, or enum.\n* `allow-string` allows strings.\n  - It does *not* allow unions containing `string`.\n  - It does *not* allow string literal types.\n* `allow-enum` allows enums.\n  - It does *not* allow unions containing `enum`.\n* `allow-number` allows numbers.\n  - It does *not* allow unions containing `number`.\n  - It does *not* allow enums or number literal types.\n* `allow-mix` allows multiple of the above to appear together.\n  - For example, `string | number` or `RegExp | null | undefined` would normally not be allowed.\n  - A type like `\"foo\" | \"bar\" | undefined` is always allowed, because it has only one way to be false.\n* `allow-boolean-or-undefined` allows `boolean | undefined`.\n  - Also allows `true | false | undefined`.\n  - Does not allow `false | undefined`.\n  - This option is a subset of `allow-undefined-union`, so you don't need to enable both options at the same time.\n        ",
+    "optionsDescription": "\nThese options may be provided:\n\n* `allow-null-union` allows union types containing `null`.\n  - It does *not* allow `null` itself.\n  - Without the '--strictNullChecks' compiler option, this will allow anything other than a string, number, or enum.\n* `allow-undefined-union` allows union types containing `undefined`.\n  - It does *not* allow `undefined` itself.\n  - Without the '--strictNullChecks' compiler option, this will allow anything other than a string, number, or enum.\n* `allow-string` allows strings.\n  - It does *not* allow unions containing `string`.\n  - It does *not* allow string literal types.\n* `allow-enum` allows enums.\n  - It does *not* allow unions containing `enum`.\n* `allow-number` allows numbers.\n  - It does *not* allow unions containing `number`.\n  - It does *not* allow enums or number literal types.\n* `allow-mix` allows multiple of the above to appear together.\n  - For example, `string | number` or `RegExp | null | undefined` would normally not be allowed.\n  - A type like `\"foo\" | \"bar\" | undefined` is always allowed, because it has only one way to be false.\n* `allow-boolean-or-undefined` allows `boolean | undefined`.\n  - Also allows `true | false | undefined`.\n  - Does not allow `false | undefined`.\n  - This option is a subset of `allow-undefined-union`, so you don't need to enable both options at the same time.\n* `ignore-rhs` ignores the right-hand operand of `&&` and `||'\n        ",
     "options": {
       "type": "array",
       "items": {
@@ -6206,11 +6349,12 @@
           "allow-string",
           "allow-enum",
           "allow-number",
-          "allow-boolean-or-undefined"
+          "allow-boolean-or-undefined",
+          "ignore-rhs"
         ]
       },
       "minLength": 0,
-      "maxLength": 5
+      "maxLength": 7
     },
     "optionExamples": [
       true,
@@ -7107,7 +7251,7 @@
         }
       ]
     ],
-    "type": "maintainability",
+    "type": "formatting",
     "typescriptOnly": false,
     "documentation": "https://palantir.github.io/tslint/rules/trailing-comma",
     "path": "./node_modules/tslint/lib/rules/trailingCommaRule.js",
@@ -7395,7 +7539,7 @@
         }
       ]
     ],
-    "type": "typescript",
+    "type": "formatting",
     "typescriptOnly": true,
     "hasFix": true,
     "documentation": "https://palantir.github.io/tslint/rules/typedef-whitespace",
@@ -7686,7 +7830,7 @@
         "check-typecast"
       ]
     ],
-    "type": "style",
+    "type": "formatting",
     "typescriptOnly": false,
     "hasFix": true,
     "documentation": "https://palantir.github.io/tslint/rules/whitespace",
