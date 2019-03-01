@@ -44,14 +44,13 @@ For further details see [Configured Rules](#configured-rules).
 
 4. on the command line run `npm run tslint`.
 
-PS: So far we didn't spend any effort in making this available via npm since it works quite well this way and it is not a high prio for us. We are releasing new version from the master branch using github [releases](https://github.com/bettermarks/bm-tslint-rules/releases) whenever we think it makes sense on a irregular basis. Mostly before and after breaking changes. of course with a tool like renovate you are also able to have digest updates.
+PS: So far we didn't spend any effort in making this available via npm since it works quite well this way and it is not a high prio for us. We are releasing new version from the master branch using github [releases](https://github.com/bettermarks/bm-tslint-rules/releases) whenever we think it makes sense on a irregular basis. Mostly before and after breaking changes. With a tool like renovate you will have digest updates from master, otherwise you will need to check for new releases once in a while. Feel free to ask for a new release/tag when you want something specific that is not available yet by filing an issue.
 
 ## Configured rules
 
 The repo exports its [`tslint.json`](https://github.com/bettermarks/bm-tslint-rules/blob/master/tslint.json) as it's main file.
 
-We are using [karfau/tslint-report](https://github.com/karfau/tslint-report/) to provide a way of reasoning about (currently 301) [available](https://github.com/bettermarks/bm-tslint-rules/blob/master/tslint.report.available.json) and (currently 179) [active](https://github.com/bettermarks/bm-tslint-rules/blob/master/tslint.report.active.json) rules and their [sources](https://github.com/bettermarks/bm-tslint-rules/blob/master/tslint.report.sources.json) (currently 6).
-As of writing this the rule set has  
+We are using [karfau/tslint-report](https://github.com/karfau/tslint-report/) to provide a way of reasoning about [available](https://github.com/bettermarks/bm-tslint-rules/blob/master/tslint.report.available.json) and [active](https://github.com/bettermarks/bm-tslint-rules/blob/master/tslint.report.active.json) rules and their [sources](https://github.com/bettermarks/bm-tslint-rules/blob/master/tslint.report.sources.json). (As of writing this this rule set provides access to 301 rules from 6 sources of which 179 are active.)
 These can be generated using `npm run report` and will be generated automatically when running `npm version ...`.
 Our CircleCI integration makes sure the reports are always up to date. So when a commit lands on master you will be able to know what rules have been changed.
 
