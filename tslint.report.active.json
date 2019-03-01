@@ -1239,6 +1239,12 @@
     "ruleName": "react-anchor-blank-noopener",
     "source": "tslint-microsoft-contrib"
   },
+  "react-hooks-nesting": {
+    "ruleSeverity": "error",
+    "type": "functionality",
+    "ruleName": "react-hooks-nesting",
+    "source": "tslint-react-hooks"
+  },
   "react-iframe-missing-sandbox": {
     "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
@@ -1315,6 +1321,18 @@
     "ruleSeverity": "error",
     "type": "style",
     "ruleName": "space-within-parens",
+    "source": "tslint"
+  },
+  "strict-boolean-expressions": {
+    "documentation": "https://palantir.github.io/tslint/rules/strict-boolean-expressions",
+    "ruleSeverity": "error",
+    "type": "functionality",
+    "ruleArguments": [
+      "allow-null-union",
+      "allow-undefined-union",
+      "ignore-rhs"
+    ],
+    "ruleName": "strict-boolean-expressions",
     "source": "tslint"
   },
   "switch-default": {

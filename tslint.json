@@ -204,6 +204,7 @@
     "react-a11y-tabindex-no-positive": true,
     "react-a11y-titles": true,
     "react-anchor-blank-noopener": true,
+    "react-hooks-nesting": true,
     "react-iframe-missing-sandbox": true,
     "react-no-dangerous-html": true,
     "react-this-binding-issue": true,
@@ -228,9 +229,10 @@
       "never"
     ],
     "strict-boolean-expressions": [
-      false,
+      true,
       "allow-null-union",
-      "allow-undefined-union"
+      "allow-undefined-union",
+      "ignore-rhs"
     ],
     "switch-default": true,
     "ter-arrow-spacing": [
