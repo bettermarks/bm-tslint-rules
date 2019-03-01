@@ -1,4 +1,20 @@
 {
+  "./node_modules/tslint": {
+    "_from": "tslint@5.12.1",
+    "_resolved": "https://registry.npmjs.org/tslint/-/tslint-5.12.1.tgz",
+    "bugs": {
+      "url": "https://github.com/palantir/tslint/issues"
+    },
+    "description": "An extensible static analysis linter for the TypeScript language",
+    "docs": "https://palantir.github.io/tslint/rules/{RULE}",
+    "homepage": "https://palantir.github.io/tslint",
+    "main": "./lib/index.js",
+    "name": "tslint",
+    "path": "./node_modules/tslint",
+    "peerDependencies": {
+      "typescript": ">=2.1.0 || >=2.1.0-dev || >=2.2.0-dev || >=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev"
+    }
+  },
   ".": {
     "bugs": "https://github.com/bettermarks/bm-tslint-rules/issues",
     "description": "default tslint rules to use for projects using typescript",
@@ -72,22 +88,6 @@
     "peerDependencies": {
       "tslint": "^5.1.0",
       "typescript": ">=2.1.0 || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev"
-    }
-  },
-  "./node_modules/tslint": {
-    "_from": "tslint@5.12.1",
-    "_resolved": "https://registry.npmjs.org/tslint/-/tslint-5.12.1.tgz",
-    "bugs": {
-      "url": "https://github.com/palantir/tslint/issues"
-    },
-    "description": "An extensible static analysis linter for the TypeScript language",
-    "docs": "https://palantir.github.io/tslint/rules/{RULE}",
-    "homepage": "https://palantir.github.io/tslint",
-    "main": "./lib/index.js",
-    "name": "tslint",
-    "path": "./node_modules/tslint",
-    "peerDependencies": {
-      "typescript": ">=2.1.0 || >=2.1.0-dev || >=2.2.0-dev || >=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev"
     }
   }
 }
