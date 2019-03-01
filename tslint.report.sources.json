@@ -63,7 +63,6 @@
     "bugs": {
       "url": "https://github.com/kwonoj/tslint-no-unused-expression-chai/issues"
     },
-    "deprecated": false,
     "description": "Custom tslint no-unused-expression rule supports chai's expect assertion",
     "docs": "unknown",
     "homepage": "https://github.com/kwonoj/tslint-no-unused-expression-chai#readme",
