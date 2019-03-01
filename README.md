@@ -13,17 +13,20 @@ the configurations that are extended in the following order:
 * [`tslint-eslint-rules`](https://github.com/buzinas/tslint-eslint-rules/blob/master/CHANGELOG.md)
 * [`tslint-microsoft-contrib`](https://github.com/Microsoft/tslint-microsoft-contrib/wiki/Release-Notes)
 * [`tslint-react`](https://github.com/Microsoft/tslint-microsoft-contrib/wiki/Release-Notes)
+* [`tslint-no-unused-expression-chai`](https://github.com/kwonoj/tslint-no-unused-expression-chai)
 
 to make sure upgrading dependencies in a project does not break any code/CI pipeline because of fixed/improve/more strict tslint rules.
 
-Instead we are doing regular upgrade days in this project and each project can decide when to switch to a newer version of this package on it's own.
+Instead we are using [renovatebot](https://renovatebot.com) to provide regular upgrade PRs and each project can decide when to switch to a newer version of this package on it's own.
+
+For further details see [Configured Rules](#configured-rules).
 
 ## Usage
 
-1. install an [available version](https://github.com/bettermarks/bm-tslint-rules/releases) (e.g. `v0.1.0`)) as a devDependency:
+1. install an [available version](https://github.com/bettermarks/bm-tslint-rules/releases) (e.g. `v0.7.16`)) as a devDependency:
 
 `npm install -D github:bettermarks/bm-tslint-rules#<VERSION>`
-(You should not use leave out `<VERSION>` since this refers to master and differs depending on which time you install it and npm's cache prevents updates once it fetched it.)
+(You should not leave out `<VERSION>`, since this refers to master and differs depending on which time you install it, since npm's cache prevents updates once it fetched it.)
 
 2. copy [`tslint.json`](https://github.com/bettermarks/bm-tslint-rules/blob/master/examples/minimal/tslint.json) to your project root.
 
@@ -41,24 +44,18 @@ Instead we are doing regular upgrade days in this project and each project can d
 
 4. on the command line run `npm run tslint`.
 
+PS: So far we didn't spend any effort in making this available via npm since it works quite well this way and it is not a high prio for us. We are releasing new version from the master branch using github [releases](https://github.com/bettermarks/bm-tslint-rules/releases) whenever we think it makes sense on a irregular basis. Mostly before and after breaking changes. of course with a tool like renovate you are also able to have digest updates.
+
 ## Configured rules
 
 The repo exports its [`tslint.json`](https://github.com/bettermarks/bm-tslint-rules/blob/master/tslint.json) as it's main file.
 
-The available and active rules are written to respective reports `tslint.report.available.json` and `tslint.report.active.json`.
+We are using [karfau/tslint-report](https://github.com/karfau/tslint-report/) to provide a way of reasoning about (currently 301) [available](https://github.com/bettermarks/bm-tslint-rules/blob/master/tslint.report.available.json) and (currently 179) [active](https://github.com/bettermarks/bm-tslint-rules/blob/master/tslint.report.active.json) rules and their [sources](https://github.com/bettermarks/bm-tslint-rules/blob/master/tslint.report.sources.json) (currently 6).
+As of writing this the rule set has  
 These can be generated using `npm run report` and will be generated automatically when running `npm version ...`.
+Our CircleCI integration makes sure the reports are always up to date. So when a commit lands on master you will be able to know what rules have been changed.
 
-Since documenting each and every rule here would possible get outdated soon here are the sources for the rules we have configured:
-
-* [`tslint`](https://palantir.github.io/tslint/rules/)
-* [`tslint-eslint-rules`](https://github.com/buzinas/tslint-eslint-rules#rules-copied-from-the-eslint-website)
-* `tslint-microsoft-contrib`: 
-  - [extending recommended ruleset](https://github.com/Microsoft/tslint-microsoft-contrib/blob/master/recommended_ruleset.js),  
-  - [available rules and options](https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules)
-* `tslint-react`:
-  - [extending ruleset](https://github.com/palantir/tslint-react/blob/master/tslint-react.json)
-  - [available rules and options](https://github.com/palantir/tslint-react#rules)
-* [`tslint-no-unused-expression-chai`](https://github.com/karfau/tslint-no-unused-expression-chai/tree/should-support#tslint-no-unused-expression-chai) with added support for `should`
+When upgrading version we stick to semver where every rule (that we are aware of) that could your `npm run tslint` will be marked as a breaking change. (This can be different from what the different rule sets consider a breaking change.)  
 
 ## Custom Rules
 
@@ -69,4 +66,3 @@ you should avoid using the alias to import things within an alias.
 
 There is no configuration for this rule, it just checks that you are not importing
 from the root level folder in src, that the module lives in.
-
