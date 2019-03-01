@@ -44,7 +44,7 @@ For further details see [Configured Rules](#configured-rules).
 
 4. on the command line run `npm run tslint`.
 
-PS: So far we didn't spend any effort in making this available via npm since it works quite well this way and it is not a high prio for us. 
+PS: So far we didn't spend any effort in making this available via npm since it works quite well this way and it is not a high prio for us. We are releasing new version from the master branch using github [releases](https://github.com/bettermarks/bm-tslint-rules/releases) whenever we think it makes sense on a irregular basis. Mostly before and after breaking changes. of course with a tool like renovate you are also able to have digest updates.
 
 ## Configured rules
 
