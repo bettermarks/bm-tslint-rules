@@ -14,6 +14,7 @@ the configurations that are extended in the following order:
 * [`tslint-microsoft-contrib`](https://github.com/Microsoft/tslint-microsoft-contrib/wiki/Release-Notes)
 * [`tslint-react`](https://github.com/Microsoft/tslint-microsoft-contrib/wiki/Release-Notes)
 * [`tslint-no-unused-expression-chai`](https://github.com/kwonoj/tslint-no-unused-expression-chai)
+* [`tslint-react-hooks`](https://github.com/Gelio/tslint-react-hooks)
 
 to make sure upgrading dependencies in a project does not break any code/CI pipeline because of fixed/improve/more strict tslint rules.
 
@@ -50,7 +51,7 @@ PS: So far we didn't spend any effort in making this available via npm since it 
 
 The repo exports its [`tslint.json`](https://github.com/bettermarks/bm-tslint-rules/blob/master/tslint.json) as it's main file.
 
-We are using [karfau/tslint-report](https://github.com/karfau/tslint-report/) to provide a way of reasoning about [available](https://github.com/bettermarks/bm-tslint-rules/blob/master/tslint.report.available.json) and [active](https://github.com/bettermarks/bm-tslint-rules/blob/master/tslint.report.active.json) rules and their [sources](https://github.com/bettermarks/bm-tslint-rules/blob/master/tslint.report.sources.json). (As of writing this this rule set provides access to 301 rules from 6 sources of which 179 are active.)
+We are using [karfau/tslint-report](https://github.com/karfau/tslint-report/) to provide a way of reasoning about [available](https://github.com/bettermarks/bm-tslint-rules/blob/master/tslint.report.available.json) and [active](https://github.com/bettermarks/bm-tslint-rules/blob/master/tslint.report.active.json) rules and their [sources](https://github.com/bettermarks/bm-tslint-rules/blob/master/tslint.report.sources.json). (As of writing this this rule set provides access to 301 rules from 7 sources of which 179 are active.)
 These can be generated using `npm run report` and will be generated automatically when running `npm version ...`.
 Our CircleCI integration makes sure the reports are always up to date. So when a commit lands on master you will be able to know what rules have been changed.
 
