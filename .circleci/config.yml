@@ -20,9 +20,9 @@ jobs:
           name: build and create report
           command: |
             npm run build
-            npm run report
-            git add . # make sure line endings are sanitized by git
-            git diff HEAD --exit-code
+#            npm run report
+#            git add . # make sure line endings are sanitized by git
+#            git diff HEAD --exit-code
 
       - store_artifacts:
           path: tslint.report.active.json
