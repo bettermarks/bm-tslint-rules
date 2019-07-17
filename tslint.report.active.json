@@ -1239,12 +1239,6 @@
     "ruleName": "react-anchor-blank-noopener",
     "source": "tslint-microsoft-contrib"
   },
-  "react-hooks-nesting": {
-    "ruleSeverity": "error",
-    "type": "functionality",
-    "ruleName": "react-hooks-nesting",
-    "source": "tslint-react-hooks"
-  },
   "react-iframe-missing-sandbox": {
     "documentation": "https://github.com/Microsoft/tslint-microsoft-contrib#supported-rules",
     "ruleSeverity": "error",
