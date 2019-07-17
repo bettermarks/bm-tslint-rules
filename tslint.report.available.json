@@ -5966,6 +5966,24 @@
     "id": "./node_modules/tslint-react-hooks:react-hooks-nesting",
     "description": "Enforces Rules of Hooks",
     "descriptionDetails": "See https://reactjs.org/docs/hooks-rules.html",
+    "optionsDescription": "\nAn optional object with the property detect-hooks-from-non-react-namespace.\nWhen set to true, violations will be reported for hooks from namespaces other\nthan the React namespace (e.g. `MyHooks.useHook` will be treated as a hook).\n    ",
+    "options": {
+      "type": "object",
+      "properties": {
+        "detect-hooks-from-non-react-namespace": {
+          "type": "boolean"
+        }
+      }
+    },
+    "optionExamples": [
+      true,
+      [
+        true,
+        {
+          "detect-hooks-from-non-react-namespace": true
+        }
+      ]
+    ],
     "hasFix": false,
     "type": "functionality",
     "typescriptOnly": false,

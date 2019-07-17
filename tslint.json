@@ -205,7 +205,6 @@
     "react-a11y-titles": true,
     "react-anchor-blank-noopener": true,
     "react-iframe-missing-sandbox": true,
-    "react-hooks-nesting": "error",
     "react-no-dangerous-html": true,
     "react-this-binding-issue": true,
     "react-unused-props-and-state": true,
