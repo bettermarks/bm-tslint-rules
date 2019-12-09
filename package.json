@@ -1,6 +1,6 @@
 {
   "name": "bm-tslint-rules",
-  "version": "0.7.45",
+  "version": "0.7.46",
   "description": "default tslint rules to use for projects using typescript",
   "repository": "https://github.com/bettermarks/bm-tslint-rules",
   "bugs": "https://github.com/bettermarks/bm-tslint-rules/issues",
@@ -37,7 +37,7 @@
     "tslint-react-hooks": "2.2.1"
   },
   "devDependencies": {
-    "@types/node": "10.17.7",
+    "@types/node": "10.17.8",
     "ts-node": "7.0.1",
     "tslint-report": "github:karfau/tslint-report#d67e143",
     "typescript": "3.7.3"
